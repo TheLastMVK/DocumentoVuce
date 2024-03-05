@@ -1,0 +1,285 @@
+{
+  "id": "fc203952-eb84-47e9-b456-8f08fa16349a",
+  "version": "2.0",
+  "name": "olce",
+  "url": "https://landing-desa.vuce.gob.pe/olce-wp",
+  "tests": [{
+    "id": "a3a3adac-ca68-4002-8e01-f6654e56a8da",
+    "name": "olce-comparativo-costos",
+    "commands": [{
+      "id": "ddcbe034-7c7a-406c-9642-a6e31c21c999",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-desa.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19737377-af00-4a08-a10e-beb84fd3ba7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9d50cb1-d10c-481e-948f-e58ce8a2b466",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Comparativo de costos",
+      "targets": [
+        ["linkText=Comparativo de costos", "linkText"],
+        ["css=#menu-item-529 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparativo de costos')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-529']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-desa.vuce.gob.pe/olce-wp/comparativo/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparativo de costos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba58332c-bc6f-45eb-9c6d-89fc00782d2d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a7b48d-685a-4d81-9f01-88b85a9b0dba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-select-value-1 > .mat-select-placeholder",
+      "targets": [
+        ["css=#mat-select-value-1 > .mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6633a549-922e-47f6-b9e5-f4dcdfafd962",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-3 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-3 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-3']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'AGENTE MARÍTIMO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45596954-dda4-4894-a122-f9d06a0be096",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-select-value-3 > .mat-select-placeholder",
+      "targets": [
+        ["css=#mat-select-value-3 > .mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-3']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/mat-select/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e704da1-2c74-4c7b-978d-b7f7bff4de8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-13 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-13 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-13']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SOLES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff384066-de1a-4a45-9fd4-7cf272c6d093",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27bb9094-4d01-4e7e-9b87-249ee1200023",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ec43f01-f8f6-4ebe-a3e1-ff4fe8432603",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e04a8972-70ad-46f7-ba02-dbd506dc177a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(8) > div:nth-child(1)",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(8) > div:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ee282b4-ab12-401c-a385-b18579780fba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(8) h3",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(8) h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Mostrando 1 a 1 de 1 Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "237ec702-bf2f-4d91-94ab-da60a0e4585b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnVerEmpresa > strong",
+      "targets": [
+        ["css=.btnVerEmpresa > strong", "css:finder"],
+        ["xpath=//div[3]/div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver empresa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2571e31b-3e7b-4c3a-8dd8-43a24c0cf3b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fila",
+      "targets": [
+        ["css=.fila", "css:finder"],
+        ["xpath=//div[@id='tabla']/table/tbody/tr", "xpath:idRelative"],
+        ["xpath=//tbody/tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ee719af-98a1-4123-a812-4e2589f2abfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'X')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "803447ac-e1f7-4ac3-968c-d83cbbdbfc66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c26-2 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c26-2 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[2]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a432cd5-1c28-4ed8-906a-70faa5d3a1b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-12 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-12 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-12']/span", "xpath:idRelative"],
+        ["xpath=//mat-option/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DÓLARES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9177ee-05c4-49b9-afdb-2eb2640d5709",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a3da11-51ee-4333-8830-1418e57ec60a",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-select-value-3",
+      "targets": [
+        ["id=mat-select-value-3", "id"],
+        ["css=#mat-select-value-3", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-3']", "xpath:attributes"],
+        ["xpath=//mat-select[@id='monedaId']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/mat-select/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e53be3ca-259d-4365-a9a7-8d52ef59a50f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-13 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-13 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-13']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SOLES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5712cb5-763a-4567-aebb-3f462b7c866e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d39e58d0-c4f0-4f30-ba91-5c15cfdb4713",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f0da207-888b-4bae-80ba-38257df78f81",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-8 strong",
+      "targets": [
+        ["css=.col-8 strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ver Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dacc45cd-41d4-4496-8d4d-3f315bc01c5e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-desa.vuce.gob.pe/", "https://landing-desa.vuce.gob.pe/olce-wp"],
+  "plugins": []
+}

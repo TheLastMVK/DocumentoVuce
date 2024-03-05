@@ -1,0 +1,412 @@
+{
+  "id": "fc203952-eb84-47e9-b456-8f08fa16349a",
+  "version": "2.0",
+  "name": "olce",
+  "url": "https://landing-desa.vuce.gob.pe/olce-wp",
+  "tests": [{
+    "id": "e1b963a1-c369-49f4-a145-5de5eedb99e0",
+    "name": "olce-directorio",
+    "commands": [{
+      "id": "81539dad-5110-4737-913f-334908ed121e",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-desa.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "983e2529-84b4-4e4b-aee2-8762215d5acb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd6cf56a-e297-4192-95b2-a622a1865172",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Directorio Logístico",
+      "targets": [
+        ["linkText=Directorio Logístico", "linkText"],
+        ["css=#menu-item-528 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Directorio Logístico')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-528']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-desa.vuce.gob.pe/olce-wp/directorio/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Directorio Logístico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faae4ed4-0356-4d33-b020-24975a9c5f53",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6046a86-98b6-4049-92b4-249d82819e5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c50-1 > .mat-select-arrow",
+      "targets": [
+        ["css=.ng-tns-c50-1 > .mat-select-arrow", "css:finder"],
+        ["xpath=//mat-select[@id='mat-select-0']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69b4070a-a828-417f-b0b4-e7ca3b169465",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-3 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-3 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-3']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CHICLAYO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "454d1ab4-6b0c-4e56-a06c-fa102dec903c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dcb09e3-aa23-4ba1-9ce4-a6671407fdc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6cd35d-c4c3-4f72-b1b2-656f5f38819b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-select-value-1",
+      "targets": [
+        ["id=mat-select-value-1", "id"],
+        ["css=#mat-select-value-1", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']", "xpath:attributes"],
+        ["xpath=//mat-select[@id='mat-select-0']/div/div", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97ad8f11-af30-4ebd-9314-382b215c15d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-2 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-2 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-2']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'AREQUIPA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d88bd24-4758-4c7d-b7c2-f90ae46cbef7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'AEREA DEL CALLAO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15897cff-2a02-47eb-a433-d62af29dc56e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-3 > .mat-pseudo-checkbox",
+      "targets": [
+        ["css=#mat-option-3 > .mat-pseudo-checkbox", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-3']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-option[4]/mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86a5d8a9-4923-4579-a93b-97a7d011146f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "540d86a0-1bdc-4c6f-a395-0a517fac60be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f90afe-d8a2-4697-aa55-db96af374f4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnMasInformacion > strong",
+      "targets": [
+        ["css=.btnMasInformacion > strong", "css:finder"],
+        ["xpath=//div[@id='empresa-organizacion']/div[2]/div[4]/button/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Más Información')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a955dff5-9613-49d5-a6fa-5bae70c37b74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-body",
+      "targets": [
+        ["css=.modal-body", "css:finder"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d38fd6-197d-41a2-a849-b940cc08098a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-derecha:nth-child(6)",
+      "targets": [
+        ["css=.section-derecha:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/div[2]/div[4]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1deb3b81-afc2-40ee-905b-67e5d3b3844a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b2706e3-8421-410f-9645-82af6a19b5da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c50-1:nth-child(2)",
+      "targets": [
+        ["css=.ng-tns-c50-1:nth-child(2)", "css:finder"],
+        ["xpath=//mat-select[@id='mat-select-0']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88222ffd-a40f-415d-b6be-095007450ae3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-2 > .mat-pseudo-checkbox",
+      "targets": [
+        ["css=#mat-option-2 > .mat-pseudo-checkbox", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-2']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee52e14b-d5ce-444a-8445-f315866b1c3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-pseudo-checkbox-checked",
+      "targets": [
+        ["css=.mat-pseudo-checkbox-checked", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d060c7-2c1f-4ad6-a5b9-4bffdbef1e51",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-0 > .mat-pseudo-checkbox",
+      "targets": [
+        ["css=#mat-option-0 > .mat-pseudo-checkbox", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-0']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f106e172-e50f-4130-ad98-cf038dd20931",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-0 > .mat-pseudo-checkbox",
+      "targets": [
+        ["css=#mat-option-0 > .mat-pseudo-checkbox", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-0']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20bdae0c-2553-48c2-87ed-d76cbab9935a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2322ed6-bacc-4cd5-b297-d3aba575b4e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b744b9a-dc0e-4070-a9fd-51457330e183",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-radio-4 .mat-radio-outer-circle",
+      "targets": [
+        ["css=#mat-radio-4 .mat-radio-outer-circle", "css:finder"],
+        ["xpath=//mat-radio-button[@id='mat-radio-4']/label/span/span", "xpath:idRelative"],
+        ["xpath=//mat-radio-button[2]/label/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac674ae-de2d-4980-b7eb-2e14bbe6ff96",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-radio-3 .mat-radio-label-content",
+      "targets": [
+        ["css=#mat-radio-3 .mat-radio-label-content", "css:finder"],
+        ["xpath=//mat-radio-button[@id='mat-radio-3']/label/span[2]", "xpath:idRelative"],
+        ["xpath=//mat-radio-button[4]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Proveedores de Servicios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16be2983-6e30-49ca-ab92-86a8762aa067",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6236cde1-5ca6-40d1-b1b9-0351b4ea82e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-radio-5 .mat-radio-outer-circle",
+      "targets": [
+        ["css=#mat-radio-5 .mat-radio-outer-circle", "css:finder"],
+        ["xpath=//mat-radio-button[@id='mat-radio-5']/label/span/span", "xpath:idRelative"],
+        ["xpath=//mat-radio-button[3]/label/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec94a2c8-6c81-404f-8ee6-aa650a4f904a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c8112b2-5b1d-4943-a712-b87a37ec30c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-radio-4 .mat-radio-outer-circle",
+      "targets": [
+        ["css=#mat-radio-4 .mat-radio-outer-circle", "css:finder"],
+        ["xpath=//mat-radio-button[@id='mat-radio-4']/label/span/span", "xpath:idRelative"],
+        ["xpath=//mat-radio-button[2]/label/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f532c19a-3ecd-493d-8331-68d755d62469",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26fc3f40-4451-44a5-87e8-393fb7859d75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.type-text:nth-child(3) > strong",
+      "targets": [
+        ["css=.type-text:nth-child(3) > strong", "css:finder"],
+        ["xpath=//button[3]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'C')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09f4e2f2-2198-4974-8839-37c319d18f4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a17080cd-f1cd-4749-a57e-dffd14141d39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.empresas:nth-child(3) .btnMasInformacion > strong",
+      "targets": [
+        ["css=.empresas:nth-child(3) .btnMasInformacion > strong", "css:finder"],
+        ["xpath=//div[@id='empresa-organizacion']/div[2]/div[4]/button/strong", "xpath:idRelative"],
+        ["xpath=//div[4]/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Más Información')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2a5202-2786-4a64-afa1-ae0a6298614d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-auto > .btn-limpiar > strong",
+      "targets": [
+        ["css=.ml-auto > .btn-limpiar > strong", "css:finder"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/div[5]/div/div/button/strong", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Cerrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dacc45cd-41d4-4496-8d4d-3f315bc01c5e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-desa.vuce.gob.pe/", "https://landing-desa.vuce.gob.pe/olce-wp"],
+  "plugins": []
+}
