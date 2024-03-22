@@ -1,0 +1,222 @@
+{
+  "id": "fcc6d553-8d0e-41ec-96db-2f185360b9d6",
+  "version": "2.0",
+  "name": "olce_directorio_logistico",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "0d2cbb5d-e85f-4568-b3f8-c2a6207e7b4b",
+    "name": "olce_directorio_logistico",
+    "commands": [{
+      "id": "374ed58c-f7c1-4b84-bbc1-badc8e36b216",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14ecaf5e-7750-4b06-b8e0-0561c339ea95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2c356c2-2a30-4c75-92cc-27a3d752b278",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-block:nth-child(1) > .py-4 > .flex",
+      "targets": [
+        ["css=.custom-block:nth-child(1) > .py-4 > .flex", "css:finder"],
+        ["xpath=//div[@id='page']/div[2]/div[3]/div/div[3]/div/div/div[2]/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70d2daec-97ea-4a7f-98a5-d24cb687ddc9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "671b7517-6c80-4789-8aaa-3b7a962d9cbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-select-value-1 > .mat-select-placeholder",
+      "targets": [
+        ["css=#mat-select-value-1 > .mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8561bc1b-621f-4ff4-b480-18f7d9d6d61c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-3 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-3 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-3']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CHICLAYO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef868c1-6518-48f5-8cfa-55bde545e3a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5234cf0e-6486-4530-8d03-62bc850dc87b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9fed9d0-f6ed-4281-80b9-fa69ec69e709",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-select-value-1",
+      "targets": [
+        ["id=mat-select-value-1", "id"],
+        ["css=#mat-select-value-1", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']", "xpath:attributes"],
+        ["xpath=//mat-select[@id='mat-select-0']/div/div", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e00b7aab-bb9f-431d-a08a-d5b58829a8d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'AEREA DEL CALLAO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2be21ec-e74a-47ed-b359-e791d64652bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-2 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-2 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-2']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'AREQUIPA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c898b7b-0cdd-4163-b004-5c246a0726ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f34024b-83f8-4f60-add1-6d2b84ec9ff0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ade12b8-09a1-487c-9a58-2491a1495d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-radio-4 .mat-radio-label-content",
+      "targets": [
+        ["css=#mat-radio-4 .mat-radio-label-content", "css:finder"],
+        ["xpath=//mat-radio-button[@id='mat-radio-4']/label/span[2]", "xpath:idRelative"],
+        ["xpath=//mat-radio-button[2]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Infraestructura')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4424e59c-c63b-4da9-bc10-00bbab9a89df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar > strong",
+      "targets": [
+        ["css=.btn-buscar > strong", "css:finder"],
+        ["xpath=//div[2]/button/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bfdbe42-6118-4f39-a6a8-1f9699405ebc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-limpiar",
+      "targets": [
+        ["css=.btn-limpiar", "css:finder"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Limpiar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f085673-cb87-4f7d-89cb-112501361875",
+      "comment": "",
+      "command": "click",
+      "target": "css=.type-text:nth-child(4) > strong",
+      "targets": [
+        ["css=.type-text:nth-child(4) > strong", "css:finder"],
+        ["xpath=//button[4]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'D')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f9cafa-0e86-4999-be0d-7073303e5f5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c10cd25b-d665-4cde-87d4-dabe5bf5e197",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-limpiar",
+      "targets": [
+        ["css=.btn-limpiar", "css:finder"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Limpiar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "20a5bcbb-78a7-44d5-b268-c5a1c9a64563",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}

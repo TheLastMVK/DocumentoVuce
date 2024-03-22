@@ -1,0 +1,359 @@
+{
+  "id": "fcc6d553-8d0e-41ec-96db-2f185360b9d6",
+  "version": "2.0",
+  "name": "olce_multilaterales",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "44149ac9-aebc-4fd6-af93-f31865bbece3",
+    "name": "olce_multilaterales",
+    "commands": [{
+      "id": "df8bcceb-3241-40ec-8986-66db343c61b7",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da1a6b68-32cc-4398-85bb-c461dea82058",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "948475af-4caf-44a7-9cd4-680b829fc247",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lg\\3Ah-full:nth-child(4) .text-black",
+      "targets": [
+        ["css=.lg\\3Ah-full:nth-child(4) .text-black", "css:finder"],
+        ["xpath=//div[@id='page']/div[2]/div[2]/a[4]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Multilaterales')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67554ce2-7b52-4d1b-8cb2-9734adec81d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-col:nth-child(2) > .w-full",
+      "targets": [
+        ["css=.flex-col:nth-child(2) > .w-full", "css:finder"],
+        ["xpath=//div[@id='page']/div[3]/div/div[2]/div/div/div[2]/a[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c41bfe7-62b8-4600-8885-d510d78aec3c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f0f24f6-292d-46cb-9abf-ee59865bef84",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Comparativa mundial",
+      "targets": [
+        ["linkText=Comparativa mundial", "linkText"],
+        ["css=.type-text > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparativa mundial')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparativa-mundial/2')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparativa mundial')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f119733-4c56-4410-9180-810cc7c9c328",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Comparación por medidas",
+      "targets": [
+        ["linkText=Comparación por medidas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparación por medidas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparacion-medidas/2')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparación por medidas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc689348-17d8-4543-882f-6591fd0cde65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Comparación por medidas",
+      "targets": [
+        ["linkText=Comparación por medidas", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparación por medidas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparacion-medidas/2')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparación por medidas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe9e633-7c9f-428d-8234-ae0fc02c113e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Comparación por medidas",
+      "targets": [
+        ["linkText=Comparación por medidas", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparación por medidas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparacion-medidas/2')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparación por medidas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0cfa35c-a750-41d1-9b6d-c31cd1394be6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Comparativa mundial",
+      "targets": [
+        ["linkText=Comparativa mundial", "linkText"],
+        ["css=.type-text > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparativa mundial')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparativa-mundial/2')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparativa mundial')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4db1b9af-e346-4960-9e52-247d611c3042",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-select-value-9 > .mat-select-placeholder",
+      "targets": [
+        ["css=#mat-select-value-9 > .mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-9']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9db574b0-779f-4f43-b3bb-450b96049658",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-354 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-354 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-354']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a5465e-0188-41c5-9eb4-ca821e0518ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-355 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-355 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-355']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2021')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6983b0ef-7a3e-459a-9b6e-5bd30a1ddcae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13a3637c-577a-4fb6-982c-ff70910eb2c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c26-13 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c26-13 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[3]/div/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5efa05a9-c9d8-42aa-9d31-77b1e56c230a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-360 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-360 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-360']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Afghanistan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8491be9-be2d-483e-8d3e-2106e54937a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-361 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-361 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-361']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Albania')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d67a79-e1c1-491f-9b54-42da89940186",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4bd90d-149d-4f36-8215-f67f82a524af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Comparación por medidas",
+      "targets": [
+        ["linkText=Comparación por medidas", "linkText"],
+        ["css=.nav > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Comparación por medidas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/vuce-olce-ui/indicador-multilateral/comparacion-medidas/2')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Comparación por medidas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba7081b7-c9dc-4eca-bcb9-8b185e431d40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) > .contenedor-control",
+      "targets": [
+        ["css=.col:nth-child(1) > .contenedor-control", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f94a3316-d333-4d49-8092-74da0bb1510a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c26-15 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c26-15 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab82dbaa-d5a0-4072-9bef-3d5312df8792",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-531 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-531 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-531']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2021')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80787835-0598-4130-b369-fc78a9becc11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-15']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/mat-form-field/div/div/div/mat-select/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f975b691-fc9c-4306-929c-0957bf91557b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-536 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-536 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-536']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Albania')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0258348f-8e93-486d-9b77-46202550ab89",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-537 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-537 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-537']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Andorra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fe3bd42-e0a6-40a8-9bce-0a36d0d66b86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "702da4c1-f065-4ad7-a8a7-fd0becda9f11",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-bar",
+      "targets": [
+        ["id=tab-bar", "id"],
+        ["css=#tab-bar", "css:finder"],
+        ["xpath=//button[@id='tab-bar']", "xpath:attributes"],
+        ["xpath=//li[@id='barraMedida']/button", "xpath:idRelative"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Barra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6d4f2b0-84cc-4904-a07e-d87ebf9e1765",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-table",
+      "targets": [
+        ["id=tab-table", "id"],
+        ["css=#tab-table", "css:finder"],
+        ["xpath=//button[@id='tab-table']", "xpath:attributes"],
+        ["xpath=//li[@id='tablaMedida']/button", "xpath:idRelative"],
+        ["xpath=//li[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tabla')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b516f54e-4b43-4cea-a0f7-ce564c000eee",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-diam-med",
+      "targets": [
+        ["id=tab-diam-med", "id"],
+        ["css=#tab-diam-med", "css:finder"],
+        ["xpath=//button[@id='tab-diam-med']", "xpath:attributes"],
+        ["xpath=//li[@id='diamanteMedida']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Diamante')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "20a5bcbb-78a7-44d5-b268-c5a1c9a64563",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}

@@ -1,0 +1,193 @@
+{
+  "id": "ec310082-4966-46ad-8836-e9c3713db990",
+  "version": "2.0",
+  "name": "OLCE",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "e0970c3b-5009-44ac-9eb1-52aee9cfbdb3",
+    "name": "Filtros -> Noticias (Desktop)",
+    "commands": [{
+      "id": "dc6ce5b6-8a0b-45b4-8d5e-2034cee2d3e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "304c2263-ffea-41f3-87a2-551a152cf4f1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2653a850-c721-4ba9-a1bf-bbdc3f6e3c2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownNavbarLink-4",
+      "targets": [
+        ["id=dropdownNavbarLink-4", "id"],
+        ["linkText=Más apartados", "linkText"],
+        ["css=#dropdownNavbarLink-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Más apartados')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownNavbarLink-4']", "xpath:attributes"],
+        ["xpath=//div[@id='primary-menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Más apartados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4771fc35-123d-4dc5-b695-e23a730641d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Noticias",
+      "targets": [
+        ["linkText=Noticias", "linkText"],
+        ["css=#dropdownNavbar-4 #menu-item-0", "css:finder"],
+        ["xpath=//a[contains(text(),'Noticias')]", "xpath:link"],
+        ["xpath=(//a[@id='menu-item-0'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/noticias/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Noticias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6fb26c1-2a2e-4042-a2f5-a93bae56c27f",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//section[@id='block-26']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c80e3186-0183-4891-855a-4793552b7cd5",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Noticias"
+    }, {
+      "id": "8447b02a-5edf-4c8d-b747-83932988efb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05968f88-1d87-458f-9c9d-d6bbf9c3bee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-65']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4200c329-9fa2-4825-b2f4-0af3b0a1e0d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//section[@id='block-26']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa697fe-fe9f-43a3-91c6-1e2dce25a61b",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Noticias"
+    }, {
+      "id": "2c63e90f-1c40-4491-8001-f934ad9c49df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29cc41ee-9fd6-4886-befc-2c6677ddb7f2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7793f43f-a561-4b81-b7d0-782408cecf66",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df7f58e1-2b91-46a1-bf57-f43f2de93343",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-65']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29d064b2-1b13-46b3-8798-8c5b2adc7ccd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-listing-grid__item:nth-child(1) .text-black",
+      "targets": [
+        ["css=.jet-listing-grid__item:nth-child(1) .text-black", "css:finder"],
+        ["xpath=//section[@id='block-22']/div/div/div/div/a/div/div/h2", "xpath:idRelative"],
+        ["xpath=//a/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Mincetur invita a empresas y operadores a participar de Consulta Pública sobre el MISLO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d86de02-d1b5-49db-be14-df13095e5f4b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}

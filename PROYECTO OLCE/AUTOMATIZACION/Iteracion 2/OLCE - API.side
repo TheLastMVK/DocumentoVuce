@@ -1,0 +1,335 @@
+{
+  "id": "ec310082-4966-46ad-8836-e9c3713db990",
+  "version": "2.0",
+  "name": "OLCE",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "e0820fc5-15e7-4a58-9af3-e63621cb7093",
+    "name": "Formulario Solicitud API (Desktop)",
+    "commands": [{
+      "id": "6ba5441e-a34b-41c1-beb5-cb9cf3d8d44a",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cc0dd57-df5d-40f3-8c03-399b18f8fce8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dacf300-f4e9-4a60-b426-85787d75461f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownNavbarLink-4 > .w-5",
+      "targets": [
+        ["css=#dropdownNavbarLink-4 > .w-5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "41695ce4-5589-4875-b2b3-d67a9c338d1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-1314",
+      "targets": [
+        ["id=menu-item-1314", "id"],
+        ["linkText=Consumo de datos y API", "linkText"],
+        ["css=#menu-item-1314", "css:finder"],
+        ["xpath=//a[contains(text(),'Consumo de datos y API')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-1314']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/consumo-de-datos-y-api/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consumo de datos y API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90180ce6-0392-4f57-bf41-808baff15752",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accede ya al formulario",
+      "targets": [
+        ["linkText=Accede ya al formulario", "linkText"],
+        ["css=p:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Accede ya al formulario')]", "xpath:link"],
+        ["xpath=//div[@id='page']/div[3]/div/div[2]/div/div/div/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/consumo-de-datos-y-api/api/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accede ya al formulario')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d318a80f-7d5c-439d-85ed-470489cf990c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo-persona",
+      "targets": [
+        ["id=tipo-persona", "id"],
+        ["name=tipo-persona", "name"],
+        ["css=#tipo-persona", "css:finder"],
+        ["xpath=//select[@id='tipo-persona']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40eb0bd2-6b3a-4fe5-9fc8-6104b7c9d554",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo-persona",
+      "targets": [],
+      "value": "label=Persona Natural"
+    }, {
+      "id": "33126b7a-de2b-4055-8f96-4dc5fc396484",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "decffc84-f6e1-4703-9f80-012d9a473fa0",
+      "comment": "",
+      "command": "type",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Miguel"
+    }, {
+      "id": "3dc7c520-3953-4869-89bb-466ea3dda9f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=apellido",
+      "targets": [
+        ["id=apellido", "id"],
+        ["name=apellido", "name"],
+        ["css=#apellido", "css:finder"],
+        ["xpath=//input[@id='apellido']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05691ac1-eb2e-4111-bf92-82423beb008a",
+      "comment": "",
+      "command": "type",
+      "target": "id=apellido",
+      "targets": [
+        ["id=apellido", "id"],
+        ["name=apellido", "name"],
+        ["css=#apellido", "css:finder"],
+        ["xpath=//input[@id='apellido']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Rey"
+    }, {
+      "id": "ae9f32fd-3801-4cd7-b7c4-a81c73b0f00c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo-documento",
+      "targets": [
+        ["id=tipo-documento", "id"],
+        ["name=tipo-documento", "name"],
+        ["css=#tipo-documento", "css:finder"],
+        ["xpath=//select[@id='tipo-documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3d7ab62-fd89-490c-9636-b5c969217400",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo-documento",
+      "targets": [],
+      "value": "label=DNI"
+    }, {
+      "id": "bdf16940-84cf-49d6-b7c1-30bcc09b3cd8",
+      "comment": "",
+      "command": "click",
+      "target": "id=n_documento",
+      "targets": [
+        ["id=n_documento", "id"],
+        ["name=n_documento", "name"],
+        ["css=#n_documento", "css:finder"],
+        ["xpath=//input[@id='n_documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fdc7315-5318-44a2-b291-982679561bb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=n_documento",
+      "targets": [
+        ["id=n_documento", "id"],
+        ["name=n_documento", "name"],
+        ["css=#n_documento", "css:finder"],
+        ["xpath=//input[@id='n_documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "8a72df8a-6231-49b9-b59f-aa3cf82cb73e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-input",
+      "targets": [
+        ["id=email-input", "id"],
+        ["css=#email-input", "css:finder"],
+        ["xpath=//input[@id='email-input']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66c6147-71b3-414b-9177-74d8eb83ce39",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-input",
+      "targets": [
+        ["id=email-input", "id"],
+        ["css=#email-input", "css:finder"],
+        ["xpath=//input[@id='email-input']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "mrey@olceperu.com"
+    }, {
+      "id": "7721d501-a8b1-4b96-b8a9-7427f2eb1459",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-input-r",
+      "targets": [
+        ["id=email-input-r", "id"],
+        ["css=#email-input-r", "css:finder"],
+        ["xpath=//input[@id='email-input-r']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a95ee7-3675-497c-b4f2-e1aa6dacf369",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-input-r",
+      "targets": [
+        ["id=email-input-r", "id"],
+        ["css=#email-input-r", "css:finder"],
+        ["xpath=//input[@id='email-input-r']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "mrey@olceperu.com"
+    }, {
+      "id": "03fd1830-11dc-4e5c-81ae-ed8f8b31a677",
+      "comment": "",
+      "command": "click",
+      "target": "id=motivo_uso",
+      "targets": [
+        ["id=motivo_uso", "id"],
+        ["name=Motivo de uso", "name"],
+        ["css=#motivo_uso", "css:finder"],
+        ["xpath=//textarea[@id='motivo_uso']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "072f2876-304d-4ef0-b516-06355db8d5ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=motivo_uso",
+      "targets": [
+        ["id=motivo_uso", "id"],
+        ["name=Motivo de uso", "name"],
+        ["css=#motivo_uso", "css:finder"],
+        ["xpath=//textarea[@id='motivo_uso']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test del formulario"
+    }, {
+      "id": "7b1e1bff-e793-4577-9a0a-fbb01b71629f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "98db5e4b-8db5-428c-aa67-d9dbaf926f4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ae2a6a-67a9-4862-b030-fd7a8e8c922b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "05204cab-4c3b-4f72-ad14-7304c44c0d16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-text",
+      "targets": [
+        ["css=.submit-text", "css:finder"],
+        ["xpath=//button[@id='submit-button']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Solicitar clave')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e393f6c-8906-42ea-8144-9324d1bf68f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#success-message > p",
+      "targets": [
+        ["css=#success-message > p", "css:finder"],
+        ["xpath=//div[@id='success-message']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'El envío se ha realizado correctamente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d86de02-d1b5-49db-be14-df13095e5f4b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}

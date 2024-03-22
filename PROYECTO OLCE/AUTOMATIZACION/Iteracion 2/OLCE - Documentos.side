@@ -1,0 +1,258 @@
+{
+  "id": "ec310082-4966-46ad-8836-e9c3713db990",
+  "version": "2.0",
+  "name": "OLCE",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "3e6cf07e-54de-41ef-b4a9-c5437384fd76",
+    "name": "Filtros -> Documentos (Desktop)",
+    "commands": [{
+      "id": "b287c7a0-0cfc-496e-bf36-23772424b6ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aefff08-a6e4-4b9a-a2a5-5fe77fc67ba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7d721ee-1330-48b1-afdc-00221bfa82b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownNavbarLink-4",
+      "targets": [
+        ["id=dropdownNavbarLink-4", "id"],
+        ["linkText=Más apartados", "linkText"],
+        ["css=#dropdownNavbarLink-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Más apartados')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownNavbarLink-4']", "xpath:attributes"],
+        ["xpath=//div[@id='primary-menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Más apartados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5361c3f7-4d0c-4270-a2c1-60dce6b76238",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-360",
+      "targets": [
+        ["id=menu-item-360", "id"],
+        ["linkText=Documentos de interés", "linkText"],
+        ["css=#menu-item-360", "css:finder"],
+        ["xpath=//a[contains(text(),'Documentos de interés')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-360']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/documentos-de-interes/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Documentos de interés')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba33aa71-1604-4c41-8756-8de5ab8775f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-documento",
+      "targets": [
+        ["name=tipo-documento", "name"],
+        ["css=#block-53 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-documento']", "xpath:attributes"],
+        ["xpath=//section[@id='block-53']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1bf0e56-fa60-4774-a1c8-c6f267ad11a4",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-documento",
+      "targets": [],
+      "value": "label=Informes"
+    }, {
+      "id": "c69a4c88-b613-40c3-acf0-6d98f27ced29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d22d05-42d8-4dc1-9a70-a9174d9a595c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ac8186-dd68-42eb-a22d-ef264cdaaa59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "799b9223-47ec-4ac9-852e-c7678d8f6258",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-54 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-54']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab49de4-d48f-40a4-9ea5-23401781d65c",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=MINCETUR"
+    }, {
+      "id": "63c3d7dc-2e62-4734-8512-ca65941ff370",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff99c51-9981-478e-add8-b6e8dd52208b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6305e504-f652-4ba5-a6bf-5163578b93f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-54 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-54']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96d24fcc-418b-434e-b3b9-b44ca05d5fdf",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=VUCE"
+    }, {
+      "id": "7fa0b5ec-9e07-4c68-ae3b-8cfa66eeebea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45441a68-c173-4d8a-a5c6-23c78cafbb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7788e5e0-4c1d-4a83-86ea-e43b59363e2c",
+      "comment": "",
+      "command": "click",
+      "target": "name=select-name",
+      "targets": [
+        ["name=select-name", "name"],
+        ["css=.jet-sorting-select", "css:finder"],
+        ["xpath=//select[@name='select-name']", "xpath:attributes"],
+        ["xpath=//section[@id='block-80']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "276f9741-6459-4bc9-b48a-67b96fe42398",
+      "comment": "",
+      "command": "select",
+      "target": "name=select-name",
+      "targets": [],
+      "value": "label=Fecha (Más antiguo)"
+    }, {
+      "id": "7eaa8a7f-460d-456c-9483-77250a20ec0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55899b23-f930-4356-b995-7928c57ad0ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accordion-collapse-heading-851 .text-base",
+      "targets": [
+        ["css=#accordion-collapse-heading-851 .text-base", "css:finder"],
+        ["xpath=//div[@id='accordion-collapse-heading-851']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Boletín Informativo de Zonas Económicas Especiales – Primer trimestre de 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d86de02-d1b5-49db-be14-df13095e5f4b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}

@@ -1,0 +1,1858 @@
+{
+  "id": "ec310082-4966-46ad-8836-e9c3713db990",
+  "version": "2.0",
+  "name": "OLCE",
+  "url": "https://landing-test.vuce.gob.pe/olce-wp/",
+  "tests": [{
+    "id": "633004c0-7bdc-44d2-9c3d-8d5309cc5135",
+    "name": "Formulario de contacto",
+    "commands": [{
+      "id": "f5fbaa32-9e24-426b-bae8-7500030a2119",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ef34ced-93d3-4139-a032-d2fba8c13c4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownNavbarLink-4 path",
+      "targets": [
+        ["css=#dropdownNavbarLink-4 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "edfb59d6-3973-488a-b56a-8a23d1b6bfbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-516",
+      "targets": [
+        ["id=menu-item-516", "id"],
+        ["linkText=Contacto", "linkText"],
+        ["css=#menu-item-516", "css:finder"],
+        ["xpath=//a[contains(text(),'Contacto')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-516']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/contacto/')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contacto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1961eb96-f1db-40b2-a0ff-2eb875ff1845",
+      "comment": "",
+      "command": "click",
+      "target": "name=your-name",
+      "targets": [
+        ["name=your-name", "name"],
+        ["css=.border-2:nth-child(1) .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-name']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdfda46-44da-4060-b49f-fc92a9f3fab3",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-name",
+      "targets": [
+        ["name=your-name", "name"],
+        ["css=.border-2:nth-child(1) .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-name']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Miguel"
+    }, {
+      "id": "4242f2ba-df98-4732-ba1a-8132bda0d6a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=your-email",
+      "targets": [
+        ["name=your-email", "name"],
+        ["css=.wpcf7-email", "css:finder"],
+        ["xpath=//input[@name='your-email']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c36732-d008-44aa-a6c7-ab02439c0088",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-email",
+      "targets": [
+        ["name=your-email", "name"],
+        ["css=.wpcf7-email", "css:finder"],
+        ["xpath=//input[@name='your-email']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": "mrey@olceperu.com"
+    }, {
+      "id": "e6237176-2682-4013-9785-11ef2da0c042",
+      "comment": "",
+      "command": "click",
+      "target": "css=.last:nth-child(2) input",
+      "targets": [
+        ["css=.last:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='sexo'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[3]/span/span/span[2]/label/input", "xpath:idRelative"],
+        ["xpath=//span[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ad7d49-6104-4372-8b39-a648781c43ba",
+      "comment": "",
+      "command": "click",
+      "target": "name=sector",
+      "targets": [
+        ["name=sector", "name"],
+        ["css=.border-2:nth-child(4) .wpcf7-form-control", "css:finder"],
+        ["xpath=//select[@name='sector']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[4]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5aae24f-cdae-4107-a811-b656e6a33d78",
+      "comment": "",
+      "command": "select",
+      "target": "name=sector",
+      "targets": [],
+      "value": "label=Institución Educativa"
+    }, {
+      "id": "81442100-52f7-464a-80f9-07df7f20bf54",
+      "comment": "",
+      "command": "click",
+      "target": "id=page",
+      "targets": [
+        ["id=page", "id"],
+        ["css=#page", "css:finder"],
+        ["xpath=//div[@id='page']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad0642a-c6e5-4635-a92d-e29798213239",
+      "comment": "",
+      "command": "click",
+      "target": "name=sector2",
+      "targets": [
+        ["name=sector2", "name"],
+        ["css=.border-2:nth-child(5) .wpcf7-form-control", "css:finder"],
+        ["xpath=//select[@name='sector2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[5]/span/select", "xpath:idRelative"],
+        ["xpath=//div[5]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5e4aeb3-d4d7-4b08-aae5-95239cbceebc",
+      "comment": "",
+      "command": "select",
+      "target": "name=sector2",
+      "targets": [],
+      "value": "label=Alumno"
+    }, {
+      "id": "66ea7c37-b582-4548-ab5f-c4bc8c57f5bb",
+      "comment": "",
+      "command": "click",
+      "target": "name=pais",
+      "targets": [
+        ["name=pais", "name"],
+        ["css=.border-2:nth-child(6) .wpcf7-form-control", "css:finder"],
+        ["xpath=//select[@name='pais']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[6]/span/select", "xpath:idRelative"],
+        ["xpath=//div[6]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "414a0b43-c9c2-47c3-86b0-6e59d7635112",
+      "comment": "",
+      "command": "select",
+      "target": "name=pais",
+      "targets": [],
+      "value": "label=España"
+    }, {
+      "id": "3785b6dc-eefa-4dea-b5c3-c854e9bae31a",
+      "comment": "",
+      "command": "click",
+      "target": "id=page",
+      "targets": [
+        ["id=page", "id"],
+        ["css=#page", "css:finder"],
+        ["xpath=//div[@id='page']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eac8fdc2-74d0-4da7-8ff4-e05462fd2e10",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipoconsulta",
+      "targets": [
+        ["name=tipoconsulta", "name"],
+        ["css=.border-2:nth-child(7) .wpcf7-form-control", "css:finder"],
+        ["xpath=//select[@name='tipoconsulta']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[7]/span/select", "xpath:idRelative"],
+        ["xpath=//div[7]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d24a00-24f9-4736-917d-dbe899911598",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipoconsulta",
+      "targets": [],
+      "value": "label=Sobre Eventos del OLCE"
+    }, {
+      "id": "a345f3ac-d950-48e6-abf5-2f231805ae23",
+      "comment": "",
+      "command": "click",
+      "target": "id=page",
+      "targets": [
+        ["id=page", "id"],
+        ["css=#page", "css:finder"],
+        ["xpath=//div[@id='page']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "204c4019-edd6-43b0-a6df-401bc4066e67",
+      "comment": "",
+      "command": "click",
+      "target": "name=your-message",
+      "targets": [
+        ["name=your-message", "name"],
+        ["css=.wpcf7-form-control-wrap:nth-child(2) > .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='your-message']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[8]/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ada6fc-9136-4848-aae7-b145148a1f75",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-message",
+      "targets": [
+        ["name=your-message", "name"],
+        ["css=.wpcf7-form-control-wrap:nth-child(2) > .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='your-message']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[8]/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Esta es una prueba del formulario de contacto."
+    }, {
+      "id": "49376c7d-e588-4ebe-898a-f829ecc0233b",
+      "comment": "",
+      "command": "click",
+      "target": "name=acceptance",
+      "targets": [
+        ["name=acceptance", "name"],
+        ["css=.wpcf7-acceptance input", "css:finder"],
+        ["xpath=//input[@name='acceptance']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[9]/span/span/span/label/input", "xpath:idRelative"],
+        ["xpath=//div[9]/span/span/span/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f0144ab-c344-4d0d-bbb2-872802eaeed8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.items-baseline > .wpcf7-form-control",
+      "targets": [
+        ["css=.items-baseline > .wpcf7-form-control", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f519-p516-o1']/form/div[2]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1c983ce3-31e3-4bef-a96d-6d9beb978868",
+    "name": "Formulario de Feedback - SI",
+    "commands": [{
+      "id": "e19fd79e-8851-46fb-bdd4-ab4f938b83e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47032b82-5688-41bf-a5fc-cc62eb25d140",
+      "comment": "",
+      "command": "click",
+      "target": "id=contenido-ok",
+      "targets": [
+        ["id=contenido-ok", "id"],
+        ["css=#contenido-ok", "css:finder"],
+        ["xpath=//input[@id='contenido-ok']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f575-o1']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "867d0cce-b5f5-4b75-9977-d7cabd9b4093",
+      "comment": "",
+      "command": "click",
+      "target": "css=#response-feedback > .flex",
+      "targets": [
+        ["css=#response-feedback > .flex", "css:finder"],
+        ["xpath=//div[@id='response-feedback']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b1f9c26a-2e1b-4fa0-9aea-66ac55fa7a5d",
+    "name": "Formulario de Feedback - NO",
+    "commands": [{
+      "id": "affa0ac0-9046-4c09-9d59-f26cd109fc6d",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59f39874-ec01-4bbe-9199-8d206a6e3dd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=contenido-feedback-button",
+      "targets": [
+        ["id=contenido-feedback-button", "id"],
+        ["css=#contenido-feedback-button", "css:finder"],
+        ["xpath=//button[@id='contenido-feedback-button']", "xpath:attributes"],
+        ["xpath=//div[@id='feedback-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "032db408-89e1-4fc4-93df-a3ce4b09ae54",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wpcf7-f573-o2 .wpcf7-list-item:nth-child(3) input",
+      "targets": [
+        ["css=#wpcf7-f573-o2 .wpcf7-list-item:nth-child(3) input", "css:finder"],
+        ["xpath=(//input[@name='contenido'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f573-o2']/form/span/span/span[3]/label/input", "xpath:idRelative"],
+        ["xpath=//span[3]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7aed22d-4ae4-4dca-b781-87722deb345c",
+      "comment": "",
+      "command": "click",
+      "target": "name=contenido-detalle",
+      "targets": [
+        ["name=contenido-detalle", "name"],
+        ["css=#wpcf7-f573-o2 .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='contenido-detalle']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f573-o2']/form/span[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abf978a9-99fc-4d1d-b4d4-cb523d1306d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=contenido-detalle",
+      "targets": [
+        ["name=contenido-detalle", "name"],
+        ["css=#wpcf7-f573-o2 .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='contenido-detalle']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f573-o2']/form/span[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Es un test del formulario de feedback"
+    }, {
+      "id": "a7591ec9-85d1-4f20-a370-869cda12f383",
+      "comment": "",
+      "command": "click",
+      "target": "id=enviar-contenido",
+      "targets": [
+        ["id=enviar-contenido", "id"],
+        ["css=#enviar-contenido", "css:finder"],
+        ["xpath=//input[@id='enviar-contenido']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f573-o2']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e800f4d-2c4f-42d4-b039-fc9b3d0d3036",
+      "comment": "",
+      "command": "click",
+      "target": "css=#response-feedback > .flex",
+      "targets": [
+        ["css=#response-feedback > .flex", "css:finder"],
+        ["xpath=//div[@id='response-feedback']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d2a31d7f-4ae2-4132-9534-2290466a4344",
+    "name": "Formulario de Feedback - REPORTAR ERROR",
+    "commands": [{
+      "id": "fe5876f2-46cf-4128-9ae7-6e6b6827d4d2",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "983f856d-1f98-49ed-87e4-4aa35b37a07f",
+      "comment": "",
+      "command": "click",
+      "target": "id=error-feedback-button",
+      "targets": [
+        ["id=error-feedback-button", "id"],
+        ["css=#error-feedback-button", "css:finder"],
+        ["xpath=//button[@id='error-feedback-button']", "xpath:attributes"],
+        ["xpath=//div[@id='feedback-form']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reportar error')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3074f6c4-f474-46f5-a07a-602e6ac76bc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wpcf7-f574-o3 .wpcf7-list-item:nth-child(3) .wpcf7-list-item-label",
+      "targets": [
+        ["css=#wpcf7-f574-o3 .wpcf7-list-item:nth-child(3) .wpcf7-list-item-label", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f574-o3']/form/span/span/span[3]/label/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/span/span/span[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c95e25-8628-4cec-981f-aa7e91278427",
+      "comment": "",
+      "command": "click",
+      "target": "name=error-detalle",
+      "targets": [
+        ["name=error-detalle", "name"],
+        ["css=#wpcf7-f574-o3 .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='error-detalle']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f574-o3']/form/span[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/span[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b1b101-a5e9-43b0-88df-3b82f3d48639",
+      "comment": "",
+      "command": "type",
+      "target": "name=error-detalle",
+      "targets": [
+        ["name=error-detalle", "name"],
+        ["css=#wpcf7-f574-o3 .wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='error-detalle']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f574-o3']/form/span[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/span[2]/textarea", "xpath:position"]
+      ],
+      "value": "Es un test del formulario de feedback"
+    }, {
+      "id": "24d1a045-bfc6-4e9b-9903-25ea853ad388",
+      "comment": "",
+      "command": "click",
+      "target": "id=enviar-error",
+      "targets": [
+        ["id=enviar-error", "id"],
+        ["css=#enviar-error", "css:finder"],
+        ["xpath=//input[@id='enviar-error']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f574-o3']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb31d0bb-559f-4ea7-8f7c-efd246a3942a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#response-feedback > .flex",
+      "targets": [
+        ["css=#response-feedback > .flex", "css:finder"],
+        ["xpath=//div[@id='response-feedback']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e0820fc5-15e7-4a58-9af3-e63621cb7093",
+    "name": "Formulario Solicitud API",
+    "commands": [{
+      "id": "6ba5441e-a34b-41c1-beb5-cb9cf3d8d44a",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dacf300-f4e9-4a60-b426-85787d75461f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownNavbarLink-4 > .w-5",
+      "targets": [
+        ["css=#dropdownNavbarLink-4 > .w-5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "41695ce4-5589-4875-b2b3-d67a9c338d1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-1314",
+      "targets": [
+        ["id=menu-item-1314", "id"],
+        ["linkText=Consumo de datos y API", "linkText"],
+        ["css=#menu-item-1314", "css:finder"],
+        ["xpath=//a[contains(text(),'Consumo de datos y API')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-1314']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/consumo-de-datos-y-api/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consumo de datos y API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90180ce6-0392-4f57-bf41-808baff15752",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accede ya al formulario",
+      "targets": [
+        ["linkText=Accede ya al formulario", "linkText"],
+        ["css=p:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Accede ya al formulario')]", "xpath:link"],
+        ["xpath=//div[@id='page']/div[3]/div/div[2]/div/div/div/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/consumo-de-datos-y-api/api/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accede ya al formulario')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d318a80f-7d5c-439d-85ed-470489cf990c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo-persona",
+      "targets": [
+        ["id=tipo-persona", "id"],
+        ["name=tipo-persona", "name"],
+        ["css=#tipo-persona", "css:finder"],
+        ["xpath=//select[@id='tipo-persona']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40eb0bd2-6b3a-4fe5-9fc8-6104b7c9d554",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo-persona",
+      "targets": [],
+      "value": "label=Persona Natural"
+    }, {
+      "id": "33126b7a-de2b-4055-8f96-4dc5fc396484",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "decffc84-f6e1-4703-9f80-012d9a473fa0",
+      "comment": "",
+      "command": "type",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["name=nombre", "name"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Miguel"
+    }, {
+      "id": "3dc7c520-3953-4869-89bb-466ea3dda9f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=apellido",
+      "targets": [
+        ["id=apellido", "id"],
+        ["name=apellido", "name"],
+        ["css=#apellido", "css:finder"],
+        ["xpath=//input[@id='apellido']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05691ac1-eb2e-4111-bf92-82423beb008a",
+      "comment": "",
+      "command": "type",
+      "target": "id=apellido",
+      "targets": [
+        ["id=apellido", "id"],
+        ["name=apellido", "name"],
+        ["css=#apellido", "css:finder"],
+        ["xpath=//input[@id='apellido']", "xpath:attributes"],
+        ["xpath=//div[@id='sPersona']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Rey"
+    }, {
+      "id": "ae9f32fd-3801-4cd7-b7c4-a81c73b0f00c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo-documento",
+      "targets": [
+        ["id=tipo-documento", "id"],
+        ["name=tipo-documento", "name"],
+        ["css=#tipo-documento", "css:finder"],
+        ["xpath=//select[@id='tipo-documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3d7ab62-fd89-490c-9636-b5c969217400",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo-documento",
+      "targets": [],
+      "value": "label=DNI"
+    }, {
+      "id": "bdf16940-84cf-49d6-b7c1-30bcc09b3cd8",
+      "comment": "",
+      "command": "click",
+      "target": "id=n_documento",
+      "targets": [
+        ["id=n_documento", "id"],
+        ["name=n_documento", "name"],
+        ["css=#n_documento", "css:finder"],
+        ["xpath=//input[@id='n_documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fdc7315-5318-44a2-b291-982679561bb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=n_documento",
+      "targets": [
+        ["id=n_documento", "id"],
+        ["name=n_documento", "name"],
+        ["css=#n_documento", "css:finder"],
+        ["xpath=//input[@id='n_documento']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "8a72df8a-6231-49b9-b59f-aa3cf82cb73e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-input",
+      "targets": [
+        ["id=email-input", "id"],
+        ["css=#email-input", "css:finder"],
+        ["xpath=//input[@id='email-input']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66c6147-71b3-414b-9177-74d8eb83ce39",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-input",
+      "targets": [
+        ["id=email-input", "id"],
+        ["css=#email-input", "css:finder"],
+        ["xpath=//input[@id='email-input']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "mrey@olceperu.com"
+    }, {
+      "id": "7721d501-a8b1-4b96-b8a9-7427f2eb1459",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-input-r",
+      "targets": [
+        ["id=email-input-r", "id"],
+        ["css=#email-input-r", "css:finder"],
+        ["xpath=//input[@id='email-input-r']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a95ee7-3675-497c-b4f2-e1aa6dacf369",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-input-r",
+      "targets": [
+        ["id=email-input-r", "id"],
+        ["css=#email-input-r", "css:finder"],
+        ["xpath=//input[@id='email-input-r']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "mrey@olceperu.com"
+    }, {
+      "id": "03fd1830-11dc-4e5c-81ae-ed8f8b31a677",
+      "comment": "",
+      "command": "click",
+      "target": "id=motivo_uso",
+      "targets": [
+        ["id=motivo_uso", "id"],
+        ["name=Motivo de uso", "name"],
+        ["css=#motivo_uso", "css:finder"],
+        ["xpath=//textarea[@id='motivo_uso']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "072f2876-304d-4ef0-b516-06355db8d5ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=motivo_uso",
+      "targets": [
+        ["id=motivo_uso", "id"],
+        ["name=Motivo de uso", "name"],
+        ["css=#motivo_uso", "css:finder"],
+        ["xpath=//textarea[@id='motivo_uso']", "xpath:attributes"],
+        ["xpath=//div[@id='form-container']/div/div[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test del formulario"
+    }, {
+      "id": "7b1e1bff-e793-4577-9a0a-fbb01b71629f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "98db5e4b-8db5-428c-aa67-d9dbaf926f4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ae2a6a-67a9-4862-b030-fd7a8e8c922b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "05204cab-4c3b-4f72-ad14-7304c44c0d16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-text",
+      "targets": [
+        ["css=.submit-text", "css:finder"],
+        ["xpath=//button[@id='submit-button']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Solicitar clave')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e393f6c-8906-42ea-8144-9324d1bf68f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#success-message > p",
+      "targets": [
+        ["css=#success-message > p", "css:finder"],
+        ["xpath=//div[@id='success-message']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'El envío se ha realizado correctamente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "746b4256-e961-4149-ab42-84c9d7520485",
+    "name": "Filtros -> Normativa",
+    "commands": [{
+      "id": "3468e62a-5d57-4620-b932-1487c127b4bb",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0303f124-50ae-41cc-91ff-17c0c55ec1f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownNavbarLink-4 > .w-5",
+      "targets": [
+        ["css=#dropdownNavbarLink-4 > .w-5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a5f954-2d53-4905-b00d-00501618dbc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-311",
+      "targets": [
+        ["id=menu-item-311", "id"],
+        ["linkText=Normativa", "linkText"],
+        ["css=#menu-item-311", "css:finder"],
+        ["xpath=//a[contains(text(),'Normativa')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-311']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/normativa/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Normativa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb929aa2-8ec4-4c90-9ddd-8dd5574c2519",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria-normativa",
+      "targets": [
+        ["name=categoria-normativa", "name"],
+        ["css=.depth-0", "css:finder"],
+        ["xpath=//select[@name='categoria-normativa']", "xpath:attributes"],
+        ["xpath=//section[@id='block-35']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6c52cf-480f-4ef6-9364-8ad39d39ae19",
+      "comment": "",
+      "command": "select",
+      "target": "name=categoria-normativa",
+      "targets": [],
+      "value": "label=Marco General"
+    }, {
+      "id": "45497275-8aeb-4405-bf18-f7a759ee1d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-40']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9dd9a85-b39e-4019-86d4-72cb568eaa9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-normativa",
+      "targets": [
+        ["name=tipo-normativa", "name"],
+        ["css=.depth-1", "css:finder"],
+        ["xpath=//select[@name='tipo-normativa']", "xpath:attributes"],
+        ["xpath=//section[@id='block-35']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e38d77b-c385-4eff-9e8b-1ddfa5c9de84",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "name=tipo-normativa",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "07be3915-2765-4f6c-b3d1-26e7777d3711",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-normativa",
+      "targets": [],
+      "value": "label=Proyecto Supremo"
+    }, {
+      "id": "55104dfc-70a8-4f99-b9e3-0471bf70220e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-40']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba2e2c1b-d381-4d13-9dfc-bbb31f5e9bff",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-normativa",
+      "targets": [
+        ["name=tipo-normativa", "name"],
+        ["css=.depth-1", "css:finder"],
+        ["xpath=//select[@name='tipo-normativa']", "xpath:attributes"],
+        ["xpath=//section[@id='block-35']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f90b01c-1ce5-47a2-9871-12b38377b985",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "name=tipo-normativa",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "48292a50-69b8-4d25-be5c-a6633a9f79c6",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-normativa",
+      "targets": [],
+      "value": "label=Resolución Ministerial"
+    }, {
+      "id": "506b5745-78c5-47e1-bda7-8b36c90fa06e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-40']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8bec376-1e38-4fa7-8982-9904e8e5a661",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-83']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cbdb737-a61d-400c-a81c-d76f6ae0ffda",
+      "comment": "",
+      "command": "click",
+      "target": "name=select-name",
+      "targets": [
+        ["name=select-name", "name"],
+        ["css=.jet-sorting-select", "css:finder"],
+        ["xpath=//select[@name='select-name']", "xpath:attributes"],
+        ["xpath=//section[@id='block-49']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/section[2]/div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e9a009-44e2-4dda-8459-87de7536e5f4",
+      "comment": "",
+      "command": "select",
+      "target": "name=select-name",
+      "targets": [],
+      "value": "label=Fecha (Más antiguo)"
+    }, {
+      "id": "b7ab9cff-7ec7-4895-93fd-a71e832f72b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accordion-collapse-heading-165-2006-EF .w-6",
+      "targets": [
+        ["css=#accordion-collapse-heading-165-2006-EF .w-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1d44172-194e-47a8-8ec7-615fd3779146",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Descargar",
+      "targets": [
+        ["linkText=Descargar", "linkText"],
+        ["css=.download-886", "css:finder"],
+        ["xpath=//div[@id='accordion-collapse-body-165-2006-EF']/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/wp-content/uploads/2023/06/01-D.S.-165-2006-EF_Creacion-de-la-VUCE.pdf')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Descargar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd31926d-39be-4ff9-8387-0d98ca958e47",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accordion-collapse-body-165-2006-EF .footer-data",
+      "targets": [
+        ["css=#accordion-collapse-body-165-2006-EF .footer-data", "css:finder"],
+        ["xpath=//div[@id='accordion-collapse-body-165-2006-EF']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "283cfa78-f237-49c5-b1e2-a9240adcfd13",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownShareitLink-886 > span",
+      "targets": [
+        ["css=#dropdownShareitLink-886 > span", "css:finder"],
+        ["xpath=//a[@id='dropdownShareitLink-886']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3e6cf07e-54de-41ef-b4a9-c5437384fd76",
+    "name": "Filtros -> Documentos",
+    "commands": [{
+      "id": "b287c7a0-0cfc-496e-bf36-23772424b6ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7d721ee-1330-48b1-afdc-00221bfa82b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownNavbarLink-4",
+      "targets": [
+        ["id=dropdownNavbarLink-4", "id"],
+        ["linkText=Más apartados", "linkText"],
+        ["css=#dropdownNavbarLink-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Más apartados')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownNavbarLink-4']", "xpath:attributes"],
+        ["xpath=//div[@id='primary-menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Más apartados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5361c3f7-4d0c-4270-a2c1-60dce6b76238",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-360",
+      "targets": [
+        ["id=menu-item-360", "id"],
+        ["linkText=Documentos de interés", "linkText"],
+        ["css=#menu-item-360", "css:finder"],
+        ["xpath=//a[contains(text(),'Documentos de interés')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-360']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/documentos-de-interes/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Documentos de interés')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba33aa71-1604-4c41-8756-8de5ab8775f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-documento",
+      "targets": [
+        ["name=tipo-documento", "name"],
+        ["css=#block-53 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-documento']", "xpath:attributes"],
+        ["xpath=//section[@id='block-53']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1bf0e56-fa60-4774-a1c8-c6f267ad11a4",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-documento",
+      "targets": [],
+      "value": "label=Informes"
+    }, {
+      "id": "c69a4c88-b613-40c3-acf0-6d98f27ced29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d22d05-42d8-4dc1-9a70-a9174d9a595c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ac8186-dd68-42eb-a22d-ef264cdaaa59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "799b9223-47ec-4ac9-852e-c7678d8f6258",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-54 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-54']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab49de4-d48f-40a4-9ea5-23401781d65c",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=MINCETUR"
+    }, {
+      "id": "63c3d7dc-2e62-4734-8512-ca65941ff370",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff99c51-9981-478e-add8-b6e8dd52208b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6305e504-f652-4ba5-a6bf-5163578b93f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-54 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-54']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96d24fcc-418b-434e-b3b9-b44ca05d5fdf",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=VUCE"
+    }, {
+      "id": "7fa0b5ec-9e07-4c68-ae3b-8cfa66eeebea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-56']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45441a68-c173-4d8a-a5c6-23c78cafbb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter:nth-child(2) > .jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7788e5e0-4c1d-4a83-86ea-e43b59363e2c",
+      "comment": "",
+      "command": "click",
+      "target": "name=select-name",
+      "targets": [
+        ["name=select-name", "name"],
+        ["css=.jet-sorting-select", "css:finder"],
+        ["xpath=//select[@name='select-name']", "xpath:attributes"],
+        ["xpath=//section[@id='block-80']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "276f9741-6459-4bc9-b48a-67b96fe42398",
+      "comment": "",
+      "command": "select",
+      "target": "name=select-name",
+      "targets": [],
+      "value": "label=Fecha (Más antiguo)"
+    }, {
+      "id": "7eaa8a7f-460d-456c-9483-77250a20ec0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-89']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55899b23-f930-4356-b995-7928c57ad0ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accordion-collapse-heading-851 .text-base",
+      "targets": [
+        ["css=#accordion-collapse-heading-851 .text-base", "css:finder"],
+        ["xpath=//div[@id='accordion-collapse-heading-851']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Boletín Informativo de Zonas Económicas Especiales – Primer trimestre de 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e0970c3b-5009-44ac-9eb1-52aee9cfbdb3",
+    "name": "Filtros -> Noticias",
+    "commands": [{
+      "id": "dc6ce5b6-8a0b-45b4-8d5e-2034cee2d3e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2653a850-c721-4ba9-a1bf-bbdc3f6e3c2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownNavbarLink-4",
+      "targets": [
+        ["id=dropdownNavbarLink-4", "id"],
+        ["linkText=Más apartados", "linkText"],
+        ["css=#dropdownNavbarLink-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Más apartados')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownNavbarLink-4']", "xpath:attributes"],
+        ["xpath=//div[@id='primary-menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Más apartados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4771fc35-123d-4dc5-b695-e23a730641d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Noticias",
+      "targets": [
+        ["linkText=Noticias", "linkText"],
+        ["css=#dropdownNavbar-4 #menu-item-0", "css:finder"],
+        ["xpath=//a[contains(text(),'Noticias')]", "xpath:link"],
+        ["xpath=(//a[@id='menu-item-0'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/noticias/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Noticias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6fb26c1-2a2e-4042-a2f5-a93bae56c27f",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//section[@id='block-26']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c80e3186-0183-4891-855a-4793552b7cd5",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Comercio Exterior"
+    }, {
+      "id": "8447b02a-5edf-4c8d-b747-83932988efb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05968f88-1d87-458f-9c9d-d6bbf9c3bee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-65']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4200c329-9fa2-4825-b2f4-0af3b0a1e0d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//section[@id='block-26']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aa697fe-fe9f-43a3-91c6-1e2dce25a61b",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Noticias"
+    }, {
+      "id": "2c63e90f-1c40-4491-8001-f934ad9c49df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29cc41ee-9fd6-4886-befc-2c6677ddb7f2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7793f43f-a561-4b81-b7d0-782408cecf66",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-27']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df7f58e1-2b91-46a1-bf57-f43f2de93343",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-65']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29d064b2-1b13-46b3-8798-8c5b2adc7ccd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-listing-grid__item:nth-child(1) .text-black",
+      "targets": [
+        ["css=.jet-listing-grid__item:nth-child(1) .text-black", "css:finder"],
+        ["xpath=//section[@id='block-22']/div/div/div/div/a/div/div/h2", "xpath:idRelative"],
+        ["xpath=//a/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Mincetur invita a empresas y operadores a participar de Consulta Pública sobre el MISLO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d2260c87-c1c7-456b-9617-0a4d4209c75d",
+    "name": "Filtros -> Fuentes de información",
+    "commands": [{
+      "id": "acb3f68f-f494-4c02-ae85-f17ef4446df1",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac3183db-7db9-40fd-b50f-59671e2e094b",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownNavbarLink-4",
+      "targets": [
+        ["id=dropdownNavbarLink-4", "id"],
+        ["linkText=Más apartados", "linkText"],
+        ["css=#dropdownNavbarLink-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Más apartados')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownNavbarLink-4']", "xpath:attributes"],
+        ["xpath=//div[@id='primary-menu']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Más apartados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3c675c1-4677-45af-b519-993096951aaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-458",
+      "targets": [
+        ["id=menu-item-458", "id"],
+        ["linkText=Fuentes de información adicionales", "linkText"],
+        ["css=#menu-item-458", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuentes de información adicionales')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-458']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/fuentes-de-informacion-adicionales/')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuentes de información adicionales')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "579cd064-f9d0-48a8-96f7-1810ddb0fef2",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-71 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-71']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43bbf06a-fc2b-4421-a72e-cd0cc64bec55",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=MINCETUR"
+    }, {
+      "id": "d110c117-cac9-48fb-bb18-bfe13f4ad93e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-74']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8cb5754-aa25-4c14-b94d-6bf6ede72538",
+      "comment": "",
+      "command": "click",
+      "target": "name=entidades",
+      "targets": [
+        ["name=entidades", "name"],
+        ["css=#block-71 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='entidades']", "xpath:attributes"],
+        ["xpath=//section[@id='block-71']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "083cc0c5-cb49-4222-9c36-0f971ab33dc6",
+      "comment": "",
+      "command": "select",
+      "target": "name=entidades",
+      "targets": [],
+      "value": "label=VUCE"
+    }, {
+      "id": "ea59bbce-3f4a-4025-af41-feaf94fbd0af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-74']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d08639c6-15ee-4a5c-9632-5afbea89e766",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-86']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a2d1cb4-f2a9-4d39-be90-1f47253d84d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=clasificacion",
+      "targets": [
+        ["name=clasificacion", "name"],
+        ["css=#block-73 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='clasificacion']", "xpath:attributes"],
+        ["xpath=//section[@id='block-73']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c81894a6-f095-43b6-bf88-b5dee85fbc53",
+      "comment": "",
+      "command": "select",
+      "target": "name=clasificacion",
+      "targets": [],
+      "value": "label=Flujos y Comercio Exterior"
+    }, {
+      "id": "40f465f4-3c70-42e2-9ba7-682c9f6c38fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-74']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "937add7d-8cf1-4318-bc83-b0df05a207eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-86']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6993587c-196a-45b6-a7ee-3db9697a662f",
+      "comment": "",
+      "command": "click",
+      "target": "name=clasificacion",
+      "targets": [
+        ["name=clasificacion", "name"],
+        ["css=#block-73 .jet-select__control", "css:finder"],
+        ["xpath=//select[@name='clasificacion']", "xpath:attributes"],
+        ["xpath=//section[@id='block-73']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//section[3]/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "684e2d10-c4a0-404c-ab75-d590bf405d46",
+      "comment": "",
+      "command": "select",
+      "target": "name=clasificacion",
+      "targets": [],
+      "value": "label=Medio Ambiente"
+    }, {
+      "id": "419cb456-4afd-4cac-acea-a39119125205",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters:nth-child(1) > .apply-filters__button",
+      "targets": [
+        ["css=.apply-filters:nth-child(1) > .apply-filters__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-74']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e575b4-5841-42a3-b12b-85a741ad9654",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left",
+      "targets": [
+        ["css=.text-left", "css:finder"],
+        ["xpath=//div[@id='accordion-collapse-heading-455']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9863a35-7df5-4dab-8cec-49e38894e663",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=https://huellacarbonoperu.minam.gob.pe/huellaperu/#/inicio",
+      "targets": [
+        ["linkText=https://huellacarbonoperu.minam.gob.pe/huellaperu/#/inicio", "linkText"],
+        ["css=.whitespace-nowrap", "css:finder"],
+        ["xpath=//a[contains(text(),'https://huellacarbonoperu.minam.gob.pe/huellaperu/#/inicio')]", "xpath:link"],
+        ["xpath=//div[@id='accordion-collapse-body-455']/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://huellacarbonoperu.minam.gob.pe/huellaperu/#/inicio')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'https://huellacarbonoperu.minam.gob.pe/huellaperu/#/inicio')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3001",
+      "windowTimeout": 2000
+    }]
+  }, {
+    "id": "2dc6831e-70c2-402d-bf39-781265d1a471",
+    "name": "Filtros -> Canal Aprendizaje",
+    "commands": [{
+      "id": "fa3a8786-9503-410e-b796-9c95e3f63956",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/olce-wp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0ea099b-dff5-4216-a24f-26e59a8befde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "343f1c05-faad-4e5e-978c-7be224a45503",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dropdownNavbarLink-4 > .w-5",
+      "targets": [
+        ["css=#dropdownNavbarLink-4 > .w-5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "75583109-dd4b-46ce-8382-62c9da000bad",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-item-476",
+      "targets": [
+        ["id=menu-item-476", "id"],
+        ["linkText=Canal de aprendizaje", "linkText"],
+        ["css=#menu-item-476", "css:finder"],
+        ["xpath=//a[contains(text(),'Canal de aprendizaje')]", "xpath:link"],
+        ["xpath=//a[@id='menu-item-476']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdownNavbar-4']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://landing-test.vuce.gob.pe/olce-wp/canal-aprendizaje/')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Canal de aprendizaje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca180372-78b0-494f-b915-21e02d9994db",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [
+        ["name=tipo-de-aprendizaje", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-de-aprendizaje']", "xpath:attributes"],
+        ["xpath=//section[@id='block-97']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe7621f8-8744-464e-a35c-e9d92d5b5027",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [],
+      "value": "label=Capacitación"
+    }, {
+      "id": "ecef830b-7427-4002-8159-04bc4de666df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-98']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ee57b46-9e85-4ef7-a21b-bb4fb4aad879",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-94']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc763d8-edab-4607-85cf-57889bfcb84e",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [
+        ["name=tipo-de-aprendizaje", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-de-aprendizaje']", "xpath:attributes"],
+        ["xpath=//section[@id='block-97']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38268820-b32f-47c6-8139-1209ceedf87f",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [],
+      "value": "label=Capacitación"
+    }, {
+      "id": "9528f4d0-edf9-434f-bf23-0ed1c112a6de",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [
+        ["name=tipo-de-aprendizaje", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-de-aprendizaje']", "xpath:attributes"],
+        ["xpath=//section[@id='block-97']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a50e89c-c4b3-4e05-8468-cf68e8f287ad",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [],
+      "value": "label=Manuales"
+    }, {
+      "id": "f6a64fd0-f701-4799-9984-fd71aabe5f22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-98']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90046d87-bca3-4764-b307-1d70caef4601",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-active-filter__remove",
+      "targets": [
+        ["css=.jet-active-filter__remove", "css:finder"],
+        ["xpath=//section[@id='block-94']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c2a0715-dc66-4bb0-a65c-3556e2fbcc75",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [
+        ["name=tipo-de-aprendizaje", "name"],
+        ["css=.jet-select__control", "css:finder"],
+        ["xpath=//select[@name='tipo-de-aprendizaje']", "xpath:attributes"],
+        ["xpath=//section[@id='block-97']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9698d139-4712-47e6-9aee-3bd1d7d4c2a8",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo-de-aprendizaje",
+      "targets": [],
+      "value": "label=Tutoriales"
+    }, {
+      "id": "e3410ab2-1647-4f6e-8b17-b7b8c801ae03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.apply-filters__button:nth-child(1)",
+      "targets": [
+        ["css=.apply-filters__button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//section[@id='block-98']/div/div/button", "xpath:idRelative"],
+        ["xpath=//section[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filtrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "839e5891-6494-4882-9069-663d413aac2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jet-listing-grid__item:nth-child(1) .w-full",
+      "targets": [
+        ["css=.jet-listing-grid__item:nth-child(1) .w-full", "css:finder"],
+        ["xpath=//img[contains(@src,'https://landing-test.vuce.gob.pe/olce-wp/wp-content/uploads/2023/06/Interoperabilidad.jpg')]", "xpath:img"],
+        ["xpath=//section[@id='block-92']/div/div/div/div/a/figure/img", "xpath:idRelative"],
+        ["xpath=//figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d86de02-d1b5-49db-be14-df13095e5f4b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["633004c0-7bdc-44d2-9c3d-8d5309cc5135"]
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/olce-wp/"],
+  "plugins": []
+}
