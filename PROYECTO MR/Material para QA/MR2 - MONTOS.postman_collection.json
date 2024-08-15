@@ -1,0 +1,894 @@
+{
+	"info": {
+		"_postman_id": "b33eb319-0761-444c-81e1-e253805574f7",
+		"name": "MR2 - MONTOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ESTADOS",
+			"item": [
+				{
+					"name": "PAGAR CPB",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"montoPagado\": 59,\r\n  \"fechaPago\": \"2024-05-07\",\r\n  \"canalId\": 1,\r\n  \"bancoId\": 1,\r\n  \"tipo\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/1864/pago",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"1864",
+								"pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EN PROCESO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"montoPagado\": 59,\r\n  \"fechaPago\": \"2024-05-07\",\r\n  \"canalId\": 1,\r\n  \"bancoId\": 1,\r\n  \"tipo\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/1864/pago",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"1864",
+								"pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXTORNO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"montoExtornado\": 59,\r\n  \"fechaExtorno\": \"2024-05-07\",\r\n  \"canalId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/1854/extorno",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"1854",
+								"extorno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ANULAR CPB",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/1854/anulacion",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"1854",
+								"anulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZA REQUER.",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/1854/anulacion",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"1854",
+								"anulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro de CPB DESARROLLO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidadId\": 3,\r\n  \"formato\": \"SNS022\",\r\n  \"usuarioId\": 1,\r\n  \"tupa\": \"123\",\r\n  \"montoExacto\": 55.4,\r\n  \"fechaVigencia\": \"2024-05-25\",\r\n  \"codDocumento\": \"RUC\",\r\n  \"nombreUsuario\": \"andres test3\",\r\n  \"nroDocumento\": \"20262996329\",\r\n  \"tipoCodigoReferencia\": \"MT\",\r\n  \"tipoReferencia1\": \"S\",\r\n  \"codReferencia1\": \"202400000046\",\r\n  \"tipoReferencia2\": \"DR\",\r\n  \"codReferencia2\": \"202400000046\",\r\n  \"componenteId\": 1,\r\n  \"tipoOperador\": \"1\",\r\n  \"rucOperador\":\"\",\r\n  \"tramiteId\":44,\r\n  \"versionTramite\":1,\r\n  \"estadoOrdenPago\":99,\r\n  \"tipoNotificacion\":\"SOLICITUD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pasarela-pago/pago-cpb-sunat-solicitud",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pasarela-pago",
+								"pago-cpb-sunat-solicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro de CPB PASAERLA DIRECTO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidadId\": 3,\r\n  \"usuarioId\": 1,\r\n  \"formato\": \"SNS022\",\r\n  \"desFormato\": \"Dscripción del formatro Senasa 022\",\r\n  \"tupa\": \"123\",\r\n  \"montoExacto\": 55.4,\r\n  \"fechaVigencia\": \"2024-05-01\",\r\n  \"codDocumento\": \"RUC\",\r\n  \"nombreUsuario\": \"andres test2\",\r\n  \"nroDocumento\": \"20600012040\",\r\n  \"tipoCodigoReferencia\": \"MT\",\r\n  \"tipoReferencia1\": \"S\",\r\n  \"codReferencia1\": \"2020001212\",\r\n  \"tipoReferencia2\": \"DR\",\r\n  \"codReferencia2\": \"2020001213\",\r\n  \"componenteId\": 1,\r\n  \"tipoOperador\": \"1\",\r\n  \"rucOperador\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/sunat",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"sunat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro de CPB LOCAL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"procedimientoId\": \"1\",\r\n    \"rucAdministrado\": \"20262996329\",\r\n    \"versionTramite\": 1,\r\n    \"rucOperador\": \"20262996329\",\r\n    \"nroDocumento\": \"20262996329\",\r\n    \"codReferencia1\": \"2402002639\",\r\n    \"codReferencia2\": \"\",\r\n    \"tramiteId\": 4173,\r\n    \"componenteId\": \"MR\",\r\n    \"tupa\": \"16\",\r\n    \"formato\": \"IPN005\",\r\n    \"entidadId\": 36,\r\n    \"tipoReferencia2\": \"\",\r\n    \"tipoReferencia1\": \"O\",\r\n    \"tipoCodigoReferencia\": \"PT\",\r\n    \"nombreUsuario\": \"ALVINO ALVINO JHONNY EFRAIN ALVINO ZELAYA\",\r\n    \"tipoOperador\": \"\",\r\n    \"codDocumento\": \"RUC\",\r\n    \"desFormato\": \"prueba\",\r\n    \"etapaTramite\": 5,\r\n    \"codigoEquipo\": 0,\r\n    \"codigoRolResponsable\": \"MR.USUARIO.PRINCIPAL\",\r\n    \"codigoUsuarioResponsable\": 347,\r\n    \"usuarioId\": 347,\r\n    \"perfilId\": 347,\r\n    \"numeroTramite\": \"2402002639\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pasarela-pago/pago-cpb-sunat-solicitud",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pasarela-pago",
+								"pago-cpb-sunat-solicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anulación CPB",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://landing-test.vuce.gob.pe/v1/vuce-services/pasarela/pagos/ordenes-pago/160109/anulacion",
+							"protocol": "https",
+							"host": [
+								"landing-test",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"pasarela",
+								"pagos",
+								"ordenes-pago",
+								"160109",
+								"anulacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CPB - PASARELA CERTI",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"procedimientoId\": \"1\",\r\n    \"rucAdministrado\": \"20262996329\",\r\n    \"versionTramite\": 1,\r\n    \"rucOperador\": \"20262996329\",\r\n    \"nroDocumento\": \"20262996329\",\r\n    \"codReferencia1\": \"20262996329\",\r\n    \"codReferencia2\": \"20262996329\",\r\n    \"tramiteId\": 2968,\r\n    \"componenteId\": \"MR\",\r\n    \"tupa\": \"16\",\r\n    \"formato\": \"IPN005\",\r\n    \"entidadId\": 36,\r\n    \"tipoReferencia2\": \"DR\",\r\n    \"tipoReferencia1\": \"S\",\r\n    \"tipoCodigoReferencia\": \"MT\",\r\n    \"nombreUsuario\": \"andres test3\",\r\n    \"tipoOperador\": \"1\",\r\n    \"codDocumento\": \"RUC\",\r\n    \"tipoNotificacion\": \"SOLICITUD\",\r\n    \"etapaTramite\": 5,\r\n    \"codigoEquipo\": 0,\r\n    \"codigoRolResponsable\": \"MR.USUARIO.PRINCIPAL\",\r\n    \"codigoUsuarioResponsable\": 112706,\r\n    \"usuarioId\": 112706,\r\n    \"perfilId\": 112706,\r\n    \"numeroTramite\": \"2402001399\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pasarela-pago/pago-cpb-sunat-solicitud",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pasarela-pago",
+								"pago-cpb-sunat-solicitud"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JOB REINTENTOS",
+			"item": [
+				{
+					"name": "CONTROL-PAGOS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"entidadId\": 1,\r\n    \"usuarioId\": \"20262996329\",\r\n    \"formato\": \"1\",\r\n    \"descripcionFormato\": \"1\",\r\n    \"tupa\": \"20262996329\",\r\n    \"montoExacto\": 59.79,\r\n    \"fechaVigencia\": 1,\r\n    \"codigoDocumento\": \"20262996329\",\r\n    \"numeroDocumento\": \"1\",\r\n    \"nombreUsuario\": \"1\",\r\n    \"tipoCodigoReferencia\": \"20262996329\",\r\n    \"codigoReferencia1\": \"1\",\r\n     \"codigoReferencia22\": \"1\",\r\n    \"tipoReferencia1\": \"20262996329\",\r\n    \"tipoReferencia2\": \"1\",\r\n    \"tipoOerador\": \"1\",\r\n    \"rucOperador\": \"20262996329\",\r\n    \"componenteId\": 1,\r\n    \"numeroIntentos\": 1,\r\n    \"intentos\": \"20262996329\",\r\n    \"fechaIntento\": \"1\",\r\n    \"codigoRespuesta\": \"1\",\r\n    \"mensajeRespuesta\": 20262996329,\r\n    \"fechaRegistro\": \"1\",\r\n     \"usuarioRegistro\": \"1\",\r\n    \"fechaModificacion\": \"20262996329\",\r\n    \"usuarioModificacion\": \"1\"\r\n}\r\n  \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/mr2/control-pagos/v1/reintentos/guardar-reintento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"mr2",
+								"control-pagos",
+								"v1",
+								"reintentos",
+								"guardar-reintento"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ENDPOINT PRUEBAS ESTADOS",
+			"item": [
+				{
+					"name": "PAGADO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orden_pago_id\": 158990,\r\n    \"monto_pagado\": 56,\r\n    \"fecha_pago\": \"20240619\",\r\n    \"canal_id\": 1,\r\n    \"canal_descripcion\": \"PASARELA SUNAT\",\r\n    \"banco_id\": 1,\r\n    \"bancio_descripcion\": \"BANCO DE CREDITO DEL PERU\",\r\n    \"tipo\": 2,\r\n    \"Tipo_descripcion\": \"PAGO ELECTRONICO\",\r\n    \"estado\": \"PAGADO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pago-topic",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pruebaEstados-pago",
+								"pago-pago-topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXTORNO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"orden_pago_id\": 2287,\r\n   \"monto_extornado\": 56,\r\n   \"fecha_extorno\": \"20240612\",\r\n   \"fecha_procesamiento\": \"20240612 15:25:25\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXTORNADO\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-extorno-topic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pruebaEstados-pago",
+								"pago-extorno-topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ANULACIÓN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"orden_pago_id\": 2085,\r\n   \"fecha_anulacion\": \"20240611 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240611 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"ANULADO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-anulacion-topic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pruebaEstados-pago",
+								"pago-anulacion-topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXPIRACIÓN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"orden_pago_id\": 2287,\r\n   \"fecha_expiracion\": \"20240611 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240511 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXPIRADO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-expiracion-topic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"v1",
+								"pruebaEstados-pago",
+								"pago-expiracion-topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DETALLE PAGOS SP",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8092/mr2/gestion-pagos-sp/tramite-pago/consulta/v1/ver-detalle-pagos?orderId=2290",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"mr2",
+								"gestion-pagos-sp",
+								"tramite-pago",
+								"consulta",
+								"v1",
+								"ver-detalle-pagos"
+							],
+							"query": [
+								{
+									"key": "orderId",
+									"value": "2290"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DETALLE PAGOS NEG",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8094/mr2/gestion-pagos/tramite-pago/v1/ver-datos?idOrdenPago=2290",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"mr2",
+								"gestion-pagos",
+								"tramite-pago",
+								"v1",
+								"ver-datos"
+							],
+							"query": [
+								{
+									"key": "idOrdenPago",
+									"value": "2290"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BUZÓN",
+			"item": [
+				{
+					"name": "buzón local",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"codTipoDestinatario\":1,\r\n   \"codDr\":\"0\",\r\n   \"codSuce\":\"0\",\r\n   \"solDestinatario\":\"USUJAVIE\",\r\n   \"codEntidad\":5,\r\n   \"estadoDocumento\":\"S\",\r\n   \"codPlantillaContenido\":13,\r\n   \"solEmisor\":\"\",\r\n   \"codDestinatario\":\"20262996329\",\r\n   \"codUsuarioEnvio\":5,\r\n   \"codCarpetaDocumento\":0,\r\n   \"codTipoEmisor\":2,\r\n   \"descripcionNotificacion\":\"aaa\",\r\n   \"codDue\":\"\",\r\n   \"codTipoEnvio\": \"1\",\r\n   \"codOrden\":\"2022001639\",\r\n   \"importante\":1,\r\n   \"codEmisor\":\"5\",\r\n   \"tipoCodEmisor\":0,\r\n   \"codEtiquetaDocumento\":2,\r\n   \"tipoCodDestinatario\":1,\r\n   \"mensaje\":{\r\n      \"asunto\":[\r\n         {\r\n            \"Value\":\"2022000157\",\r\n            \"Key\":\"vNotificacion\"\r\n         },\r\n         {\r\n            \"Value\":\"DIGEMID\",\r\n            \"Key\":\"vNombreEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"2022001639\",\r\n            \"Key\":\"vOrden\"\r\n         },\r\n         {\r\n            \"Value\":\"81\",\r\n            \"Key\":\"vTupa\"\r\n         },\r\n         {\r\n            \"Value\":\"DGM013\",\r\n            \"Key\":\"vFormato\"\r\n         }\r\n      ],\r\n      \"cuerpo\":[\r\n         {\r\n            \"Value\":\"<img src='\\''http://www.vuce.gob.pe/vuce_logo_email.jpg'\\'' alt='\\''VUCE'\\''>\",\r\n            \"Key\":\"vImagenEncabezado\"\r\n         },\r\n         {\r\n            \"Value\":\"FARMINDUSTRIA S.A.\",\r\n            \"Key\":\"vNombreUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"RUC\",\r\n            \"Key\":\"vTipoDocDescripUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"20262996329\",\r\n            \"Key\":\"vNumeroDocumentoUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"DIGEMID\",\r\n            \"Key\":\"vNombreEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"81\",\r\n            \"Key\":\"vTupa\"\r\n         },\r\n         {\r\n            \"Value\":\"DGM013\",\r\n            \"Key\":\"vFormato\"\r\n         },\r\n         {\r\n            \"Value\":\"2022000157\",\r\n            \"Key\":\"vNotificacion\"\r\n         },\r\n         {\r\n            \"Value\":\"2022001639\",\r\n            \"Key\":\"vOrden\"\r\n         },\r\n         {\r\n            \"Value\":\"07-MAR-22\",\r\n            \"Key\":\"vFecha\"\r\n         },\r\n         {\r\n            \"Value\":\"COMUNICAR SUB. 1\",\r\n            \"Key\":\"vMensajeEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"Este correo electronico fue enviado por la <a href='\\''www.vuce.gob.pe'\\''>VUCE</a>\",\r\n            \"Key\":\"vReferenciaPie\"\r\n         }\r\n      ]\r\n   },\r\n   \"tiposLinks\":[\r\n      {\r\n         \"Value\":\"9712819\",\r\n         \"Key\":\"vIdMensaje\"\r\n      },\r\n      {\r\n         \"Value\":\"dgm013\",\r\n         \"Key\":\"vFormato\"\r\n      },\r\n      {\r\n         \"Value\":\"dgm013\",\r\n         \"Key\":\"vPagina\"\r\n      },\r\n      {\r\n         \"Value\":\"622369\",\r\n         \"Key\":\"vIdOrden\"\r\n      },\r\n      {\r\n         \"Value\":\"1\",\r\n         \"Key\":\"vMto\"\r\n      }\r\n   ],\r\n   \"adjuntos\":[\r\n      {\r\n         \"nombre\":\"TEST - 2.pdf\",\r\n         \"guid\":\"D0EC517F-0000-CF28-8F30-7898FDAA768E\"\r\n      }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8097/mr2/gestion-notificaciones-neg/notificacion/v1/envio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"mr2",
+								"gestion-notificaciones-neg",
+								"notificacion",
+								"v1",
+								"envio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Autenticación Endpoint",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"mincetur-buzonelectronico\",\r\n    \"password\":\"AmwJux54x9\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/buzonelectronicomq2.0/login",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"buzonelectronicomq2.0",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Message con adjuntos",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaW5jZXR1ci1idXpvbmVsZWN0cm9uaWNvIiwiZXhwIjoxNjkzNjA0MTE1fQ.Z5Xcbkz3tRpM7Uf1IjWKgd3oewKIgDGiWDDaDleA_cK5hI6RND3_fhi3FUtShbxW7EoByFXTvtIGskioLJycLA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"codTipoContenidoEnvio\":1,\r\n   \"codTipoDestinatario\":1,\r\n   \"codDr\":\"0\",\r\n   \"codSuce\":\"0\",\r\n   \"solDestinatario\":\"USUJAVIE\",\r\n   \"codComponente\":\"1.0\",\r\n   \"codEntidad\":5,\r\n   \"codCarpetaEntidad\":5,\r\n   \"estadoDocumento\":\"S\",\r\n   \"codPlantillaContenido\":13,\r\n   \"solEmisor\":\"\",\r\n   \"codDestinatario\":\"20262996329\",\r\n   \"codUsuarioEnvio\":5,\r\n   \"codCarpetaDocumento\":0,\r\n   \"codTipoEmisor\":2,\r\n   \"descripcion_notificacion\":\"\",\r\n   \"fechahoraEnvio\":\"03/03/2022 17:33:39\",\r\n   \"codDue\":\"\",\r\n   \"codTipoEnvio\":1,\r\n   \"codOrden\":\"2022001639\",\r\n   \"importante\":1,\r\n   \"codEmisor\":\"5\",\r\n   \"tipoCodEmisor\":0,\r\n   \"codEtiquetaDocumento\":2,\r\n   \"tipoCodDestinatario\":1,\r\n   \"mensaje\":{\r\n      \"asunto\":[\r\n         {\r\n            \"Value\":\"2022000157\",\r\n            \"Key\":\"vNotificacion\"\r\n         },\r\n         {\r\n            \"Value\":\"DIGEMID\",\r\n            \"Key\":\"vNombreEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"2022001639\",\r\n            \"Key\":\"vOrden\"\r\n         },\r\n         {\r\n            \"Value\":\"81\",\r\n            \"Key\":\"vTupa\"\r\n         },\r\n         {\r\n            \"Value\":\"DGM013\",\r\n            \"Key\":\"vFormato\"\r\n         }\r\n      ],\r\n      \"cuerpo\":[\r\n         {\r\n            \"Value\":\"<img src='http://www.vuce.gob.pe/vuce_logo_email.jpg' alt='VUCE'>\",\r\n            \"Key\":\"vImagenEncabezado\"\r\n         },\r\n         {\r\n            \"Value\":\"FARMINDUSTRIA S.A.\",\r\n            \"Key\":\"vNombreUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"RUC\",\r\n            \"Key\":\"vTipoDocDescripUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"20262996329\",\r\n            \"Key\":\"vNumeroDocumentoUSF3\"\r\n         },\r\n         {\r\n            \"Value\":\"DIGEMID\",\r\n            \"Key\":\"vNombreEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"81\",\r\n            \"Key\":\"vTupa\"\r\n         },\r\n         {\r\n            \"Value\":\"DGM013\",\r\n            \"Key\":\"vFormato\"\r\n         },\r\n         {\r\n            \"Value\":\"2022000157\",\r\n            \"Key\":\"vNotificacion\"\r\n         },\r\n         {\r\n            \"Value\":\"2022001639\",\r\n            \"Key\":\"vOrden\"\r\n         },\r\n         {\r\n            \"Value\":\"07-MAR-22\",\r\n            \"Key\":\"vFecha\"\r\n         },\r\n         {\r\n            \"Value\":\"COMUNICAR SUB. 1\",\r\n            \"Key\":\"vMensajeEntidad\"\r\n         },\r\n         {\r\n            \"Value\":\"Este correo electronico fue enviado por la <a href='www.vuce.gob.pe'>VUCE</a>\",\r\n            \"Key\":\"vReferenciaPie\"\r\n         }\r\n      ]\r\n   },\r\n   \"tiposLinks\":[\r\n      {\r\n         \"Value\":\"9712819\",\r\n         \"Key\":\"vIdMensaje\"\r\n      },\r\n      {\r\n         \"Value\":\"dgm013\",\r\n         \"Key\":\"vFormato\"\r\n      },\r\n      {\r\n         \"Value\":\"dgm013\",\r\n         \"Key\":\"vPagina\"\r\n      },\r\n      {\r\n         \"Value\":\"622369\",\r\n         \"Key\":\"vIdOrden\"\r\n      },\r\n      {\r\n         \"Value\":\"1\",\r\n         \"Key\":\"vMto\"\r\n      }\r\n   ],\r\n   \"adjuntos\":[\r\n      {\r\n         \"nombre\":\"TEST - 2.pdf\",\r\n         \"guid\":\"D0EC517F-0000-CF28-8F30-7898FDAA768E\"\r\n      }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://landing-desa.vuce.gob.pe/v1/vuce-services/buzonelectronicomq/operations",
+							"protocol": "https",
+							"host": [
+								"landing-desa",
+								"vuce",
+								"gob",
+								"pe"
+							],
+							"path": [
+								"v1",
+								"vuce-services",
+								"buzonelectronicomq",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
