@@ -1,4 +1,8 @@
-EN tabla perfil de postgresql
+en tabla perfil de postgresql
 
 usuario_id_vuce1
- 
+
+
+
+
+ing.jorgecisneroscab@gmail.com
