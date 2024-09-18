@@ -1,0 +1,833 @@
+{
+	"info": {
+		"_postman_id": "1ab7f037-bc2f-4325-9194-35d2cd4af61e",
+		"name": "PAGOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ENDPOINT PRUEBAS ESTADOS",
+			"item": [
+				{
+					"name": "LOCAL",
+					"item": [
+						{
+							"name": "EN PROCESO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 159485,\r\n   \"codigo_orden_pago\": \"2402001628\",\r\n   \"monto\": 59,\r\n   \"fecha_generacion\": \"20240702 15:25:25\",\r\n   \"cpb\": \"848240516203286000\",\r\n   \"estado\": \"PENDIENTE DE PAGO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pendiente-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pendiente-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PAGADO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"orden_pago_id\": 158938,\r\n    \"monto_pagado\": 56,\r\n    \"fecha_pago\": \"20240702\",\r\n    \"canal_id\": 1,\r\n    \"canal_descripcion\": \"PASARELA SUNAT\",\r\n    \"banco_id\": 1,\r\n    \"bancio_descripcion\": \"BANCO DE CREDITO DEL PERU\",\r\n    \"tipo\": 2,\r\n    \"Tipo_descripcion\": \"PAGO ELECTRONICO\",\r\n    \"estado\": \"PAGADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pago-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pago-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXTORNO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 158938,\r\n   \"monto_extornado\": 56,\r\n   \"fecha_extorno\": \"20240702\",\r\n   \"fecha_procesamiento\": \"20240612 15:25:25\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXTORNADO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-extorno-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-extorno-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ANULACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 158938,\r\n   \"fecha_anulacion\": \"20240702 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240702 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"ANULADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-anulacion-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-anulacion-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXPIRACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 158938,\r\n   \"fecha_expiracion\": \"20240701 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240702 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXPIRADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-expiracion-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-expiracion-topic"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DESA",
+					"item": [
+						{
+							"name": "PAGADO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"orden_pago_id\": 159907,\r\n    \"monto_pagado\": 59,\r\n    \"fecha_pago\": \"20240717\",\r\n    \"canal_id\": 1,\r\n    \"canal_descripcion\": \"PASARELA SUNAT\",\r\n    \"banco_id\": 1,\r\n    \"bancio_descripcion\": \"BANCO DE CREDITO DEL PERU\",\r\n    \"tipo\": 2,\r\n    \"Tipo_descripcion\": \"PAGO ELECTRONICO\",\r\n    \"estado\": \"PAGADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pago-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pago-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PAGADO Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"orden_pago_id\": 159907,\r\n    \"monto_pagado\": 59,\r\n    \"fecha_pago\": \"20240717\",\r\n    \"canal_id\": 1,\r\n    \"canal_descripcion\": \"PASARELA SUNAT\",\r\n    \"banco_id\": 1,\r\n    \"bancio_descripcion\": \"BANCO DE CREDITO DEL PERU\",\r\n    \"tipo\": 2,\r\n    \"Tipo_descripcion\": \"PAGO ELECTRONICO\",\r\n    \"estado\": \"PAGADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pago-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pago-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXTORNO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2287,\r\n   \"monto_extornado\": 56,\r\n   \"fecha_extorno\": \"20240612\",\r\n   \"fecha_procesamiento\": \"20240612 15:25:25\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXTORNADO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8094/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-extorno-topic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8094",
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-extorno-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ANULACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2085,\r\n   \"fecha_anulacion\": \"20240611 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240611 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"ANULADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-anulacion-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-anulacion-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXPIRACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2287,\r\n   \"fecha_expiracion\": \"20240611 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240511 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXPIRADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-expiracion-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-expiracion-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EN PROCESO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 158938,\r\n   \"codigo_orden_pago\": \"20210001997\",\r\n   \"monto\": 56,\r\n   \"fecha_generacion\": \"20240530 15:25:25\",\r\n   \"cpb\": \"848246716064786000\",\r\n   \"estado\": \"PENDIENTE DE PAGO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pendiente-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pendiente-topic"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CERTI",
+					"item": [
+						{
+							"name": "PAGADO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"orden_pago_id\": 159657,\r\n    \"monto_pagado\": 58.10,\r\n    \"fecha_pago\": \"20240710\",\r\n    \"canal_id\": 1,\r\n    \"canal_descripcion\": \"PASARELA SUNAT\",\r\n    \"banco_id\": 1,\r\n    \"bancio_descripcion\": \"BANCO DE CREDITO DEL PERU\",\r\n    \"tipo\": 2,\r\n    \"Tipo_descripcion\": \"PAGO ELECTRONICO\",\r\n    \"estado\": \"PAGADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-test.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pago-topic",
+									"protocol": "https",
+									"host": [
+										"landing-test",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pago-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXTORNO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2287,\r\n   \"monto_extornado\": 56,\r\n   \"fecha_extorno\": \"20240612\",\r\n   \"fecha_procesamiento\": \"20240612 15:25:25\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXTORNADO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-test.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-extorno-topic",
+									"protocol": "https",
+									"host": [
+										"landing-test",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-extorno-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ANULACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2085,\r\n   \"fecha_anulacion\": \"20240611 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240611 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"ANULADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-anulacion-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-anulacion-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EXPIRACIÓN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 2739,\r\n   \"fecha_expiracion\": \"20240730 17:12:45\",\r\n   \"fecha_procesamiento\": \"20240730 17:12:45\",\r\n   \"canal_id\": 1,\r\n   \"canal_descripcion\": \"PASARELA SUNAT\",\r\n   \"estado\": \"EXPIRADO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-test.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-expiracion-topic",
+									"protocol": "https",
+									"host": [
+										"landing-test",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-expiracion-topic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EN PROCESO",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"orden_pago_id\": 158938,\r\n   \"codigo_orden_pago\": \"20210001997\",\r\n   \"monto\": 56,\r\n   \"fecha_generacion\": \"20240530 15:25:25\",\r\n   \"cpb\": \"848246716064786000\",\r\n   \"estado\": \"PENDIENTE DE PAGO\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://landing-desa.vuce.gob.pe/mr2/gestion-pagos/v1/pruebaEstados-pago/pago-pendiente-topic",
+									"protocol": "https",
+									"host": [
+										"landing-desa",
+										"vuce",
+										"gob",
+										"pe"
+									],
+									"path": [
+										"mr2",
+										"gestion-pagos",
+										"v1",
+										"pruebaEstados-pago",
+										"pago-pendiente-topic"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
