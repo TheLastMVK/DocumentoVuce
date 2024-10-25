@@ -1,0 +1,31 @@
+Etiqueta,# Muestras,Media,Mín,Máx,Desv. Estándar,% Error,Rendimiento,Kb/sec,Sent KB/sec,Media de Bytes
+JSR223 Sampler,100,0,0,3,0.56,100.000%,101.11223,0.00,0.00,.0
+/vuce-zee-api-autorizacion/login/-153,100,185,144,422,35.96,0.000%,71.37759,314.58,44.47,4513.0
+/vuce-zee-api-autorizacion/auth-154,100,3006,235,12294,1785.67,0.000%,7.71129,57.87,30.99,7684.6
+/vuce-zee-api/v1/login/token?token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJSWmtYbGdXLU90bjd2RzFiZl9FUHFvRXl0QV9jSUJnc3l5UDhZSlpHTk9vIn0.eyJleHAiOjE3MjI1NTM1OTgsImlhdCI6MTcyMjU0OTk5OCwianRpIjoiZmE1ZDg1MGUtNzIwZi00Y2I0LWExMmEtZmY2MTY5MTI3MGM1IiwiaXNzIjoiaHR0cHM6Ly9jZXJ0aWZpY2F0aW9uLXRlc3QudnVjZS5nb2IucGUvYXV0aC9yZWFsbXMvemVlcGVydSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5M2UxOTE2OS1mMDlkLTRjZmEtYTBjZS00NjJkN2M0NWJlM2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsYW5kaW5nIiwic2Vzc2lvbl9zdGF0ZSI6ImZkODQ0OWFkLTZiZWEtNDAxOS1iZjRkLTA4ODE4MGY5NTU2YiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZSIsIioiLCJodHRwOi8vbG9jYWhvc3Q6OTAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCBkZWZhdWx0IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiRU1JTElBTk8gQUdVSUxBUiBNQUxMUVVJIiwicHJlZmVycmVkX3VzZXJuYW1lIjoia2xsYW5vc3IxNCIsImdpdmVuX25hbWUiOiJFTUlMSUFOTyBBR1VJTEFSIiwiZmFtaWx5X25hbWUiOiJNQUxMUVVJIiwiZW1haWwiOiJrbGxhbm9zcjE0QGdtYWlsLmNvbSJ9.EmdNhGTH8swdcVKfjhX0zaAdfSWZ28GmtIwLDqTP0Be0yVWIboZLCvu6hi5WA5C7TjAje6uStLhN5UmBdGZpTHsT0VoRXU1cBNYicGdun3lb_HK-a-h3xmqS5lit9hLSYnr-WdugEb8WbhCQ9yirkMo4pNbnwBctxXmtjgYmIgi4f1yIK2JyFhSMm83bSipv3iNvahC6eYCX2J5Ywow9J9wYyXsZ3mv4g3uBFxT5hscauPa3YuOlf-McnS_FVjy53Y2YaShGB9Dt7AHjbVH0EPWF0dyOwbSd3uHxC63xsTzzAvG3pD61BJI5qxkXqJ7b-TJP79LZt2s5Kj7ALjnuzQ&idkeycload=93e19169-f09d-4cfa-a0ce-462d7c45be3c-156,100,274,59,3104,338.26,0.000%,7.81739,2.70,45.71,353.7
+/vuce-zee-mf/-157,100,156,41,1279,221.49,0.000%,7.88271,38.61,22.24,5015.3
+/vuce-zee-api/v1/kc/user-keycloack-161,100,153,51,1108,176.51,0.000%,7.87278,5.74,16.62,746.6
+/vuce-zee-api-configuracion/v1/catalogomensaje/getMessages-162,100,5840,570,14459,3837.19,0.000%,4.26203,5564.29,8.90,1336882.5
+/vuce-zee-api-configuracion/v1/catalogomensaje/getTitulos-163,100,323,53,4179,673.97,0.000%,4.35275,5.65,9.08,1328.6
+/vuce-zee-api/v1/personas/listzonas-164,100,271,54,4108,593.94,0.000%,4.35275,2.41,9.19,566.3
+/vuce-zee-api-configuracion/v1/menu/nav-165,100,838,155,4447,979.54,0.000%,4.00320,190.54,8.79,48740.0
+/vuce-zee-api-configuracion/v1/variables-sistema-166,100,487,135,7225,874.03,0.000%,3.79104,61.39,8.03,16582.3
+/vuce-zee-api/v1/personas/fotoperzona-167,100,143,52,2084,278.54,0.000%,3.80561,0.95,8.20,255.6
+/vuce-zee-api-mensajeria/v1/mensajeria/configuracion/c2836185-b2cd-43e9-8d21-2be0f5073aea-170,100,355,40,7119,1211.58,0.000%,3.80156,1.54,8.05,414.7
+/vuce-zee-api-mensajeria/v1/mensajeria/bandeja-169,100,135,41,1114,242.72,0.000%,3.80185,2.32,8.39,625.9
+/vuce-zee-api-mensajeria/v1/mensajeria/bandeja-168,100,310,54,7130,793.70,0.000%,3.81738,11.82,8.43,3170.1
+/vuce-zee-api-mensajeria/v1/mensajeria/noleidos/c2836185-b2cd-43e9-8d21-2be0f5073aea/e94eb4dc-3528-4bf9-b383-aed611ae0a00-172,100,213,45,3081,424.61,0.000%,3.82848,1.22,8.23,325.5
+/vuce-zee-api-mensajeria/v1/mensajeria/noleidos/c2836185-b2cd-43e9-8d21-2be0f5073aea/e94eb4dc-3528-4bf9-b383-aed611ae0a00-173,100,271,45,3082,631.21,0.000%,3.83715,1.19,8.25,318.7
+/vuce-zee-api-mensajeria/v1/notificaciones/noleidos/c2836185-b2cd-43e9-8d21-2be0f5073aea/e94eb4dc-3528-4bf9-b383-aed611ae0a00-171,100,163,44,1092,286.25,0.000%,3.84054,1.17,8.27,312.9
+/vuce-zee-api-mensajeria/v1/notificaciones/noleidos/c2836185-b2cd-43e9-8d21-2be0f5073aea/e94eb4dc-3528-4bf9-b383-aed611ae0a00-174,100,304,38,7120,1013.31,0.000%,3.85758,1.19,8.31,314.6
+/vuce-zee-pesaje/main.js-175,100,10853,1521,24271,4435.17,0.000%,2.47023,3969.12,1.34,1645343.9
+/vuce-zee-pesaje/327.js-176,100,13298,2343,30666,5424.41,0.000%,2.37886,5840.80,1.29,2514223.0
+/vuce-zee-pesaje/839.js-177,100,672,46,4005,854.99,0.000%,2.88052,363.31,1.56,129153.0
+/vuce-zee-api-configuracion/v1/asignacionparams/parametros-178,100,103,47,1104,198.68,0.000%,2.91511,1.30,6.59,458.4
+/vuce-zee-api-configuracion/v1/asignacionparams/parametros-179,100,184,48,3080,477.81,0.000%,2.91766,1.13,6.60,397.2
+/vuce-zee-api/v1/maestros/find_by_prefix_and_correlatives-180,100,88,42,1068,170.67,0.000%,2.91911,1.83,6.16,643.5
+/vuce-zee-api/v1/maestros/find_by_prefix_and_correlatives-181,100,118,43,1074,241.26,0.000%,2.92133,1.73,6.17,607.2
+/vuce-zee-api-pesaje/v1/pesajeVehiculo/bandeja-182,100,134,43,3116,359.39,0.000%,2.92218,1.77,6.43,621.1
+/vuce-zee-api-pesaje/v1/pesajeVehiculo/bandeja-183,100,367,123,3252,493.84,0.000%,2.90259,72.14,6.38,25449.7
+/vuce-zee-api-pesaje/v1/pesajeVehiculo/bandeja-184,100,203,67,2210,350.18,0.000%,3.10588,13.16,6.93,4340.0
+Total,2900,1360,0,30666,3532.28,3.448%,61.22277,11853.23,127.34,198254.8

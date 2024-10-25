@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plan de Pruebas">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables definidas por el Usuario">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="Montar grupo de Hilos" enabled="true">
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Controlador Bucle" enabled="true">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ComparisonVisualizer" testclass="ResultCollector" testname="Visualizador de la aserción de comparación" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Petición HTTP" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${requestBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">landing-test.vuce.gob.pe</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">vuce-zee-api/v1/personas</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">false</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <boolProp name="HTTPSampler.md5">false</boolProp>
+          <intProp name="HTTPSampler.ipSourceType">0</intProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+// Función para generar un numero aleatorio válido en base a la fecha
+def generateRandomNumero() {
+    def now = new Date()
+    def day = String.format(&quot;%02d&quot;, now.getDate())
+    def month = String.format(&quot;%02d&quot;, now.getMonth() + 1)
+    def hour = String.format(&quot;%02d&quot;, now.getHours())
+    def minute = String.format(&quot;%02d&quot;, now.getMinutes())
+    def second = String.format(&quot;%02d&quot;, now.getSeconds())
+    def millis = String.format(&quot;%02d&quot;, (now.getTime() % 1000) / 10 as int)
+    return day + month + hour + minute + second + millis
+}
+
+def generateRandomCorreo() {
+    def now = new Date()
+    def day = String.format(&quot;%02d&quot;, now.getDate())
+    def month = String.format(&quot;%02d&quot;, now.getMonth() + 1)
+    def hour = String.format(&quot;%02d&quot;, now.getHours())
+    def minute = String.format(&quot;%02d&quot;, now.getMinutes())
+    def second = String.format(&quot;%02d&quot;, now.getSeconds())
+    def millis = String.format(&quot;%02d&quot;, (now.getTime() % 1000) / 10 as int)
+    return day + month + hour + minute + second + millis + &quot;@gmail.com&quot;
+}
+
+// JSON original
+def originalJson = &apos;&apos;&apos;
+{
+  &quot;tipoUsuarioCreacion&quot;: {
+    &quot;id&quot;: &quot;46bea53a-8e38-fbdb-61f1-92de0d9b7443&quot;
+  },
+  &quot;id&quot;: &quot;&quot;,
+  &quot;tipoDocumento&quot;: {
+    &quot;id&quot;: &quot;ef5a045c-bc4f-ba1a-690c-549109049670&quot;
+  },
+  &quot;tipoPersona&quot;: {
+    &quot;id&quot;: &quot;a7911266-2d43-8399-a19b-bfd531d2319c&quot;
+  },
+  &quot;pais&quot;: {
+    &quot;id&quot;: &quot;1221233e-7105-44ca-3d9d-df57385891e3&quot;
+  },
+  &quot;departamento&quot;: {
+    &quot;id&quot;: &quot;f0edef0a-672a-4782-a358-d2d8ef09006f&quot;
+  },
+  &quot;provincia&quot;: {
+    &quot;id&quot;: &quot;0ca37fd4-d900-4ea1-a35a-16cd97cef166&quot;
+  },
+  &quot;distrito&quot;: {
+    &quot;id&quot;: &quot;acaa1bc1-1f58-4972-8547-6ace52a7dc3a&quot;
+  },
+  &quot;numeroDocumento&quot;: &quot;120345454567&quot;,
+  &quot;nombre&quot;: &quot;ANTHONY&quot;,
+  &quot;codigoPersonal&quot;: &quot;3455&quot;,
+  &quot;dirPrincipal&quot;: &quot;FRENTE AL PARQUE&quot;,
+  &quot;referencia&quot;: &quot;REFERENCIA&quot;,
+  &quot;correo1&quot;: &quot;120345454567@gmail.com&quot;,
+  &quot;celular&quot;: &quot;945645645&quot;,
+  &quot;telefono&quot;: &quot;9234234324235&quot;,
+  &quot;imagen&quot;: &quot;&quot;,
+  &quot;imageName&quot;: &quot;&quot;,
+  &quot;apellidoP&quot;: &quot;BERNILLA&quot;,
+  &quot;apellidoM&quot;: &quot;MANAYALLE&quot;,
+  &quot;rutaArchivo&quot;: &quot;&quot;,
+  &quot;userCreate&quot;: &quot;c2836185-b2cd-43e9-8d21-2be0f5073aea&quot;,
+  &quot;userUpdate&quot;: &quot;c2836185-b2cd-43e9-8d21-2be0f5073aea&quot;,
+  &quot;zonaEconomica&quot;: &quot;e94eb4dc-3528-4bf9-b383-aed611ae0a00&quot;
+}
+&apos;&apos;&apos;
+
+// Convierte el JSON a un mapa
+def jsonSlurper = new JsonSlurper()
+def jsonObject = jsonSlurper.parseText(originalJson)
+
+// Genera un valor dinámico para el campo &quot;nombre&quot; sin caracteres especiales
+jsonObject.numeroDocumento = generateRandomNumero()
+jsonObject.correo1 = generateRandomCorreo()
+
+// Convierte el mapa de vuelta a JSON
+def jsonBuilder = new JsonBuilder(jsonObject)
+def requestBody = jsonBuilder.toPrettyString()
+
+// Almacena el JSON modificado en una variable de JMeter
+vars.put(&quot;requestBody&quot;, requestBody)</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+        </hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Gestor de Cabecera HTTP" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Reporte resumen" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
