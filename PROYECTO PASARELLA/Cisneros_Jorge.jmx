@@ -18,7 +18,7 @@
         <stringProp name="HTTPSampler.protocol">http</stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">10</stringProp>
@@ -34,9 +34,34 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Generar una Orden de Pago para SUNAT, generar el CPB, enviar notificacion por kafka y solicitar registro en la SUNAT" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/sunat</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -122,9 +147,34 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Expirar las Órdenes de Pago que tienen la fecha de vigencia menor a la fecha de actual" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/expirado</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -166,9 +216,19 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Generar una Orden de Pago para Transferencias Bancarias y enviar notificacion por kafka" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;montoExtornado&quot;: 56,&#xd;
+  &quot;fechaExtorno&quot;: &quot;2023-12-22&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/transferencia-bancaria</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -210,9 +270,21 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;montoPagado&quot;:56,&#xd;
+   &quot;fechaPago&quot;:&quot;2022-09-06&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -254,9 +326,20 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;montoExtornado&quot;: 56,&#xd;
+  &quot;fechaExtorno&quot;: &quot;2023-12-22&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -298,9 +381,21 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;montoPagado&quot;:56,&#xd;
+   &quot;fechaPago&quot;:&quot;2022-09-06&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -342,9 +437,18 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;canales&quot;: [1],&#xd;
+  &quot;fechaProceso&quot;: &quot;20240805&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -518,9 +622,34 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="enerar una Orden de Pago para SUNAT, generar el CPB, enviar notificacion por kafka y solicitar registro en la SUNAT" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/sunat</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -650,9 +779,34 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Generar una Orden de Pago para Transferencias Bancarias y enviar notificacion por kafka" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/transferencia-bancaria</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -694,9 +848,19 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;montoExtornado&quot;: 56,&#xd;
+  &quot;fechaExtorno&quot;: &quot;2023-12-22&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -738,9 +902,21 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;montoPagado&quot;:56,&#xd;
+   &quot;fechaPago&quot;:&quot;2022-09-06&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -782,9 +958,19 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;montoExtornado&quot;: 56,&#xd;
+  &quot;fechaExtorno&quot;: &quot;2023-12-22&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -832,8 +1018,11 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
+   &quot;montoPagado&quot;:56,&#xd;
+   &quot;fechaPago&quot;:&quot;2022-09-06&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -885,8 +1074,24 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -932,18 +1137,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Anular una Orden de Pago con el ID de la orden de pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/anulacion</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -985,18 +1181,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Expirar las Órdenes de Pago que tienen la fecha de vigencia menor a la fecha de actual" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/expirado</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1044,8 +1231,24 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
+  &quot;entidadId&quot;: 5,&#xd;
+  &quot;perfilId&quot;: 456,&#xd;
+  &quot;formato&quot;: &quot;&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
+  &quot;tupa&quot;: &quot;321&quot;,&#xd;
+  &quot;montoExacto&quot;: 55.4,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241030&quot;,&#xd;
+  &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
+  &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
+  &quot;componenteId&quot;: 2,&#xd;
+  &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
+  &quot;rucOperador&quot;:&quot;&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1091,18 +1294,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1144,18 +1338,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando CPB" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1197,18 +1382,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1250,18 +1426,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1303,18 +1470,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Generar una Orden de Pago para SUNAT, generar el CPB, enviar notificacion por kafka y solicitar registro en la SUNAT" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/sunat</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -1356,18 +1514,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Anular una Orden de Pago con el ID de la orden de pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/anulacion</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1409,18 +1558,9 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Expirar las Órdenes de Pago que tienen la fecha de vigencia menor a la fecha de actual" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
-  &quot;usuario&quot;: &quot;authapp&quot;&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/expirado</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1732,8 +1872,8 @@
           </elementProp>
           <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/entidad/{entidadId}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
           <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
