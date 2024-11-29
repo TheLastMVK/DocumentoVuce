@@ -21,11 +21,11 @@
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="01) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">60</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <stringProp name="ThreadGroup.num_threads">630</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">150</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -45,8 +45,8 @@
   &quot;formato&quot;: &quot;&quot;,&#xd;
   &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
   &quot;tupa&quot;: &quot;321&quot;,&#xd;
-  &quot;montoExacto&quot;: 55.4,&#xd;
-  &quot;fechaVigencia&quot;: &quot;20241212&quot;,&#xd;
+  &quot;montoExacto&quot;: 50,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241230&quot;,&#xd;
   &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
   &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
   &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
@@ -87,7 +87,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="02) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="02) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">10</stringProp>
@@ -296,7 +296,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/extorno</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/${cpb}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -320,7 +320,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="06) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="06) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">10</stringProp>
@@ -342,16 +342,17 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;montoExtornado&quot;: 56,&#xd;
-  &quot;fechaExtorno&quot;: &quot;2023-12-22&quot;,&#xd;
-  &quot;canalId&quot;: 1&#xd;
-}&#xd;
-</stringProp>
+   &quot;montoPagado&quot;:50,&#xd;
+   &quot;fechaPago&quot;:&quot;20241129&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
+}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/{cpb}/pago</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/cpb/${cpb}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -373,6 +374,18 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Configuración del CSV Data Set" enabled="true">
+          <stringProp name="filename">D:/VUCE/DocumentoVuce/PROYECTO PASARELLA/CPB.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">cpb</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="07) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
@@ -397,17 +410,15 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;montoPagado&quot;:56,&#xd;
-   &quot;fechaPago&quot;:&quot;2022-09-06&quot;,&#xd;
-   &quot;canalId&quot;:1,&#xd;
-   &quot;bancoId&quot;:1,&#xd;
-   &quot;tipo&quot;:&quot;1&quot;&#xd;
+  &quot;montoExtornado&quot;: 50,&#xd;
+  &quot;fechaExtorno&quot;: &quot;20241129&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/extorno</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -429,6 +440,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">247441</stringProp>
+          <stringProp name="CounterConfig.end">248041</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="08) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
@@ -453,14 +473,17 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;canales&quot;: [1],&#xd;
-  &quot;fechaProceso&quot;: &quot;20240805&quot;&#xd;
+   &quot;montoPagado&quot;:50,&#xd;
+   &quot;fechaPago&quot;:&quot;20241129&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/pago</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -482,6 +505,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">250462</stringProp>
+          <stringProp name="CounterConfig.end">251062</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="09) RNF-006A: API002 - 1 Peticiones x 60 Segundos x 1 Repeticiones" enabled="false">
@@ -1074,11 +1106,11 @@
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="20) RNF-009: API001 - 75 Peticiones x 40 Segundos x 10 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">75</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">40</stringProp>
+        <stringProp name="ThreadGroup.num_threads">200</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">120</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1093,24 +1125,24 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;entidadId&quot;: 5,&#xd;
-  &quot;perfilId&quot;: 456,&#xd;
-  &quot;formato&quot;: &quot;&quot;,&#xd;
-  &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
-  &quot;tupa&quot;: &quot;321&quot;,&#xd;
-  &quot;montoExacto&quot;: 55.4,&#xd;
-  &quot;fechaVigencia&quot;: &quot;20241212&quot;,&#xd;
+  &quot;entidadId&quot;: 1,&#xd;
+  &quot;perfilId&quot;:456,&#xd;
+  &quot;formato&quot;: &quot;DGS028&quot;,&#xd;
+  &quot;desFormato&quot;: &quot;ENTIDAD DIGESA&quot;,&#xd;
+  &quot;tupa&quot;: &quot;30&quot;,&#xd;
+  &quot;montoExacto&quot;: 80.5,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241225&quot;,&#xd;
   &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
-  &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
+  &quot;nombreUsuario&quot;: &quot;LUIS&quot;,&#xd;
   &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
   &quot;tipoCodigoReferencia&quot;: &quot;MT&quot;,&#xd;
-  &quot;tipoReferencia1&quot;: &quot;S&quot;,&#xd;
-  &quot;codReferencia1&quot;: &quot;2020001215&quot;,&#xd;
-  &quot;tipoReferencia2&quot;: &quot;DR&quot;,&#xd;
+  &quot;tipoReferencia1&quot;: &quot;DR&quot;,&#xd;
+  &quot;codReferencia1&quot;: &quot;2020001212&quot;,&#xd;
+  &quot;tipoReferencia2&quot;: &quot;&quot;,&#xd;
   &quot;codReferencia2&quot;: &quot;2020001213&quot;,&#xd;
-  &quot;componenteId&quot;: 2,&#xd;
+  &quot;componenteId&quot;: 1,&#xd;
   &quot;tipoOperador&quot;: &quot;1&quot;,&#xd;
-  &quot;rucOperador&quot;:&quot;&quot;&#xd;
+  &quot;rucOperador&quot;:&quot;11111123456&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1160,7 +1192,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/anulacion</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/anulacion</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1182,6 +1214,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">245469</stringProp>
+          <stringProp name="CounterConfig.end">246219</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="22) RNF-009: API001 - 75 Peticiones x 40 Segundos x 10 Repeticiones" enabled="false">
@@ -1401,11 +1442,21 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Extorno informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;montoExtornado&quot;: 50,&#xd;
+  &quot;fechaExtorno&quot;: &quot;20241129&quot;,&#xd;
+  &quot;canalId&quot;: 1&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/extorno</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/extorno</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1427,6 +1478,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">248678</stringProp>
+          <stringProp name="CounterConfig.end">249428</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="27) RNF-009: API001 - 75 Peticiones x 40 Segundos x 10 Repeticiones" enabled="false">
@@ -1445,11 +1505,23 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar Pago informado por la SUNAT usando ID Orden Pago" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;montoPagado&quot;:50,&#xd;
+   &quot;fechaPago&quot;:&quot;20241129&quot;,&#xd;
+   &quot;canalId&quot;:1,&#xd;
+   &quot;bancoId&quot;:1,&#xd;
+   &quot;tipo&quot;:&quot;1&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/pago</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/pago</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1472,15 +1544,24 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">251400</stringProp>
+          <stringProp name="CounterConfig.end">252150</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="28) RNF-010: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">60</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <stringProp name="ThreadGroup.num_threads">770</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">150</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1500,8 +1581,8 @@
   &quot;formato&quot;: &quot;&quot;,&#xd;
   &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
   &quot;tupa&quot;: &quot;321&quot;,&#xd;
-  &quot;montoExacto&quot;: 55.4,&#xd;
-  &quot;fechaVigencia&quot;: &quot;20241212&quot;,&#xd;
+  &quot;montoExacto&quot;: 50,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20241230&quot;,&#xd;
   &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
   &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
   &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
@@ -2444,7 +2525,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/archivo</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/archivo</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2466,6 +2547,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">249448</stringProp>
+          <stringProp name="CounterConfig.end">249648</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="48) RNF-013: API001 - 20 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
@@ -2532,7 +2622,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/{ordenPagoId}/status</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/pagos/ordenes-pago/${ordenPagoId}/status</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2554,6 +2644,15 @@
             </elementProp>
           </collectionProp>
         </HeaderManager>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
+          <stringProp name="CounterConfig.start">249228</stringProp>
+          <stringProp name="CounterConfig.end">249428</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
         <hashTree/>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
