@@ -816,8 +816,8 @@
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">120</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -832,14 +832,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -885,14 +885,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -938,14 +938,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -991,14 +991,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1044,14 +1044,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1097,14 +1097,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;isFavorito&quot;: true,&#xd;
+  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1150,14 +1150,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1203,14 +1203,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1256,14 +1256,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1309,14 +1309,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1362,14 +1362,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1415,14 +1415,14 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;estadoId&quot;: &quot;1&quot;,&#xd;
+  &quot;isFavorito&quot;: true,&#xd;
   &quot;usuario&quot;: &quot;authapp&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/roles/35/favorito</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1276/roles/38/favorito</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1994,7 +1994,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2038,7 +2038,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2082,7 +2082,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2126,7 +2126,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2170,7 +2170,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2214,7 +2214,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1120/inicializar-rol?cuentaVuceId=1085&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/1277/inicializar-rol?cuentaVuceId=1200&amp;componenteId=1</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2786,7 +2786,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2830,7 +2830,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2874,7 +2874,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2918,7 +2918,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2962,7 +2962,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3006,7 +3006,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1133&amp;componenteId=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/perfil/datos-perfil?perfilId=1210&amp;componenteId=MR</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3310,9 +3310,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3354,9 +3372,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3398,9 +3434,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3442,9 +3496,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3486,9 +3558,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3530,9 +3620,27 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API036-Recupera la información de funcionarios" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;componenteCodigo&quot;:&quot;MR&quot;,&#xd;
+   &quot;equipos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoEquipo&quot;:&quot;EQU0001&quot;&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;roles&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoRol&quot;:&quot;MR.ENTIDAD.EVALUADOR&quot;&#xd;
+      }&#xd;
+   ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/funcionario/equipos</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3578,7 +3686,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3622,7 +3730,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3666,7 +3774,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3690,14 +3798,14 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP82: API041-RNF010: 120 Peticion(es) X 30 Segundo(s)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP82: API041-RNF010: 120 Peticion(es) X 60 Segundo(s)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">120</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -3710,7 +3818,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3754,7 +3862,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3798,7 +3906,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=123</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/jwt-info?jwtId=09c2e07d-4f5f-4327-ba5b-5cf1d4172154</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3842,7 +3950,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3866,7 +3974,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP86: API042-RNF009: 500 Peticion(es) X 10 Segundo(s)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP86: API042-RNF009: 500 Peticion(es) X 10 Segundo(s)" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>
@@ -3886,7 +3994,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3930,7 +4038,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3974,7 +4082,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4018,7 +4126,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4915,43 +5023,6 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
-        <objProp>
-          <name>saveConfig</name>
-          <value class="SampleSaveConfiguration">
-            <time>true</time>
-            <latency>true</latency>
-            <timestamp>true</timestamp>
-            <success>true</success>
-            <label>true</label>
-            <code>true</code>
-            <message>true</message>
-            <threadName>true</threadName>
-            <dataType>true</dataType>
-            <encoding>false</encoding>
-            <assertions>true</assertions>
-            <subresults>true</subresults>
-            <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
-            <fieldNames>true</fieldNames>
-            <responseHeaders>false</responseHeaders>
-            <requestHeaders>false</requestHeaders>
-            <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-            <assertionsResultsToSave>0</assertionsResultsToSave>
-            <bytes>true</bytes>
-            <sentBytes>true</sentBytes>
-            <url>true</url>
-            <threadCounts>true</threadCounts>
-            <idleTime>true</idleTime>
-            <connectTime>true</connectTime>
-          </value>
-        </objProp>
-        <stringProp name="filename"></stringProp>
-      </ResultCollector>
-      <hashTree/>
       <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
@@ -4989,9 +5060,81 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Gráfico" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
