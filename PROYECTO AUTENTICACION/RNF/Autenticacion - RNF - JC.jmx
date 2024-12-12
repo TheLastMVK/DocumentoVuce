@@ -3974,7 +3974,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP86: API042-RNF009: 500 Peticion(es) X 10 Segundo(s)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CP86: API042-RNF009: 500 Peticion(es) X 10 Segundo(s)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>
@@ -4170,7 +4170,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=1&amp;nombreCompleto=JOEL%20RAMIREZ%20VASQUEZ&amp;nroRegistro=1</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-user-entidad?componente=MR&amp;nombreCompleto=IPEN-JUAN%20PEREZ&amp;nroRegistro=A</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4214,7 +4214,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4258,7 +4258,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4302,7 +4302,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4346,7 +4346,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4390,7 +4390,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4434,7 +4434,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=1&amp;tipoPersona=1&amp;usuario=DCC14161&amp;tipoDocumento=1&amp;numeroDocumento=43663311</stringProp>
+          <stringProp name="HTTPSampler.path">/autenticacion2/authentication-api/v1/usuario/data-min-legacy?idp=AUTHSUNAT&amp;tipoPersona=2&amp;usuario=AGEBCIA3&amp;tipoDocumento=1&amp;numeroDocumento=20509301817</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
