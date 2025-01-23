@@ -1,0 +1,81 @@
+E2:
+1.- Crear la ficha técnica-----No se encuentra implementado
+2.- Emitir Opinión Favorable---No se encuentra implementado
+3.- Autorizar ficha técnica----No se encuentra implementado
+
+==============================================================
+E3: Historias transversales:
+VUCEPERPAM-8071 Guardar información de una pestaña
+VUCEPERPAM-8069 Enviar información de una pestaña
+Nota: Lo que se quiere es que se registre, que guarde y que envie
+
+======================================================
+Flujo hasta ver CPB
+======================================================
+E3:
+Historia: VUCEPERPAM-168 Crear el Anuncio de Escala
+CP01:Verificar la creación de anuncio escala de nave---si esta automatizado.
+
+Historia: VUCEPERPAM-259 Agregar personas a la Lista de Tripulantes ------No se encuentra implementado
+
+Historia: VUCEPERPAM-240 Agregar personas a la Lista de Pasajeros------No se encuentra implementado
+
+Historia: VUCEPERPAM-204 Detalle del Formato PBIP------No se encuentra implementado
+
+VUCEPERPAM-249 Agregar mercancía peligrosa al manifiesto de mercancías peligrosas------Si se encuentra implementado
+
+VUCEPERPAM-191 Detalle la Declaración Marítima de Sanidad
+------No se encuentra implementado------No se encuentra implementado
+
+VUCEPERPAM-8019 Ver CPB
+
+======================================================
+NAVE MERP- PESQUERA
+===================================================
+
+Historia: VUCEPERPAM-168 Crear el Anuncio de Escala
+CP01:Verificar la creación de anuncio escala de nave---si esta automatizado.
+
+Historia: VUCEPERPAM-259 Agregar personas a la Lista de Tripulantes ------No se encuentra implementado
+
+Historia: VUCEPERPAM-240 Agregar personas a la Lista de Pasajeros------No se encuentra implementado
+
+Historia: VUCEPERPAM-204 Detalle del Formato PBIP------No se encuentra implementado
+
+VUCEPERPAM-249 Agregar mercancía peligrosa al manifiesto de mercancías peligrosas------Si se encuentra implementado
+
+VUCEPERPAM-191 Detalle la Declaración Marítima de Sanidad
+------No se encuentra implementado------No se encuentra implementado
+
+VUCEPERPAM-8019 Ver CPB------No se encuentra implementado
+
+VUCEPERPAM-1203 Solicitar Declaración Jurada de Pago------No se encuentra implementado
+
+VUCEPERPAM-1302 Evaluar Declaración Jurada de Pago------No se encuentra implementado
+
+
+VUCEPERPAM-807 Detalle de la Lista de Narcóticos---Si esta automatizado
+
+VUCEPERPAM-213 Detalle de la Lista de Provisiones------No se encuentra implementado
+
+VUCEPERPAM-173 Detalle de la Declaración de Carga------No se encuentra implementado
+
+VUCEPERPAM-8066 Detalle de la declaración general de entrada------SI SE encuentra implementado
+
+CP003: Verificar que el sistema permita visualizar y registrar la información requerida para iniciar el proceso administrativo de recepción de naves desde la opción "Detalle de la DUE"
+
+VUCEPERPAM-8019 Ver CPB------No se encuentra implementado
+
+VUCEPERPAM-1203 Solicitar Declaración Jurada de Pago------No se encuentra implementado
+
+VUCEPERPAM-1302 Evaluar Declaración Jurada de Pago------No se encuentra implementado
+
+VUCEPERPAM-8050 Detalle de la  Solicitud de Patente Sanitaria
+
+Ingresar con un perfil y autorizar DUE, el estado de la due cambia a Autorizado
+
+
+
+======================================================
+Otro flujo seria con nave de recreación distinta MERP que solo se habilitan 04 estañas
+==============================================================
