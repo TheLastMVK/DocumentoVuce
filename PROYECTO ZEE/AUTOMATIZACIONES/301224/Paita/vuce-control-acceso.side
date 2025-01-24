@@ -1,0 +1,173 @@
+{
+  "id": "060b7648-4281-4676-852d-8fd325a7dc34",
+  "version": "2.0",
+  "name": "vuce-control-acceso",
+  "url": "https://landing-test.vuce.gob.pe/vuce-zee-api-autorizacion/login/?urlReturn=https://landing-test.vuce.gob.pe/vuce-zee-mf/",
+  "tests": [{
+    "id": "f95a4b43-eb36-49a3-af10-6f9cd8f8fd29",
+    "name": "control-acceso",
+    "commands": [{
+      "id": "ea33a985-6281-4472-b16f-e4153c3e3322",
+      "comment": "",
+      "command": "open",
+      "target": "https://landing-test.vuce.gob.pe/vuce-zee-api-autorizacion/login/?urlReturn=https://landing-test.vuce.gob.pe/vuce-zee-mf/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb2fb064-7cbd-4500-9f4c-4e452e2d6189",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1098x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bb78b32-c93f-4e8b-ab4e-968c118b950b",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "hacosta"
+    }, {
+      "id": "caf2243e-97b6-473e-a226-b80e029084dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "hacosta"
+    }, {
+      "id": "bfbba7b3-9232-4d73-919a-4a707cdeb3ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "549e6105-b63d-438d-bc29-1c20ede8406a",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4003ed98-7d35-4ad0-9039-884f01327c2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-first-77ae26f1-b68d-4502-8c1b-c2eca33b0ac6",
+      "targets": [
+        ["id=menu-first-77ae26f1-b68d-4502-8c1b-c2eca33b0ac6", "id"],
+        ["css=#menu-first-77ae26f1-b68d-4502-8c1b-c2eca33b0ac6", "css:finder"],
+        ["xpath=//span[@id='menu-first-77ae26f1-b68d-4502-8c1b-c2eca33b0ac6']", "xpath:attributes"],
+        ["xpath=//mat-expansion-panel-header[@id='mat-expansion-panel-header-13']/span/mat-panel-title/span", "xpath:idRelative"],
+        ["xpath=//mat-expansion-panel[14]/mat-expansion-panel-header/span/mat-panel-title/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b0fa2d-9c6e-40df-8349-82c49fa3b6f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-checkbox-3 .mat-checkbox-inner-container",
+      "targets": [
+        ["css=#mat-checkbox-3 .mat-checkbox-inner-container", "css:finder"],
+        ["xpath=//mat-checkbox[@id='mat-checkbox-3']/label/span", "xpath:idRelative"],
+        ["xpath=//mat-checkbox[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c08f0727-44e9-492d-ad09-f18fbdebd299",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-row:nth-child(3) .mat-focus-indicator:nth-child(1) .mat-icon",
+      "targets": [
+        ["css=.mat-row:nth-child(3) .mat-focus-indicator:nth-child(1) .mat-icon", "css:finder"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row[2]/mat-cell[5]/button/span/mat-icon", "xpath:idRelative"],
+        ["xpath=//mat-row[2]/mat-cell[5]/button/span/mat-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "908d4a37-64de-4ec9-bb8a-b40af1e36a6d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mat-row:nth-child(3) .mat-focus-indicator:nth-child(1) .mat-icon",
+      "targets": [
+        ["css=.mat-row:nth-child(3) .mat-focus-indicator:nth-child(1) .mat-icon", "css:finder"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row[2]/mat-cell[5]/button/span/mat-icon", "xpath:idRelative"],
+        ["xpath=//mat-row[2]/mat-cell[5]/button/span/mat-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "817d8909-9d6a-4aa0-9981-85d913456f45",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-row:nth-child(3) > .mat-cell > .mat-tooltip-trigger",
+      "targets": [
+        ["css=.mat-row:nth-child(3) > .mat-cell > .mat-tooltip-trigger", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row[2]/mat-cell[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//mat-row[2]/mat-cell[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b93db939-8d3a-4e03-98b8-ddad9a0f7ee2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mat-row:nth-child(3) > .mat-cell > .mat-tooltip-trigger",
+      "targets": [
+        ["css=.mat-row:nth-child(3) > .mat-cell > .mat-tooltip-trigger", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row[2]/mat-cell[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//mat-row[2]/mat-cell[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dadd50d-e579-4106-be8f-168c53b5352d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-row:nth-child(2) .mat-focus-indicator:nth-child(1) .mat-icon",
+      "targets": [
+        ["css=.mat-row:nth-child(2) .mat-focus-indicator:nth-child(1) .mat-icon", "css:finder"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row/mat-cell[5]/button/span/mat-icon", "xpath:idRelative"],
+        ["xpath=//mat-cell[5]/button/span/mat-icon", "xpath:position"],
+        ["xpath=//mat-icon[contains(.,'visibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52cd7424-77c1-4d23-b98f-e6116760977f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mat-row:nth-child(2) .mat-focus-indicator:nth-child(1) .mat-icon",
+      "targets": [
+        ["css=.mat-row:nth-child(2) .mat-focus-indicator:nth-child(1) .mat-icon", "css:finder"],
+        ["xpath=//div[@id='single-spa-application:@vuce-zee/mf-control-acceso']/mf-control-acceso/app-control-acceso/div/div/div/mat-table/mat-row/mat-cell[5]/button/span/mat-icon", "xpath:idRelative"],
+        ["xpath=//mat-cell[5]/button/span/mat-icon", "xpath:position"],
+        ["xpath=//mat-icon[contains(.,'visibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d2844ac-0b00-4554-9a85-06093c75ac45",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f95a4b43-eb36-49a3-af10-6f9cd8f8fd29"]
+  }],
+  "urls": ["https://landing-test.vuce.gob.pe/vuce-zee-api-autorizacion/login/?urlReturn=https://landing-test.vuce.gob.pe/vuce-zee-mf/"],
+  "plugins": []
+}
