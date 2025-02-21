@@ -1,0 +1,239 @@
+openapi: 3.0.1
+info:
+  title: API de la VUCE para la gestion de archivos en el FileNet
+  description: API de la VUCE para la gestion de archivos en el FileNet
+  contact:
+    email: mmontoya@mincetur.gob.pe
+    name: Miguel Angel Montoya
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: '0.1'
+servers:
+  - url: 'http://10.19.34.185:30000/v1/vuce-services/middleware'
+paths:
+  /file:
+    post:
+      tags:
+        - Gestion de archivos
+      summary: Crea un archivo en el FileNet
+      parameters:
+        - name: filenetUser
+          in: header
+          description: Usuario de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: filenetPassword
+          in: header
+          description: Password de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: host
+          in: header
+          description: Ambiente de despliegue
+          required: true
+          schema:
+            type: string
+          example: "landing-desa.vuce.gob.pe"
+      requestBody:
+        description: "Datos de archivo"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Documento'
+      responses:
+        200:
+          description: "Operacion exitosa"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Documento'
+        500:
+          description: "Servicio con problemas"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    put:
+      tags:
+        - Gestion de archivos
+      summary: Modifica un archivo en el FileNet
+      parameters:
+        - name: filenetUser
+          in: header
+          description: Usuario de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: filenetPassword
+          in: header
+          description: Password de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: host
+          in: header
+          description: Ambiente de despliegue
+          required: true
+          schema:
+            type: string
+          example: "landing-desa.vuce.gob.pe"
+      requestBody:
+        description: "Datos de archivo"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Documento'
+      responses:
+        200:
+          description: "Operacion exitosa"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Documento'
+        500:
+          description: "Servicio con problemas"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    get:
+      tags:
+        - Gestion de archivos
+      summary: Obtiene un archivo del FileNet
+      parameters:
+        - name: filenetUser
+          in: header
+          description: Usuario de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: filenetPassword
+          in: header
+          description: Password de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: host
+          in: header
+          description: Ambiente de despliegue
+          required: true
+          schema:
+            type: string
+          example: "landing-desa.vuce.gob.pe"
+        - name: iddocumento
+          in: query
+          description: Id del documento
+          required: true
+          schema:
+            type: string
+            format: string
+      responses:
+        200:
+          description: "Operacion exitosa"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Documento'
+        500:
+          description: "Servicio con problemas"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    delete:
+      tags:
+        - Gestion de archivos
+      summary: Elimina un archivo del FileNet
+      parameters:
+        - name: filenetUser
+          in: header
+          description: Usuario de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: filenetPassword
+          in: header
+          description: Password de FileNet
+          required: true
+          schema:
+            type: string
+            format: string
+        - name: host
+          in: header
+          description: Ambiente de despliegue
+          required: true
+          schema:
+            type: string
+          example: "landing-desa.vuce.gob.pe"
+        - name: iddocumento
+          in: query
+          description: Id del documento
+          required: true
+          schema:
+            type: string
+            format: string
+      responses:
+        200:
+          description: "Operacion exitosa"
+          content: {}
+        500:
+          description: "Servicio con problemas"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    Documento:
+      type: object
+      properties:
+        componente:
+          description: "Id del componente. Asociado a una carpeta en FileNet"
+          type: string
+        opcion:
+          description: "Id de la opcion del menu. Asociado a una subcarpeta en FileNet"
+          type: string
+        foldersExtras:
+          description: "Folders adicionales a los configurados"
+          type: string
+        iddocumento:
+          description: "Id del documento"
+          type: string
+        nombre:
+          description: "Nombre del documento"
+          type: string
+        descripcion:
+          description: "Descripcion del documento"
+          type: string
+        propiedades:
+          description: "Propiedades del documento"
+          type: string
+        bytes:
+          description: "Documento en bytes"
+          type: string
+          format: byte
+    ErrorResponse:
+      type: object
+      description: "Objeto usado para retornar mensaje de error 500"
+      properties:
+        type:
+          description: "Tipo de mensaje de error"
+          type: string
+        alias:
+          description: "Descripcion corta del mensaje del error"
+          type: string
+        description:
+          description: "Descripcion larga del mensaje del error"
+          type: string

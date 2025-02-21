@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Main-Class: filenet.Application
+Class-Path: tomcat-embed-core-9.0.37.jar spring-expression-5.2.8.RELEASE
+ .jar swagger-core-2.1.1.jar okio-2.2.2.jar log4j-api-2.12.1.jar webjars
+ -locator-0.38.jar xlxpScannerUtils-xlxpScannerUtils.jar jackson-datatyp
+ e-jdk8-2.10.5.jar Jace-Jace.jar jaxb-api-2.3.1.jar validation-api-2.0.1
+ .Final.jar jandex-2.1.3.Final.jar HikariCP-3.4.5.jar jjwt-0.7.0.jar jac
+ kson-module-parameter-names-2.10.5.jar spring-security-web-5.2.5.RELEAS
+ E.jar classgraph-4.8.44.jar springdoc-openapi-ui-1.2.32.jar json-simple
+ -1.1.jar spring-boot-2.2.9.RELEASE.jar p8cel10n-p8cel10n.jar spring-boo
+ t-starter-tomcat-2.2.9.RELEASE.jar tomcat-embed-websocket-9.0.37.jar sw
+ agger-models-2.1.1.jar spring-webmvc-5.2.8.RELEASE.jar springdoc-openap
+ i-webmvc-core-1.2.32.jar spring-boot-starter-logging-2.2.9.RELEASE.jar 
+ spring-boot-starter-web-2.2.9.RELEASE.jar snakeyaml-1.25.jar spring-web
+ -5.2.8.RELEASE.jar commons-lang3-3.9.jar dom4j-2.1.3.jar ojdbc8-19.8.0.
+ 0.jar LatencyUtils-2.0.3.jar spring-jdbc-5.2.8.RELEASE.jar spring-boot-
+ actuator-2.2.9.RELEASE.jar jaxb-runtime-2.3.3.jar spring-boot-starter-2
+ .2.9.RELEASE.jar kotlin-stdlib-1.3.72.jar jakarta.transaction-api-1.3.3
+ .jar jul-to-slf4j-1.7.30.jar spring-security-core-5.2.5.RELEASE.jar spr
+ ing-boot-starter-json-2.2.9.RELEASE.jar hibernate-core-5.4.18.Final.jar
+  spring-boot-starter-jdbc-2.2.9.RELEASE.jar spring-tx-5.2.8.RELEASE.jar
+  swagger-ui-3.25.0.jar jackson-annotations-2.10.5.jar spring-boot-start
+ er-validation-2.2.9.RELEASE.jar jasypt-spring-boot-2.0.0.jar spring-dat
+ a-commons-2.2.9.RELEASE.jar okhttp-4.2.2.jar spring-aspects-5.2.8.RELEA
+ SE.jar javassist-3.24.0-GA.jar jakarta.xml.bind-api-2.3.3.jar webjars-l
+ ocator-core-0.41.jar log4j-1.2.13.jar springdoc-openapi-common-1.2.32.j
+ ar jasypt-spring-boot-starter-2.0.0.jar javax.activation-api-1.2.0.jar 
+ classmate-1.5.1.jar jakarta.annotation-api-1.3.5.jar spring-boot-actuat
+ or-autoconfigure-2.2.9.RELEASE.jar jboss-logging-3.4.1.Final.jar kotlin
+ -stdlib-common-1.3.72.jar jakarta.persistence-api-2.2.3.jar hibernate-v
+ alidator-6.0.20.Final.jar annotations-13.0.jar xlxpScanner-xlxpScanner.
+ jar istack-commons-runtime-3.0.11.jar postgresql-42.2.14.jar spring-bea
+ ns-5.2.8.RELEASE.jar aspectjweaver-1.9.6.jar jasypt-1.9.2.jar spring-da
+ ta-jpa-2.2.9.RELEASE.jar jackson-databind-2.10.5.jar jakarta.activation
+ -1.2.2.jar stax-api-stax-api.jar angular__http-2.4.10.jar spring-core-5
+ .2.8.RELEASE.jar jakarta.validation-api-2.0.2.jar spring-boot-starter-a
+ op-2.2.9.RELEASE.jar spring-security-config-5.2.5.RELEASE.jar logback-c
+ lassic-1.2.3.jar micrometer-core-1.3.11.jar tomcat-embed-el-9.0.37.jar 
+ jackson-core-2.10.5.jar swagger-annotations-2.1.1.jar hibernate-commons
+ -annotations-5.1.0.Final.jar spring-context-5.2.8.RELEASE.jar spring-or
+ m-5.2.8.RELEASE.jar txw2-2.3.3.jar slf4j-api-1.7.30.jar jackson-datatyp
+ e-jsr310-2.10.5.jar HdrHistogram-2.1.11.jar spring-boot-starter-actuato
+ r-2.2.9.RELEASE.jar logback-core-1.2.3.jar spring-boot-autoconfigure-2.
+ 2.9.RELEASE.jar spring-aop-5.2.8.RELEASE.jar swagger-integration-2.1.1.
+ jar jackson-dataformat-yaml-2.10.5.jar spring-boot-starter-data-jpa-2.2
+ .9.RELEASE.jar spring-jcl-5.2.8.RELEASE.jar byte-buddy-1.10.13.jar spri
+ ng-boot-starter-security-1.5.3.RELEASE.jar antlr-2.7.7.jar log4j-to-slf
+ 4j-2.12.1.jar
+

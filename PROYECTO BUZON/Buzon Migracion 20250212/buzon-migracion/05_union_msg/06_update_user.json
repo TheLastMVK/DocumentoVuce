@@ -1,0 +1,28 @@
+db.user_2010.aggregate([
+  {
+    $lookup: {
+      from: "usuario",
+      localField: "usuario_id",  // Campo en USER_2010
+      foreignField: "usuario_id", // Campo en usuario
+      as: "matched_users"         // El campo de salida donde se guardan los usuarios coincidentes
+    }
+  },
+  {
+    $match: {
+      "matched_users": { $size: 0 }  // Filtrar para obtener los documentos sin coincidencias
+    }
+  },
+  {
+    $project: {
+      "usuario_id": 1, // Seleccionamos solo el campo de usuario_id
+      // Puedes agregar más campos si quieres insertar más información
+    }
+  },
+  {
+    $merge: {
+      into: "usuario",  // Nombre de la colección donde se insertarán los usuarios
+      whenMatched: "discard", // Descartar si hay coincidencias (esto evita la actualización de usuarios existentes)
+      whenNotMatched: "insert" // Insertar solo los documentos que no tienen coincidencia
+    }
+  }
+]);

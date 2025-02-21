@@ -1,0 +1,94 @@
+CREATE OR REPLACE PROCEDURE VCOBJ.Cargar_buzon_final (
+      p_fecha       IN string
+   )
+   as
+   v_usuario_defecto VARCHAR2(200):='46733';
+BEGIN
+--  dbms_output.put_line
+
+EXECUTE IMMEDIATE ('CREATE TABLE VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||' as 
+      SELECT m.mensaje_id "codMensaje",
+         nvl(b.componente,nvl(mt.componente,nvl(t.componente,1))) "codComponente",m.de "codEntidad",
+       m.fecha_registro "fechahoraEnvio", nvl(m.usuid_reg_aud,'|| v_usuario_defecto ||') "codUsuarioEnvio",
+       case when m.notificacion_id is not NULL then ''NT'' When mt.tipo_mensaje =2 then ''AL'' ELSE ''MS'' end "codTipoEnvio",
+       1 "codTipoContenidoEnvio",nvl(m.mensaje_texto_id,83) "codPlantillaContenido",
+       to_char(m.de) "codEmisor", cast(0 as integer) "tipoCodEmisor", b.usuario_tipo "codTipoEmisor",
+       '' '' "solEmisor",
+       u.numero_documento "codDestinatario", u.documento_tipo "tipoCodDestinatario", d.usuario_tipo "codTipoDestinatario",
+       u.usuario_sol "solDestinatario", 
+       case when o.orden_id is not NULL then 1  when mt.tipo_mensaje =2 then 3 when b.relacion_tramite =2 then 10 ELSE 2 end "codCarpetaDocumento", 
+       nvl(t.entidad_id,m.de) "codCarpetaEntidad",
+       DECODE(m.dr_id, NULL, 4.0, s.suce_id,null,3.0,o.orden_id,NULL, 2.0) "codEtiquetaDocumento", 
+       o.ORDEN_ID "idOrden", o.ORDEN "codOrden",
+       s.suce "codSuce", d2.dr "codDr", '' '' "codDue",
+       DECODE(m.estado_registro,null,''C'',''P'',''E'',''T'',''Z'',''A'',''A'',''R'',''R'') "estadoDocumento",
+       nd.descripcion "descripcion_notificacion",
+       b.asunto "asunto",
+       m.mensaje "mensaje",
+       s.suce "suce",
+       '' '' "mto",
+       d.leido "leido",
+       d.fecha_lectura "fechaLeido",
+       a.usuario_id "emisor_id",
+       a.usuario_tipo_id "emisor_tipo_id",
+       a.documento_tipo "emisor_documento_tipo",
+       a.numero_documento "emisor_numero_documento",
+       a.usuario_sol "emisor_usuario_sol",
+       a.nombre "emisor_nombre",
+       a.email  "emisor_email",
+       a.empresa_id  "emisor_empresa_id",
+       a.entidad_id "emisor_entidad_id",
+       u.usuario_id "dest_id",
+       u.usuario_tipo_id "dest_tipo_id",
+       u.documento_tipo "dest_documento_tipo",
+       u.numero_documento "dest_numero_documento",
+       u.usuario_sol "dest_usuario_sol",
+       u.nombre "dest_nombre",
+       u.email  "dest_email",
+       u.empresa_id  "dest_empresa_id",
+       u.entidad_id "dest_entidad_id",
+       m.fecha_mod_aud "fecha_mod_aud", 
+       m.usuid_mod_aud "usu_mod_aud"
+  FROM vcobj.mensaje m, 
+       vcobj.buzon b,
+       vcobj.usuario a,
+       vcobj.mensaje_texto mt,
+       vcobj.destinatario d,
+       vcobj.usuario u,
+       vcobj.tce t, vcobj.suce s,
+       vcobj.dr d2,       
+       vcobj.notificacion n,
+       vcobj.notificacion_detalle nd,
+      vcobj.orden o
+ WHERE m.buzon_id = b.buzon_id (+)
+   AND m.de = a.usuario_id  (+)
+   AND m.mensaje_texto_id = mt.mensaje_texto_id(+)
+   AND m.mensaje_id = d.mensaje_id (+)
+   AND  d.destinatario = u.usuario_id (+)
+   AND m.notificacion_id = n.notificacion_id(+)
+   AND n.notificacion_id = nd.notificacion_id(+)
+   AND n.orden_id = o.orden_id (+)
+   AND o.orden_id = t.orden_id (+)
+   AND nvl(n.suce_id,0) = s.suce_id(+)
+   AND nvl(m.dr_id,0) = d2.dr_id(+)   
+   AND m.fecha_registro >= TO_DATE('''||p_fecha||''',''DD/MM/YYYY'')
+   AND m.fecha_registro <  ADD_MONTHS(TO_DATE('''||p_fecha||''',''DD/MM/YYYY''), 1)');-- and rownum <=5');
+
+--  dbms_output.put_line
+
+EXECUTE IMMEDIATE ('CREATE TABLE VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||'_TMP as 
+  SELECT  a."codMensaje" mensaje_id,RPAD('' '', 100) uuid,a."codUsuarioEnvio" as usuario_id,a."usu_mod_aud"  as usu_mod,a."emisor_id" as emisor_id,a."dest_id" as dest_id from VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||' a');
+
+   
+EXECUTE IMMEDIATE ('CREATE TABLE VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||'_ADJ as 
+  SELECT  a.mensaje_id,b.adjunto_id,b.adjunto_tipo,b.nombre_archivo,a.uuid from VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||'_TMP a,VCOBJ.adjunto b
+  WHERE a.mensaje_id = b.mensaje_id and b.estado=''A''');
+
+EXECUTE IMMEDIATE ('CREATE TABLE VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||'_USER as 
+  SELECT  distinct u.USUARIO_ID usuario_id,u.USUARIO_TIPO_ID usuario_tipo_id,u.DOCUMENTO_TIPO documento_tipo, 
+u.NUMERO_DOCUMENTO numero_documento,u.NOMBRE nombre, u.USUARIO_SOL usuario_sol,''a'' avatar,u.EMAIL email, u.TELEFONO telefono,
+u.PRINCIPAL principal, u.EMPRESA_ID empresa_id, u.ENTIDAD_ID entidad_id from VCOBJ.A_'||substr(p_fecha,7,4)||substr(p_fecha,4,2)||'_TMP b,VCOBJ.usuario u
+  WHERE (b.usuario_id = u.usuario_id or b.usu_mod  = u.usuario_id or b.emisor_id  = u.usuario_id  or b.dest_id = u.usuario_id  ) ');
+      
+END Cargar_buzon_final;
+/
