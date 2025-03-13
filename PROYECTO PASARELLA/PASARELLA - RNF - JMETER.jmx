@@ -196,7 +196,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="04) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="04) RNF-006A: API001 - 60 Peticiones x 60 Segundos x 10 Repeticiones" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">10</stringProp>
@@ -224,7 +224,7 @@
   &quot;desFormato&quot;: &quot;Dscripción del formatro Senasa 022&quot;,&#xd;
   &quot;tupa&quot;: &quot;321&quot;,&#xd;
   &quot;montoExacto&quot;: 55.4,&#xd;
-  &quot;fechaVigencia&quot;: &quot;20241212&quot;,&#xd;
+  &quot;fechaVigencia&quot;: &quot;20251212&quot;,&#xd;
   &quot;codDocumento&quot;: &quot;RUC&quot;,&#xd;
   &quot;nroDocumento&quot;: &quot;20600012042&quot;,&#xd;
   &quot;nombreUsuario&quot;: &quot;andres test4&quot;,&#xd;
