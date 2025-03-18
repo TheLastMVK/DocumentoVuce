@@ -1,0 +1,140 @@
+﻿
+CREDENCIALES AMBIENTE CERTIFICACIÓN - ZED MATARANI
+
+
+SUPERADMINISTRADOR
+
+Usuario: superadmin
+Contraseña: superadmin
+
+
+ADMINISTRADOR
+
+Usuario: kllanosr14
+Contraseña: kllanosr14
+
+
+TRABAJADOR
+
+Usuario: leticia
+Contraseña: leticia
+
+
+PERSONAL DE TESORERÍA
+
+Usuario: zeetest6
+Contraseña: zeetest6
+
+
+AFORADOR
+ANDRES CANCHARI FANO 
+Usuario: zeetest7
+Contraseña: zeetest7
+
+
+EVALUADOR
+
+Usuario: evaluadormat
+Contraseña: evaluadormat
+
+
+AUTORIZADOR
+
+Usuario: autorizadormat
+Contraseña: autorizadormat
+
+
+USUARIO ZEE
+
+RUC: 20100010136
+Usuario: MODDATOS
+Contraseña: moddatos
+
+
+
+
+
+CREDENCIALES AMBIENTE CERTIFICACIÓN - ZED PAITA
+
+
+SUPERADMINISTRADOR
+
+Usuario: superadmin
+Contraseña: superadmin
+
+
+ADMINISTRADOR
+
+Usuario: hacosta
+Contraseña: hacosta
+
+
+TRABAJADOR
+
+Usuario: warce
+Contraseña: warce
+
+
+PERSONAL DE TESORERÍA
+
+Usuario: garenas
+Contraseña: garenas
+
+
+AFORADOR - JESSICA ANGELICA AGUILAR MENDOZA 
+
+Usuario: jaguilar
+Contraseña: jaguilar
+
+
+EVALUADOR
+
+Usuario: mleon
+Contraseña: mleon
+
+
+AUTORIZADOR
+
+Usuario: rorihuela
+Contraseña: rorihuela
+
+
+USUARIO ZEE
+
+RUC: 20100010136
+Usuario: MODDATOS
+Contraseña: moddatos
+
+
+
+*******************************************
+
+----USUARIO ZEE
+RUC: 20262996329 
+US:   TESTGEEA
+Clave: TESTCO1a
+
+
+
+---ZED PAITA----
+-Aforador 
+Usuario vuce.mincetur.002
+Clave SUS2024#1087!62
+-Personal de Tesoreria 
+Us vuce.mincetur.003
+Clave SON2024*1033#74
+-Trabajador 
+Us vucezee001
+Clave MEY2024#1099!64
+
+----ZED MATARANI----
+-Aforador 
+Usuario vucezee003
+Clave CAR2024*1026!32
+-Personal de Tesoreria 
+Usuario vucezee004
+Clave LAU2024#1077!118
+-Trabajador 
+Usuario Luis.pachecouigv
+Clave MAR2024!1013*22
+
