@@ -24,8 +24,8 @@
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">800</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">130</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">120</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -143,8 +143,8 @@
         </CSVDataSet>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
-          <stringProp name="CounterConfig.start">243893</stringProp>
-          <stringProp name="CounterConfig.end">244493</stringProp>
+          <stringProp name="CounterConfig.start">290421</stringProp>
+          <stringProp name="CounterConfig.end">291022</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
@@ -519,8 +519,8 @@
         </HeaderManager>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
-          <stringProp name="CounterConfig.start">250462</stringProp>
-          <stringProp name="CounterConfig.end">251062</stringProp>
+          <stringProp name="CounterConfig.start">292082</stringProp>
+          <stringProp name="CounterConfig.end">292683</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
@@ -581,7 +581,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10) RNF-006A: API002 - 1 Peticiones x 60 Segundos x 1 Repeticiones" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10) RNF-006A: API002 - 1 Peticiones x 60 Segundos x 1 Repeticiones" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>
@@ -604,7 +604,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;canales&quot;: [1],&#xd;
-  &quot;fechaProceso&quot;: &quot;20241121&quot;&#xd;
+  &quot;fechaProceso&quot;: &quot;20250422&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1237,8 +1237,8 @@
         </HeaderManager>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
-          <stringProp name="CounterConfig.start">245469</stringProp>
-          <stringProp name="CounterConfig.end">246219</stringProp>
+          <stringProp name="CounterConfig.start">291330</stringProp>
+          <stringProp name="CounterConfig.end">292081</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
@@ -1613,8 +1613,8 @@
         </HeaderManager>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
-          <stringProp name="CounterConfig.start">251400</stringProp>
-          <stringProp name="CounterConfig.end">252150</stringProp>
+          <stringProp name="CounterConfig.start">292685</stringProp>
+          <stringProp name="CounterConfig.end">293436</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
@@ -2235,22 +2235,11 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Obtiene las órdenes de pago que han pasado por el proceso de liquidación" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">   {&#xd;
-        &quot;pageSize&quot;: 100,&#xd;
-        &quot;currentPage&quot;: 0,&#xd;
-        &quot;totalPages&quot;: 0,&#xd;
-        &quot;totalItems&quot;: 0&#xd;
-    }</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/reporte-ordenes-pago?entidadId=38&amp;fechaDesde=20230901&amp;fechaHasta=20240630</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/reporte-ordenes-pago?entidadId=38&amp;fechaDesde=20230901&amp;fechaHasta=20240630&amp;pageSize=5&amp;currentPage=1</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2426,7 +2415,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/archivo-liquidaciones-fecha/?fechaDesde=20241021&amp;fechaHasta=20241121</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/archivo-liquidaciones-fecha/?fechaDesde=20250422&amp;fechaHasta=20250422</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2769,6 +2758,43 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
@@ -2807,43 +2833,6 @@
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Informe Agregado" enabled="true">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
-        <objProp>
-          <name>saveConfig</name>
-          <value class="SampleSaveConfiguration">
-            <time>true</time>
-            <latency>true</latency>
-            <timestamp>true</timestamp>
-            <success>true</success>
-            <label>true</label>
-            <code>true</code>
-            <message>true</message>
-            <threadName>true</threadName>
-            <dataType>true</dataType>
-            <encoding>false</encoding>
-            <assertions>true</assertions>
-            <subresults>true</subresults>
-            <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
-            <fieldNames>true</fieldNames>
-            <responseHeaders>false</responseHeaders>
-            <requestHeaders>false</requestHeaders>
-            <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-            <assertionsResultsToSave>0</assertionsResultsToSave>
-            <bytes>true</bytes>
-            <sentBytes>true</sentBytes>
-            <url>true</url>
-            <threadCounts>true</threadCounts>
-            <idleTime>true</idleTime>
-            <connectTime>true</connectTime>
-          </value>
-        </objProp>
-        <stringProp name="filename"></stringProp>
-      </ResultCollector>
-      <hashTree/>
-      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
