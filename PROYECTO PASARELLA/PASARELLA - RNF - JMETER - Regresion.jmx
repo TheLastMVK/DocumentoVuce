@@ -24,8 +24,8 @@
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">120</stringProp>
+        <stringProp name="ThreadGroup.num_threads">202</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -581,7 +581,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10) RNF-006A: API002 - 1 Peticiones x 60 Segundos x 1 Repeticiones" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10) RNF-006A: API002 - 1 Peticiones x 60 Segundos x 1 Repeticiones" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>
@@ -2145,7 +2145,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;canales&quot;: [1],&#xd;
-  &quot;fechaProceso&quot;: &quot;20241129&quot;&#xd;
+  &quot;fechaProceso&quot;: &quot;20250422&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -2195,7 +2195,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/{liquidacionId}/entidad/{entidadId}/conciliacion</stringProp>
+          <stringProp name="HTTPSampler.path">/v1/vuce-services/pasarela/liquidaciones/1535/entidad/8/conciliacion</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2571,7 +2571,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="47) RNF-013: API001 - 20 Peticiones x 60 Segundos x 10 Repeticiones" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="47) RNF-013: API001 - 20 Peticiones x 60 Segundos x 10 Repeticiones" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">10</stringProp>
@@ -2615,8 +2615,8 @@
         </HeaderManager>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Contador de Orden de Pago" enabled="true">
-          <stringProp name="CounterConfig.start">249448</stringProp>
-          <stringProp name="CounterConfig.end">249648</stringProp>
+          <stringProp name="CounterConfig.start">293666</stringProp>
+          <stringProp name="CounterConfig.end">293867</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ordenPagoId</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
