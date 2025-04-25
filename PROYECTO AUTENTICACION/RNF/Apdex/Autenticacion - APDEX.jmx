@@ -43,7 +43,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -23917,104 +23917,6 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/auth2/realms/autenticacion2/protocol/openid-connect/token-116" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="code" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">code</stringProp>
-                  <stringProp name="Argument.value">2296dac8-a9ca-4670-aab2-82e963de5199.4861783a-52d2-43ec-91cb-66bcf0258699.5281fdba-bb92-447a-b385-d02bd7e047e6</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="grant_type" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">grant_type</stringProp>
-                  <stringProp name="Argument.value">authorization_code</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="client_id" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">client_id</stringProp>
-                  <stringProp name="Argument.value">authentication-ui</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="redirect_uri" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">redirect_uri</stringProp>
-                  <stringProp name="Argument.value">https://landing-test.vuce.gob.pe/autenticacion2/authentication-ui/profile?session_state=4861783a-52d2-43ec-91cb-66bcf0258699&amp;iss=https%3A%2F%2Fauthorize-test.vuce.gob.pe%2Fauth2%2Frealms%2Fautenticacion2&amp;code=1ea9e480-030f-42b0-9e65-0ff8f61371fc.4861783a-52d2-43ec-91cb-66bcf0258699.1ae53c7d-0abc-4263-8769-69f49e035d99</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="code_verifier" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">code_verifier</stringProp>
-                  <stringProp name="Argument.value">o3X1ONkVED1vfjEdL1eSh8JDSUB8p9qpz1NdtrOqbeFWg5bkgXcDw9wsEuoBPDOcRiT7y6v7RCVfCAumCw6EBjiPwZx0nFW1</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">authorize-test.vuce.gob.pe</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.path">/auth2/realms/autenticacion2/protocol/openid-connect/token</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-site</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">*/*</stringProp>
-                </elementProp>
-                <elementProp name="Content-type" elementType="Header">
-                  <stringProp name="Header.name">Content-type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">empty</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-common-api/1.0/keycloak/validate-public-token-121" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -24073,86 +23975,6 @@
                 <elementProp name="Access-Control-Request-Headers" elementType="Header">
                   <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
                   <stringProp name="Header.value">component-header,content-type,profile-header</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">empty</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-common-api/1.0/keycloak/validate-public-token-122" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjU4MTgsImlhdCI6MTc0NTQyNTUxOCwiYXV0aF90aW1lIjoxNzQ1NDI1NTE4LCJqdGkiOiI2YWJhZTY5Zi1lN2UxLTRhM2QtODY4ZS1lZmRiNjM0NTViOGEiLCJpc3MiOiJodHRwczovL2F1dGhvcml6ZS10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGgyL3JlYWxtcy9hdXRlbnRpY2FjaW9uMiIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJmOjU4NjgxMDhmLTJlN2QtNDg0YS1hNmRiLTRlZjIyZmFmMmVhYTpiYWNrdXNAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXV0aGVudGljYXRpb24tdWkiLCJub25jZSI6IjY3MjQ1ZWRiLTU1NmMtNGY2OC04ZTljLTI5YzgxNWUyYjBjMyIsInNlc3Npb25fc3RhdGUiOiI0ODYxNzgzYS01MmQyLTQzZWMtOTFjYi02NmJjZjAyNTg2OTkiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo0MjAxIiwiaHR0cHM6Ly9sYW5kaW5nLXRlc3QudnVjZS5nb2IucGUvYXV0ZW50aWNhY2lvbjIvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjQ4NjE3ODNhLTUyZDItNDNlYy05MWNiLTY2YmNmMDI1ODY5OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZGVzVGlwb0RvY3VtZW50byI6IlJVQyIsImNvZFRpcG9Eb2N1bWVudG8iOiIxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYmFja3VzQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjIwMjYyOTk2MzI5IiwiYXBlTWF0ZXJubyI6IiIsIm5vbWJyZUNvbXBsZXRvIjoiRkFSTUlORFVTVFJJQSBTLkEuIiwiYXBlUGF0ZXJubyI6IiIsImVtYWlsIjoiYmFja3VzQGdtYWlsLmNvbSIsIm5vbWJyZXMiOiIifQ.eX8jEtSdgLo-xxBCQhbijsjvJeLX2x7WoXDj8LGzvph7XhKi_2w3lnb94198edRHsZ-xI70co4nOZ51LhGletAlOLUWuC6Fty6cQ0g3ExIY0hWbVdo7WINN2v60g8Bjj0zuZimIkes5SA6BFgWZ5lqnpmqdG4mnw8x3OHbBCGsGkHo4lbXfyBg7kyMhaBXJCuHg5bXZ3-YQem2hqrHFyeT0C3uHfRlpJtY6lYxjwuRVfbciIjcTwwjx0zNMAyrZVErMiTvlxR6OpDQrhAXJJwYk0QqPoRrgoqpBzyJcn6Ny2WjRBe0ggYyMIV9m_7Nch6d2RhXNuYC7rbenfgWXNzg&quot;}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">gateway-apim-test.vuce.gob.pe</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.path">/pass-through-https-cert/autenticacion2/authentication-common-api/1.0/keycloak/validate-public-token</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-site</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe</stringProp>
-                </elementProp>
-                <elementProp name="Component-Header" elementType="Header">
-                  <stringProp name="Header.name">Component-Header</stringProp>
-                  <stringProp name="Header.value">mercancias-restringidas</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="Profile-Header" elementType="Header">
-                  <stringProp name="Header.name">Profile-Header</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
@@ -24639,95 +24461,6 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/actualizar-ingreso-mr?perfilId=1088-130" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">gateway-apim-test.vuce.gob.pe</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.path">/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/actualizar-ingreso-mr?perfilId=1088</stringProp>
-            <stringProp name="HTTPSampler.method">PUT</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-site</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3</stringProp>
-                </elementProp>
-                <elementProp name="Data-Auditperfil" elementType="Header">
-                  <stringProp name="Header.name">Data-Auditperfil</stringProp>
-                  <stringProp name="Header.value">eyJjdWVudGFWdWNlSWQiOjEwNjYsInBlcmZpbElkIjoxMDg4LCJjb3JyZW8iOiJiYWNrdXNAZ21haWwuY29tIiwiaWRTZXNpb24iOiI2YTRmMjgxZS1hY2UwLTRiNjktYTA5YS03YmYzNjcwNDAwYmYiLCJjb21wb25lbnRlIjoibWVyY2FuY2lhcy1yZXN0cmluZ2lkYXMifQ==</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe</stringProp>
-                </elementProp>
-                <elementProp name="Component-Header" elementType="Header">
-                  <stringProp name="Header.name">Component-Header</stringProp>
-                  <stringProp name="Header.value">mercancias-restringidas</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="Authorization" elementType="Header">
-                  <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjczMTksImlhdCI6MTc0NTQyNTUxOSwianRpIjoiZmZmNzk5ZDYtZDZkNi00MzE1LTgxYTEtZmZkYWZkNjk0NDJjIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.H2xnylSGNJSw3__sT2R0TrK7alWMmvDmitjipEba5tXvxKo3IRJuYvtqTdexaoVxFoNt_gXAQUsfHa3nQnR11LMSfrXQTo3YBh95_iFMYdhjUL6PMcWzjZp3BUGWb4maHPiQ6LGcIb-ovRBcXVbaMw-a5QxWGmp7atYnUaw97JqAGtPgB7S1nC66b3WN7Fi-FGd9sp6oTORY7ibnn5rjxkV4r6DKSMPTT_A-yW-6EgKWlPSpCrPab4ItFfkkm0-SN-SmXj16CPz3gyj3zN5UGnq9cnw1x04zLPGk6P8V74QTF9iQnXif2Lw2xAGXimjRJNsrS-T9XwhZyGpemlWoyQ</stringProp>
-                </elementProp>
-                <elementProp name="Profile-Header" elementType="Header">
-                  <stringProp name="Header.name">Profile-Header</stringProp>
-                  <stringProp name="Header.value">1088</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">empty</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/ficha-ruc-129" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -24792,7 +24525,7 @@
                 </elementProp>
                 <elementProp name="Authorization" elementType="Header">
                   <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjczMTksImlhdCI6MTc0NTQyNTUxOSwianRpIjoiZmZmNzk5ZDYtZDZkNi00MzE1LTgxYTEtZmZkYWZkNjk0NDJjIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.H2xnylSGNJSw3__sT2R0TrK7alWMmvDmitjipEba5tXvxKo3IRJuYvtqTdexaoVxFoNt_gXAQUsfHa3nQnR11LMSfrXQTo3YBh95_iFMYdhjUL6PMcWzjZp3BUGWb4maHPiQ6LGcIb-ovRBcXVbaMw-a5QxWGmp7atYnUaw97JqAGtPgB7S1nC66b3WN7Fi-FGd9sp6oTORY7ibnn5rjxkV4r6DKSMPTT_A-yW-6EgKWlPSpCrPab4ItFfkkm0-SN-SmXj16CPz3gyj3zN5UGnq9cnw1x04zLPGk6P8V74QTF9iQnXif2Lw2xAGXimjRJNsrS-T9XwhZyGpemlWoyQ</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU1MzAyNTMsImlhdCI6MTc0NTUyODQ1MywianRpIjoiMmIxMjFjMjMtMzk0Ny00NGYwLThiZDAtZmNlMmVhZDU3MTgyIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.fdIs8KuY3860IKtil64EtH9Jom4HXNEFuAm7-1KPzZhmgwFazK9a5bi8Bc7LMq_UCSLB0cjkui9Mz1WCiRQG2S0M_Sbf-I1OAiEDFdxaI6PoWAeM2rstPsbH7rp78-iPhbj3ExlgvcY1jR3ktCqBR_Z9iwMfVMVA3wjzNz9NTXXCktjRNNj88KT8FRVR1Ocfz0wdmFuxRUrjC8pdYmamPnf1lmvKZQ0bq9P1TsQ-OxfP5P6SwxXoMyyeC2cOCfFjEI6HQBDB7meiYjVBIAo-ySS7ugdY3-0CCRqV-ZCJYGunxfgBArbqHCL5cU6k9DwD1W8EUBkUOSao3T5ny7o3ZQ</stringProp>
                 </elementProp>
                 <elementProp name="Profile-Header" elementType="Header">
                   <stringProp name="Header.name">Profile-Header</stringProp>
@@ -25998,95 +25731,6 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/actualizar-ingreso-mr?perfilId=1088-136" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">gateway-apim-test.vuce.gob.pe</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.path">/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/actualizar-ingreso-mr?perfilId=1088</stringProp>
-            <stringProp name="HTTPSampler.method">PUT</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-site</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3</stringProp>
-                </elementProp>
-                <elementProp name="Data-Auditperfil" elementType="Header">
-                  <stringProp name="Header.name">Data-Auditperfil</stringProp>
-                  <stringProp name="Header.value">eyJjdWVudGFWdWNlSWQiOjEwNjYsInBlcmZpbElkIjoxMDg4LCJjb3JyZW8iOiJiYWNrdXNAZ21haWwuY29tIiwiaWRTZXNpb24iOiI2YTRmMjgxZS1hY2UwLTRiNjktYTA5YS03YmYzNjcwNDAwYmYiLCJjb21wb25lbnRlIjoibWVyY2FuY2lhcy1yZXN0cmluZ2lkYXMifQ==</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe</stringProp>
-                </elementProp>
-                <elementProp name="Component-Header" elementType="Header">
-                  <stringProp name="Header.name">Component-Header</stringProp>
-                  <stringProp name="Header.value">mercancias-restringidas</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="Authorization" elementType="Header">
-                  <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjczMTksImlhdCI6MTc0NTQyNTUxOSwianRpIjoiZmZmNzk5ZDYtZDZkNi00MzE1LTgxYTEtZmZkYWZkNjk0NDJjIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.H2xnylSGNJSw3__sT2R0TrK7alWMmvDmitjipEba5tXvxKo3IRJuYvtqTdexaoVxFoNt_gXAQUsfHa3nQnR11LMSfrXQTo3YBh95_iFMYdhjUL6PMcWzjZp3BUGWb4maHPiQ6LGcIb-ovRBcXVbaMw-a5QxWGmp7atYnUaw97JqAGtPgB7S1nC66b3WN7Fi-FGd9sp6oTORY7ibnn5rjxkV4r6DKSMPTT_A-yW-6EgKWlPSpCrPab4ItFfkkm0-SN-SmXj16CPz3gyj3zN5UGnq9cnw1x04zLPGk6P8V74QTF9iQnXif2Lw2xAGXimjRJNsrS-T9XwhZyGpemlWoyQ</stringProp>
-                </elementProp>
-                <elementProp name="Profile-Header" elementType="Header">
-                  <stringProp name="Header.name">Profile-Header</stringProp>
-                  <stringProp name="Header.value">1088</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">empty</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/pass-through-https-cert/autenticacion2/authentication-profile-api/1.0/perfil/auditPerfil-139" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -26144,7 +25788,7 @@
                 </elementProp>
                 <elementProp name="Authorization" elementType="Header">
                   <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjczMTksImlhdCI6MTc0NTQyNTUxOSwianRpIjoiZmZmNzk5ZDYtZDZkNi00MzE1LTgxYTEtZmZkYWZkNjk0NDJjIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.H2xnylSGNJSw3__sT2R0TrK7alWMmvDmitjipEba5tXvxKo3IRJuYvtqTdexaoVxFoNt_gXAQUsfHa3nQnR11LMSfrXQTo3YBh95_iFMYdhjUL6PMcWzjZp3BUGWb4maHPiQ6LGcIb-ovRBcXVbaMw-a5QxWGmp7atYnUaw97JqAGtPgB7S1nC66b3WN7Fi-FGd9sp6oTORY7ibnn5rjxkV4r6DKSMPTT_A-yW-6EgKWlPSpCrPab4ItFfkkm0-SN-SmXj16CPz3gyj3zN5UGnq9cnw1x04zLPGk6P8V74QTF9iQnXif2Lw2xAGXimjRJNsrS-T9XwhZyGpemlWoyQ</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU1MzAyNTMsImlhdCI6MTc0NTUyODQ1MywianRpIjoiMmIxMjFjMjMtMzk0Ny00NGYwLThiZDAtZmNlMmVhZDU3MTgyIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.fdIs8KuY3860IKtil64EtH9Jom4HXNEFuAm7-1KPzZhmgwFazK9a5bi8Bc7LMq_UCSLB0cjkui9Mz1WCiRQG2S0M_Sbf-I1OAiEDFdxaI6PoWAeM2rstPsbH7rp78-iPhbj3ExlgvcY1jR3ktCqBR_Z9iwMfVMVA3wjzNz9NTXXCktjRNNj88KT8FRVR1Ocfz0wdmFuxRUrjC8pdYmamPnf1lmvKZQ0bq9P1TsQ-OxfP5P6SwxXoMyyeC2cOCfFjEI6HQBDB7meiYjVBIAo-ySS7ugdY3-0CCRqV-ZCJYGunxfgBArbqHCL5cU6k9DwD1W8EUBkUOSao3T5ny7o3ZQ</stringProp>
                 </elementProp>
                 <elementProp name="Profile-Header" elementType="Header">
                   <stringProp name="Header.name">Profile-Header</stringProp>
@@ -26231,7 +25875,7 @@
                 </elementProp>
                 <elementProp name="Authorization" elementType="Header">
                   <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU0MjczMTksImlhdCI6MTc0NTQyNTUxOSwianRpIjoiZmZmNzk5ZDYtZDZkNi00MzE1LTgxYTEtZmZkYWZkNjk0NDJjIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNmE0ZjI4MWUtYWNlMC00YjY5LWEwOWEtN2JmMzY3MDQwMGJmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.H2xnylSGNJSw3__sT2R0TrK7alWMmvDmitjipEba5tXvxKo3IRJuYvtqTdexaoVxFoNt_gXAQUsfHa3nQnR11LMSfrXQTo3YBh95_iFMYdhjUL6PMcWzjZp3BUGWb4maHPiQ6LGcIb-ovRBcXVbaMw-a5QxWGmp7atYnUaw97JqAGtPgB7S1nC66b3WN7Fi-FGd9sp6oTORY7ibnn5rjxkV4r6DKSMPTT_A-yW-6EgKWlPSpCrPab4ItFfkkm0-SN-SmXj16CPz3gyj3zN5UGnq9cnw1x04zLPGk6P8V74QTF9iQnXif2Lw2xAGXimjRJNsrS-T9XwhZyGpemlWoyQ</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NDU1MzAyNTMsImlhdCI6MTc0NTUyODQ1MywianRpIjoiMmIxMjFjMjMtMzk0Ny00NGYwLThiZDAtZmNlMmVhZDU3MTgyIiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6YmFja3VzQGdtYWlsLmNvbSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxhbmRpbmctYXV0aDIiLCJzZXNzaW9uX3N0YXRlIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS9hdXRlbnRpY2FjaW9uMi8qIiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwLyoiLCJodHRwczovL2xhbmRpbmctdGVzdC52dWNlLmdvYi5wZS8qIiwiKiIsImh0dHBzOi8vbG9jYWxob3N0OjQyMDAvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZGVmYXVsdCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNTVhNjc0M2QtYTA4Ny00ZDY0LThlMGEtYWNkMjAwNmU0MWRmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJkZXNUaXBvRG9jdW1lbnRvIjoiUlVDIiwiY29kVGlwb0RvY3VtZW50byI6IjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJiYWNrdXNAZ21haWwuY29tIiwibnVtZXJvRG9jdW1lbnRvIjoiMjAyNjI5OTYzMjkiLCJhcGVNYXRlcm5vIjoiIiwibm9tYnJlQ29tcGxldG8iOiJGQVJNSU5EVVNUUklBIFMuQS4iLCJhcGVQYXRlcm5vIjoiIiwiZW1haWwiOiJiYWNrdXNAZ21haWwuY29tIiwibm9tYnJlcyI6IiJ9.fdIs8KuY3860IKtil64EtH9Jom4HXNEFuAm7-1KPzZhmgwFazK9a5bi8Bc7LMq_UCSLB0cjkui9Mz1WCiRQG2S0M_Sbf-I1OAiEDFdxaI6PoWAeM2rstPsbH7rp78-iPhbj3ExlgvcY1jR3ktCqBR_Z9iwMfVMVA3wjzNz9NTXXCktjRNNj88KT8FRVR1Ocfz0wdmFuxRUrjC8pdYmamPnf1lmvKZQ0bq9P1TsQ-OxfP5P6SwxXoMyyeC2cOCfFjEI6HQBDB7meiYjVBIAo-ySS7ugdY3-0CCRqV-ZCJYGunxfgBArbqHCL5cU6k9DwD1W8EUBkUOSao3T5ny7o3ZQ</stringProp>
                 </elementProp>
                 <elementProp name="Profile-Header" elementType="Header">
                   <stringProp name="Header.name">Profile-Header</stringProp>
@@ -26460,109 +26104,6 @@
                 <elementProp name="Sec-Fetch-Dest" elementType="Header">
                   <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
                   <stringProp name="Header.value">document</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test/auth2/realms/autenticacion2/protocol/openid-connect/token-169" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="code" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">code</stringProp>
-                  <stringProp name="Argument.value">4da9f453-746e-4ccc-a125-16c4976f5e1e.4861783a-52d2-43ec-91cb-66bcf0258699.97d96d61-78fd-431c-86a2-2f3ec4253861</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="grant_type" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">grant_type</stringProp>
-                  <stringProp name="Argument.value">authorization_code</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="client_id" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">client_id</stringProp>
-                  <stringProp name="Argument.value">mr-ui</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="redirect_uri" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">redirect_uri</stringProp>
-                  <stringProp name="Argument.value">https://landing-test.vuce.gob.pe/mr2/mr2-ui/</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="code_verifier" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">code_verifier</stringProp>
-                  <stringProp name="Argument.value">cEChNCGGdGEEYVFK5cJhXG590OXHCEPka9Q4OfFlHrP4uY1cicp9871spcDiNSTZ7l60EP6TcDvRwO34S3NMksTuJTkb82aa</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">authorize-test.vuce.gob.pe</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.path">/auth2/realms/autenticacion2/protocol/openid-connect/token</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">cors</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-site</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://landing-test.vuce.gob.pe</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">*/*</stringProp>
-                </elementProp>
-                <elementProp name="Content-type" elementType="Header">
-                  <stringProp name="Header.name">Content-type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">empty</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
