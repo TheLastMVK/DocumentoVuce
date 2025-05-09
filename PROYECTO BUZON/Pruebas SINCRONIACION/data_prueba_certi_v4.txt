@@ -1,0 +1,136 @@
+==============================================================================*/  INSERTAR DATA CON RANGO DE FECHAS
+DECLARE
+    v_fecha_min date := TO_DATE('05/04/2019','DD/MM/YYYY');
+    v_fecha_max date := TO_DATE('20/04/2019','DD/MM/YYYY');
+    v_user_prueba number := 441740;
+    vCodResultado number:=0;
+    vMsgResultado varchar2(2000):='';   
+BEGIN
+    execute immediate('truncate table VCOBJ.SYNCR_CONTROL');
+    
+    INSERT INTO VCOBJ.SYNCR_CONTROL (
+          id_control, nombre_tabla,operacion, campos_control, id_registro, datos_anteriores, datos_nuevos, estado, usuario
+    )
+    select
+         VCOBJ.SYNCR_CONTROL_SEQ.NEXTVAL,     -- Usamos la variable para el ID generado
+        'MENSAJE',                            -- Nombre de la tabla
+        'INSERT',                             -- Tipo de operación
+        'fecha_registro, estado_registro',    -- Campos involucrados
+        l.mensaje_id,
+        NULL,                                 -- Datos anteriores (NULL para INSERT)
+        l.Fecha_Registro || ', ' || l.Estado_Registro,  -- Concatenamos los nuevos datos
+        'C',                                  -- Estado: 'C' de CREADO
+         v_user_prueba                           -- Usuario que realizó la operación (puedes ajustarlo)
+    from (   
+    select distinct t.mensaje_id , t.Fecha_Registro ,t.Estado_Registro                      -- Usuario que realizó la operación (puedes ajustarlo)
+    from VCOBJ.MENSAJE t, VCOBJ.adjunto a,VCOBJ.DESTINATARIO d 
+    where t.mensaje_id =a.mensaje_id and d.mensaje_id = t.mensaje_id 
+    and t.Fecha_Registro >= v_fecha_min  and t.Fecha_Registro < v_fecha_max ) l; 
+    
+    INSERT INTO VCOBJ.SYNCR_control ( 
+          id_control,
+        nombre_tabla,
+        operacion,
+        campos_control,
+        id_registro,
+        datos_anteriores,
+        datos_nuevos,
+        estado,
+        usuario
+    )
+    select 
+        VCOBJ.SYNCR_control_seq.NEXTVAL,                         -- Usamos la variable para el ID generado
+        'ADJUNTO',                           -- Nombre de la tabla
+        'INSERT',                             -- Tipo de operación
+        'guid, adjunto_tipo,nombre_archivo, fecha_reg_aud, estado',    -- Campos involucrados
+        a.adjunto_id,
+        NULL,                                 -- Datos anteriores (NULL para INSERT)
+        a.guid || ', '|| a.adjunto_tipo || ', '|| a.nombre_archivo || ', '  || TO_CHAR(a.FECHA_REG_AUD,'YYYYMMDD')|| ', '  ||  a.estado,  -- Concatenamos los nuevos datos
+        'C',                                  -- Estado: 'C' de CREADO
+        v_user_prueba                            -- Usuario que realizó la operación (puedes ajustarlo)
+    from VCOBJ.MENSAJE t, VCOBJ.adjunto a,VCOBJ.DESTINATARIO d 
+    where t.mensaje_id =a.mensaje_id and d.mensaje_id = t.mensaje_id
+    and t.Fecha_Registro >= v_fecha_min  and t.Fecha_Registro < v_fecha_max;
+     
+    INSERT INTO VCOBJ.SYNCR_control (
+        id_control,
+        nombre_tabla,
+        operacion,
+        campos_control,
+        id_registro,
+        datos_anteriores,
+        datos_nuevos,
+        estado,
+        usuario
+    )
+    select 
+        VCOBJ.SYNCR_control_seq.NEXTVAL,
+        'ADJUNTOREL',                           -- Nombre de la tabla
+        'UPDATE',                                 -- Tipo de operación
+        'mensaje_id',                                  -- Campo involucrado
+        a.adjunto_id,                          -- ID del registro actualizado (valor OLD)
+        null ,  -- Datos anteriores (valores OLD)
+        a.mensaje_id,  -- Datos nuevos (valores NEW)
+        'C',                                      -- Estado: 'C' para CREADO
+       v_user_prueba                                -- Usuario que realizó la operación (puedes ajustarlo)
+    from VCOBJ.MENSAJE t, VCOBJ.adjunto a,VCOBJ.DESTINATARIO d 
+    where t.mensaje_id =a.mensaje_id and d.mensaje_id = t.mensaje_id
+    and t.Fecha_Registro >= v_fecha_min  and t.Fecha_Registro < v_fecha_max  ;
+     
+     
+    INSERT INTO VCOBJ.SYNCR_CONTROL (
+          id_control, nombre_tabla,operacion, campos_control, id_registro, datos_anteriores, datos_nuevos, estado, usuario
+    )
+    select
+         VCOBJ.SYNCR_CONTROL_SEQ.NEXTVAL,                         -- Usamos la variable para el ID generado
+        'LEIDO',                           -- Nombre de la tabla
+        'UPDATE',                             -- Tipo de operación
+        'leido, fecha_mod_aud, usuid_mod_aud',    -- Campos involucrados
+        l.mensaje_id,
+        NULL,                                 -- Datos anteriores (NULL para INSERT)
+        l.leido || ', ' ||l.fecha_mod_aud || ', ' || l.usuid_mod_aud,  -- Concatenamos los nuevos datos
+        'C'  ,                                -- Estado: 'C' de CREADO
+        v_user_prueba 
+    from (   
+    select distinct d.mensaje_id , d.leido,  d.fecha_mod_aud, d.usuid_mod_aud                      -- Usuario que realizó la operación (puedes ajustarlo)
+    from VCOBJ.MENSAJE t, VCOBJ.adjunto a,VCOBJ.DESTINATARIO d 
+    where t.mensaje_id =a.mensaje_id and d.mensaje_id = t.mensaje_id 
+    and t.Fecha_Registro >= v_fecha_min  and t.Fecha_Registro < v_fecha_max ) l;  
+    commit;
+EXCEPTION
+    WHEN OTHERS THEN
+           vCodResultado:= SQLCODE;
+           vMsgResultado:= SUBSTR(SQLERRM, 1, 2000);
+      ROLLBACK;
+      DBMS_OUTPUT.PUT_LINE('PROCESO: ' || 'error_data');
+      DBMS_OUTPUT.PUT_LINE('SQLCODE: ' || vCodResultado);
+      DBMS_OUTPUT.PUT_LINE('SQLERRM: ' || vMsgResultado);
+
+End;
+
+
+
+
+-------------------------------VERIFICAR EN TABLA DE CONTROL
+
+SELECT * FROM SYNCR_CONTROL sc;
+
+-------------------------------VERIFICAR DE DATA CON ADJUNTOS
+
+
+SELECT *
+FROM ADJUNTO a 
+WHERE DBMS_LOB.getlength(a.ARCHIVO) > 0 AND a.mensaje_id IS NOT null
+and a.FECHA_REG_AUD >= TO_DATE('05/04/2019','DD/MM/YYYY') and a.FECHA_REG_AUD < TO_DATE('20/04/2019','DD/MM/YYYY')  ;
+
+-----------------------------VERIFICAR DE DATA CON ADJUNTOS MAS DE UN ADJUNTO CON MENSAJE ASOCIADO
+
+SELECT a.mensaje_id,count(1)
+FROM ADJUNTO a 
+WHERE DBMS_LOB.getlength(a.ARCHIVO) > 0 AND a.mensaje_id IS NOT NULL
+GROUP BY a.mensaje_id ORDER BY 2 desc
+
+
+
+SELECT * FROM vcobj.adjunto WHERE mensaje_id = '7377215';
+

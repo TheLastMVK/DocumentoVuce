@@ -1,7 +1,0 @@
-db.envio.find({
-  "auditoria.usuarioregid": 437007, // Aquí reemplaza con el valor deseado
-  "fechaemision": {
-    $gte: new ISODate("2024-01-01T00:00:00Z"),
-    $lt: new ISODate("2025-01-01T00:00:00Z")
-  }
-})
