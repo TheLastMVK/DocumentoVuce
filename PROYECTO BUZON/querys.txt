@@ -1,0 +1,48 @@
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_HORARIO t
+
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_PROGRAMACION t
+
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_PASOS t
+
+select t.*, t.rowid from VCOBJ.SYNCR_CONTROL t where id_registro = 11718944
+
+select t.*, t.rowid from VCOBJ.MENSAJE t order by 1 desc
+
+select t.*, t.rowid from VCOBJ.SYNCR_CONTROL_HISTORICO t
+
+------
+
+
+select nombre_tabla,estado,count(*) from VCOBJ.SYNCR_CONTROL t group by nombre_tabla,estado
+
+
+
+
+
+
+
+
+
+
+db.envio.find({
+    "auditoria.Fechareg":{
+        $gte: ISODate("2025-05-21T19:28:00.000Z"),
+        $lte: ISODate("2025-05-22T19:30:00.000Z"),
+    },
+   
+})
+
+db.envio.find({"code_mensaje":11718944 })
+
+
+
+
+
+
+db.envio.find({"origen_envio" :"S"})
+   .projection({})
+   .sort({})
+   .limit(0)
+   
+db.envio.deleteMany({"origen_envio" :"S"})
+   
