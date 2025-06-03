@@ -1,0 +1,19 @@
+luqueti@gmail.com
+Vuce0424.
+ID: 394113 - Rol: BUZON.ENTIDAD
+perfil_id = 2722
+ 
+palominohay@gmail.com
+Vuce0424.
+ID: 376642 - Rol: BUZON.ENTIDAD
+perfil_id = 2720
+ 
+bendezu@gmail.com
+Vuce0424.
+ID: 74913 - Rol: BUZON.SUPERVISOR.ENTIDAD
+perfil_id = 2718
+ 
+ascona@gmail.com
+Vuce0424.
+ID: 71233 - Rol: BUZON.SUPERVISOR.ENTIDAD
+perfil_id = 2715
