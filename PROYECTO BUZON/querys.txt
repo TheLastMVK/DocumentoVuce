@@ -16,8 +16,8 @@ select t.*, t.rowid from VCOBJ.SYNCR_CONTROL_HISTORICO t
 select nombre_tabla,estado,count(*) from VCOBJ.SYNCR_CONTROL t group by nombre_tabla,estado
 
 
-
-
+SELECT * FROM VCOBJ.SYNCR_LOGERROR sl                       ORDER BY sl.CREATEDATE DESC
+SELECT * FROM VCOBJ.SYNCR_LOGERROR sl WHERE sl.VALOR_02 > 0 ORDER BY sl.CREATEDATE DESC
 
 
 
