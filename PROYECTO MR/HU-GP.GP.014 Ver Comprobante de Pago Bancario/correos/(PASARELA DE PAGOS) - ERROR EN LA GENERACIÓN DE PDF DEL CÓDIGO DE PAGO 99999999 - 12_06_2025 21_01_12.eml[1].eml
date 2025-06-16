@@ -1,0 +1,87 @@
+Delivered-To: nuevoscriadores@gmail.com
+Received: by 2002:a05:7300:e10f:b0:175:51a3:2893 with SMTP id hd15csp1501019dyb;
+        Sun, 15 Jun 2025 07:57:39 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFV4CuVfGSv4uXCAg13DIhcLze7g71DY1HzYHZZzAMb6YNRcxxlm9f/8IXZiz+9eTzIlQYJ
+X-Received: by 2002:a05:6102:2821:b0:4e1:ec70:536 with SMTP id ada2fe7eead31-4e7f2b35996mr3785102137.4.1749999361223;
+        Sun, 15 Jun 2025 07:56:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1749999361; cv=none;
+        d=google.com; s=arc-20240605;
+        b=VXY2s6Q0r0/7W8zBWZpQAM/hldJ16Cls1kiQGICthu++pB5mcrf1x0NbOOHMvN2dWh
+         +MkfigViQzRED1tMTfXWR0fxEIq8olCMXmlBwINx9oJaewhBFXCZrDwZpOgLn1ZpAERq
+         oo9ZM9CaHhptHgflC6E6rSKOSet8fso9I3ubukpZ5/VzI2XeYScR1/r4ideCQtMv5jqh
+         McKV0nnXX1epiXtjP0HmBSldNb507VOr8ZfLgMvjKvLcPax6TpAWWjC2VaDkPGR1Zblr
+         7Mc3zKXJnMlKCaoaDH17r2DWVq//qzmsdLUP1eKGDA1yqwXKtNMPS6vmlLF9aM1Xblh8
+         nKPA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:date:subject:to:from:message-id:dkim-signature;
+        bh=Wh3WYRQ/s4WtUhuqPQQiLLAi67+KTK6vD5ocPEQWyII=;
+        fh=6r6RDrObtS3NkmcS0GpBz8JQh2HRIZXeEwzOWhD0wYg=;
+        b=VSkP1ocd3EsAwZrcjt/8AudQ6uvMAAy46v5VtCrg66ITNB8dgYC3dcwSe+6diwiIJd
+         6KMV6VYuO6JbC/L5Qoc8TlJZonGGOkwnLkNJTpm+gd6OEdc/goaBjhKPQGPOfeV4ULm1
+         KjQv2QPx95c3qrNKtVs05n1FVMJ75Mj6VrPwRmBMEeN+a3W64hM/ueCzvs83Qxeh1MXd
+         E5SFjRRvOmG5EFKEMf/xXsC0e5RmVd4QOP+DVYg5RFxNBnbmDY18h7JeWWI0ugOXocBe
+         s61slrwLDJYulPXD7Ad+TzYbE4aOu3uCVMwXpRA4IlZ6lc9I13thstnteaaQ5F364Cu5
+         lH6Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mincetur.gob.pe header.s=masterbase header.b=oLqU9eHr;
+       spf=pass (google.com: domain of um_minceturcompe.3.cc2fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe designates 108.175.97.101 as permitted sender) smtp.mailfrom=UM_MINCETURCOMPE.3.CC2Fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mincetur.gob.pe
+Return-Path: <UM_MINCETURCOMPE.3.CC2Fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe>
+Received: from mail97-101.masterbase.com (mail97-101.masterbase.com. [108.175.97.101])
+        by mx.google.com with ESMTPS id a1e0cc1a2514c-87f227ee293si515850241.31.2025.06.15.07.56.01
+        for <nuevoscriadores@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 15 Jun 2025 07:56:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of um_minceturcompe.3.cc2fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe designates 108.175.97.101 as permitted sender) client-ip=108.175.97.101;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mincetur.gob.pe header.s=masterbase header.b=oLqU9eHr;
+       spf=pass (google.com: domain of um_minceturcompe.3.cc2fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe designates 108.175.97.101 as permitted sender) smtp.mailfrom=UM_MINCETURCOMPE.3.CC2Fc8d4781049f811f0840429682a6f8d0001.0@masterbase.mincetur.gob.pe;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mincetur.gob.pe
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+  s=masterbase;d=mincetur.gob.pe;
+  h=message-id:from:to:subject:date:mime-version:content-type;
+  bh=/6WYsjhwPtFKVrNWIkb0fM2Xtyw=;
+  b=oLqU9eHrdCKCXxgsVFvK7hv31gcqAMKkdO/ZvzIPUgv6Nleeaa/CqlI15ahtWw8EAvLlyBpC2/WDMVFBjoNABMlU83ft2nzb4gNMXeQc4oJpaa5i+N64I/hyv7WjKHK2Cgme8IlWF61Njd1ZhUKkJz84KwRSReplIh7XA9A8/AA=
+Message-ID: <a5e68805-f6b6-d5c1-d05a-a0891ba60221@mincetur.gob.pe>
+From: "Soporte Vuce" <vucemonitor@mincetur.gob.pe>
+To: <nuevoscriadores@gmail.com>
+Subject: =?utf-8?B?KFBBU0FSRUxBIERFIFBBR09TKSAtIEVSUk9SIEVOIExBIEdF?=
+	=?utf-8?B?TkVSQUNJw5NOIERFIFBERiBERUwgQ8OTRElHTyBERSBQQUdP?=
+	=?utf-8?B?IDk5OTk5OTk5IC0gMTIvMDYvMjAyNSAyMTowMToxMg==?=
+Date: Sun, 15 Jun 2025 14:55:31 +0000
+Content-Type: multipart/alternative;
+	boundary="c6ae09dfca6d0493e534663800069b20"
+MIME-Version: 1.0
+
+--c6ae09dfca6d0493e534663800069b20
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Estimado MONITOR VUCE:El Componente Mercanc=C3=ADas Restringidas comunica =
+que ha ocurrido un error  al interoperar con la Pasarela de Pagos para =
+generar el archivo pdf del c=C3=B3digo de pago 99999999 en la fecha =
+12/06/2025 21:01:12. El error encontrado es 404 : =
+"{"type":"ERROR","alias":"No se encontr=C3=B3 datos","description":"No se =
+encontr=C3=B3 la Orden de Pago enviada."}"=2E
+
+--c6ae09dfca6d0493e534663800069b20
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">Es=
+timado MONITOR VUCE:<br>El Componente Mercanc=C3=ADas Restringidas comunica=
+ que ha ocurrido un error  al interoperar con la Pasarela de Pagos para gen=
+erar el archivo pdf del c=C3=B3digo de pago 99999999 en la fecha 12/06/2025=
+ 21:01:12. El error encontrado es 404 : &quot;{&quot;type&quot;:&quot;ERROR=
+&quot;,&quot;alias&quot;:&quot;No se encontr=C3=B3 datos&quot;,&quot;descri=
+ption&quot;:&quot;No se encontr=C3=B3 la Orden de Pago enviada.&quot;}&quot=
+;<br>.<img src=3D"https://C8752.tv3.masterbase.com/MB/022589036A9142CBAA723=
+572B6CF7F64AA08170A7E4DC9504437AEEE92962A051BB2178BB9CAD2A788C551F4C7385938=
+D695BE7FE719745165FD2698BAA90D3107F295802638AFA9E6B1CDAFD359094F3F7644A22A2=
+7A14AD99932D7A7055C7F16B2F64EB7B51CF9C71B5782EF46B53BCD1221DA8AAC1A1A/blank=
+.png" border=3D"0" height=3D"1" width=3D"1">
+
+--c6ae09dfca6d0493e534663800069b20--
