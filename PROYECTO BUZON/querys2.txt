@@ -1,0 +1,103 @@
+///////////////////////////////////////////////////ORACLE////////////////////////////////
+
+
+
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_HORARIO t
+
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_PROGRAMACION t
+
+select t.*, t.rowid from VCOBJ.SYNCR_TAREA_PASOS t
+
+select nombre_tabla,estado,count(*) from VCOBJ.SYNCR_CONTROL t group by nombre_tabla,estado;
+
+
+select t.*, t.rowid from VCOBJ.MENSAJE t order by 1 desc
+
+
+select nombre_tabla,estado,count(*) from VCOBJ.SYNCR_CONTROL_HISTORICO t group by nombre_tabla,estado;
+
+------
+SELECT * FROM VCOBJ.SYNCR_LOGERROR sl ORDER BY sl.CREATEDATE DESC;
+
+
+	
+
+
+
+
+
+
+//////////////////////////////////////////////////MONGO DB////////////////////////////////////////
+
+
+
+/*Buscar todos los mensajes en un rango de fecha determinado*/
+
+db.envio.find({
+    "auditoria.Fechareg":{
+        $gte: ISODate("2025-05-21T19:28:00.000Z"),
+        $lte: ISODate("2025-05-22T19:30:00.000Z"),
+    },
+   
+})
+
+
+
+/*Buscar mensaje con codigo mensaje específico*/
+db.envio.find({"code_mensaje":11718944 })
+
+
+/*Seleccionar todos los mensajes en estado S*/
+db.envio.find({
+  code_mensaje: {
+    $in: db.envio.distinct("code_mensaje", { origen_envio: "S" })
+  }
+});
+
+/*Borrar todos los mensajes en estado S*/
+
+db.envio.deleteMany({
+  code_mensaje: {
+    $in: db.envio.distinct("code_mensaje", { origen_envio: "S" })
+  }
+});
+
+
+/*  Para contar la sumatoria de todos los adjuntos de todos los mensajes en estado S*/
+
+db.envio.aggregate([
+  {
+    $match: {
+      code_mensaje: {
+        $in: db.envio.distinct("code_mensaje", { origen_envio: "S" })
+      },
+      adjuntos: {
+        $exists: true,
+        $ne: null,
+        $not: { $size: 0 }
+      }
+    }
+  },
+  {
+    $project: {
+      cantidad_adjuntos: { $size: "$adjuntos" }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      total_adjuntos: { $sum: "$cantidad_adjuntos" }
+    }
+  }
+]);   
+
+
+
+/*  Para contar todos los leidos en estado True, de todos los mensajes en estado S*/
+
+db.envio.find({
+  code_mensaje: {
+    $in: db.envio.distinct("code_mensaje", { origen_envio: "S" })
+  },
+  "leido.indicador": true
+});
