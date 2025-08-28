@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="RECORD 07-15-25 5.48.26 PM" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.${project.version}. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Dest" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+            <stringProp name="Header.value">empty</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Site" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+            <stringProp name="Header.value">same-site</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Mode" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+            <stringProp name="Header.value">cors</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">gateway-apim-test.vuce.gob.pe</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <longProp name="ThreadGroup.duration">0</longProp>
+        <longProp name="ThreadGroup.delay">0</longProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testname="Test" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">pais</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=puerto" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">puerto</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[2]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[3]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoTrafico" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoTrafico</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[4]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=armador" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">armador</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[5]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=naviera" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">naviera</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[6]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=materialCasco" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">materialCasco</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[7]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">pais</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[8]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=puerto" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">puerto</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[9]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=armador" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">armador</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[10]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=naviera" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">naviera</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[11]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[12]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoTrafico" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoTrafico</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[13]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=materialCasco" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">materialCasco</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[14]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[15]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[16]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[17]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[18]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=mmsi&amp;value=999612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">mmsi</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">999612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[19]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=mmsi&amp;value=999612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">mmsi</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">999612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[20]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=callSign&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">callSign</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[21]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=callSign&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">callSign</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[22]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=inmarsat&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">inmarsat</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[23]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=inmarsat&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">inmarsat</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[24]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[25]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[26]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[27]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[28]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[29]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[30]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">imo</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[31]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&amp;value=9612911" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">field</stringProp>
+                  <stringProp name="Argument.value">matricula</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="value" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">value</stringProp>
+                  <stringProp name="Argument.value">9612911</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[32]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">POST</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,content-type,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[33]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;imo&quot;:&quot;9612911&quot;,&quot;matricula&quot;:&quot;9612911&quot;,&quot;documentInstance&quot;:null,&quot;document&quot;:null,&quot;fichaTecnicaDet&quot;:{&quot;versionFt&quot;:1,&quot;estadoVersionFt&quot;:1,&quot;estadoFictecId&quot;:1,&quot;materialCascoId&quot;:6,&quot;paisId&quot;:515,&quot;tipoNaveId&quot;:13,&quot;tipoTraficoId&quot;:1,&quot;armadorId&quot;:7,&quot;navieraId&quot;:4,&quot;puertoMatriculaId&quot;:null,&quot;fechaMatricula&quot;:null,&quot;nombreNave&quot;:&quot;9612911&quot;,&quot;callSign&quot;:&quot;9612911&quot;,&quot;inmarsat&quot;:&quot;9612911&quot;,&quot;mmsi&quot;:&quot;999612911&quot;,&quot;sociedadClasificadora&quot;:&quot;LG&quot;,&quot;dicapi&quot;:&quot;--&quot;,&quot;constructorInfoNave&quot;:&quot;TEST&quot;,&quot;anoConstructor&quot;:&quot;2023&quot;,&quot;tonelajePesoMuerto&quot;:&quot;250&quot;,&quot;velocidad&quot;:&quot;10&quot;,&quot;eslora&quot;:&quot;34&quot;,&quot;manga&quot;:&quot;33&quot;,&quot;puntal&quot;:&quot;32&quot;,&quot;arqueoNeto&quot;:&quot;33&quot;,&quot;arqueoBruto&quot;:&quot;55&quot;,&quot;caladoMinimo&quot;:&quot;66&quot;,&quot;caladoMaximo&quot;:&quot;89&quot;,&quot;dobleCaso&quot;:null,&quot;fichaTecnicaDocumentos&quot;:[],&quot;document&quot;:null,&quot;documentInstance&quot;:null,&quot;fichaTecnicaSeguimiento&quot;:{&quot;comentario&quot;:&quot;&quot;,&quot;rucUsuario&quot;:20100010136,&quot;tipoSeguimientoId&quot;:1,&quot;rol&quot;:&quot;ADM&quot;,&quot;razonSocialUsuario&quot;:&quot;COSMOS AGENCIA MARITIMA SAC&quot;,&quot;operation&quot;:&quot;r&quot;,&quot;usunameRegAud&quot;:&quot;101 | Rosa Odar Prueba&quot;,&quot;usunameModAud&quot;:&quot;101 | Rosa Odar Prueba&quot;}}}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[34]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica?numberpage=1&amp;sizepage=25&amp;perfil=A" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="numberpage" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">numberpage</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sizepage" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">sizepage</stringProp>
+                  <stringProp name="Argument.value">25</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="perfil" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">perfil</stringProp>
+                  <stringProp name="Argument.value">A</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[35]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoFicTec" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">estadoFicTec</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[36]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">pais</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Method" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                  <stringProp name="Header.value">GET</stringProp>
+                </elementProp>
+                <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                  <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                  <stringProp name="Header.value">authorization,idperfil,ruc,user</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[37]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica?numberpage=1&amp;sizepage=25&amp;perfil=A" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="numberpage" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">numberpage</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="sizepage" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">sizepage</stringProp>
+                  <stringProp name="Argument.value">25</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="perfil" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">perfil</stringProp>
+                  <stringProp name="Argument.value">A</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[38]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">pais</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[39]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoFicTec" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">estadoFicTec</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <intProp name="HTTPSampler.port">0</intProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="idPerfil" elementType="Header">
+                  <stringProp name="Header.name">idPerfil</stringProp>
+                  <stringProp name="Header.value">101</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-platform" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTYzMDY5OTYsImlhdCI6MTc1NjMwNTE5NiwianRpIjoiOTQwYmY5M2UtZDQ1Ni00ZjhjLTg0MWQtZTEyMzQ2NWE5NTU4IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDJAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiIyYTkwZmUzOS02OGYzLTQ3OGMtOGIzOC0yNTM4NzljYWJkMGIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJETkkiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMiIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTAyQGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjcwODIwMzgzIiwiYXBlTWF0ZXJubyI6IlBydWViYSIsIm5vbWJyZUNvbXBsZXRvIjoiUm9zYSBPZGFyIFBydWViYSIsImFwZVBhdGVybm8iOiJPZGFyIiwiZW1haWwiOiJjcC1jZXJ0aS0wMkBnbWFpbC5jb20iLCJub21icmVzIjoiUm9zYSJ9.Uv768lXbGgTdFaDGkY8rH4Mk7v-QP5CDLu0qCn8FDlYYIifkrtnsvMXF4RSlX1ciNN9YFAqnkmMFuu91tx6sCP5mEkBx1UE5nXVvrvAIge4az-soGjXpTacyu1JMVIz66KZhzH1fHPfwVOpzIYpJuX18Gq84VJs_irtBji7q83r_fe1nUX2kdSU9EgpkMiypMsJFIGXbM9xTg4ZVsqnpzqZsdPdo0gEMK_zEUhOhZ6Bh8izB6qbRCHlPQs4HS0slAXtgcdzBJU_RLIzMvZmkbEfwGfrBPTE-8YGgISNOWz36FPzsjyyVdfnSltUFkDn2ETteLbdeMmWIkyuDPuQjTg</stringProp>
+                </elementProp>
+                <elementProp name="ruc" elementType="Header">
+                  <stringProp name="Header.name">ruc</stringProp>
+                  <stringProp name="Header.value">20100010136</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua</stringProp>
+                  <stringProp name="Header.value">&quot;Not;A=Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;139&quot;, &quot;Chromium&quot;;v=&quot;139&quot;</stringProp>
+                </elementProp>
+                <elementProp name="sec-ch-ua-mobile" elementType="Header">
+                  <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+                  <stringProp name="Header.value">?0</stringProp>
+                </elementProp>
+                <elementProp name="user" elementType="Header">
+                  <stringProp name="Header.name">user</stringProp>
+                  <stringProp name="Header.value">101 | Rosa Odar Prueba</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp reference="../../../HTTPSamplerProxy[40]/elementProp[2]/collectionProp"/>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

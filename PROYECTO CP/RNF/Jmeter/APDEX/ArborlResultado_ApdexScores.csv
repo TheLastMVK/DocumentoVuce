@@ -1,0 +1,17 @@
+Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
+Test,1,0.0,2.0,0.0,0.94,Unacceptable,true,true
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=armador,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoFicTec,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=materialCasco,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=naviera,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais,4,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=puerto,2,0.0,2.0,0.75,0.94,Fair,true,true
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoTrafico,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas,2,0.0,2.0,0.75,0.94,Fair,true,true
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica?numberpage=1&sizepage=25&perfil=A,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=imo&value=9612923,6,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&value=9612923,6,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=callSign&value=9612923,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=inmarsat&value=9612923,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form?field=mmsi&value=999612923,2,0.0,2.0,1.0,0.94,Excellent,true,false
