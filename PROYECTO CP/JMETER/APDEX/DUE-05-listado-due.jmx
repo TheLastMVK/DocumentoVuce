@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="due-05 listado due" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.${project.version}. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="Authorization" elementType="Header">
+            <stringProp name="Header.name">Authorization</stringProp>
+            <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZbzNJa18xYU9XUk5QcWxPLVJVTmUzVjhESldTU2U0eUgybFp4MG52cy1rIn0.eyJleHAiOjE3NTgxNDQ3NzcsImlhdCI6MTc1ODE0Mjk3NywianRpIjoiN2YxOGMzMGEtNWRmNi00OWQwLTlmMDMtMDc3NTZhOGU1YzE3IiwiaXNzIjoiaHR0cHM6Ly9hdXRob3JpemUtdGVzdC52dWNlLmdvYi5wZS9hdXRoMi9yZWFsbXMvYXV0ZW50aWNhY2lvbjIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjo1ODY4MTA4Zi0yZTdkLTQ4NGEtYTZkYi00ZWYyMmZhZjJlYWE6Y3AtY2VydGktMDVAZ21haWwuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGFuZGluZy1hdXRoMiIsInNlc3Npb25fc3RhdGUiOiI4OTM4Mzk0Ni1jYmJlLTRhNzYtOTQ0OC1hNjE4NzI0OWExMDgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlL2F1dGVudGljYWNpb24yLyoiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAvKiIsImh0dHBzOi8vbGFuZGluZy10ZXN0LnZ1Y2UuZ29iLnBlLyoiLCIqIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDIwMC8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJkZWZhdWx0IHByb2ZpbGUgZW1haWwiLCJzaWQiOiI4OTM4Mzk0Ni1jYmJlLTRhNzYtOTQ0OC1hNjE4NzI0OWExMDgiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImRlc1RpcG9Eb2N1bWVudG8iOiJSVUMiLCJjb2RUaXBvRG9jdW1lbnRvIjoiMSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNwLWNlcnRpLTA1QGdtYWlsLmNvbSIsIm51bWVyb0RvY3VtZW50byI6IjIwMjYyOTk5OTk5IiwiYXBlTWF0ZXJubyI6IlRpdmVzIiwibm9tYnJlQ29tcGxldG8iOiJUQU1QQSBUSVZFUyBUVUxBIiwiYXBlUGF0ZXJubyI6IlRhbXBhIiwiZW1haWwiOiJjcC1jZXJ0aS0wNUBnbWFpbC5jb20iLCJub21icmVzIjoiVHVsYSJ9.H0JIBoooPlOs4hYpyebOjRSmMEjuj_6kOizJ3uUs6c8StgsZSh8dadmp46AJVLHl0JwlXrcVq9o4l4rRXe2tfHQ_eTSBxOCw2mggdqlRcgKx8-0ojb6x2E1kbSK-c-gxEPeMbU8xCstInhKgOLWjQJ8x-DGsFQ4V7pfgnB74Mxh1i6f3iEkQ4kTQUTrViYaB9PCf9vCoGvVFhyqEcQvkhbcUYTeJrmnwcRtH6zdQF-ShxmC6DXEs4vcPG-ngTw-UmBjMKDukD_jCJXBIOJQvPHe6Nk70l4YS8_qThmNodkndQ82hnYB01RHRi3mp6gfOOUmeHPbUyLIcmr1-Kte7-A</stringProp>
+          </elementProp>
+          <elementProp name="ruc" elementType="Header">
+            <stringProp name="Header.name">ruc</stringProp>
+            <stringProp name="Header.value">20509645150</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;140&quot;, &quot;Not=A?Brand&quot;;v=&quot;24&quot;, &quot;Google Chrome&quot;;v=&quot;140&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="Accept" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+          </elementProp>
+          <elementProp name="idPerfil" elementType="Header">
+            <stringProp name="Header.name">idPerfil</stringProp>
+            <stringProp name="Header.value">104</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="user" elementType="Header">
+            <stringProp name="Header.name">user</stringProp>
+            <stringProp name="Header.value">104 | Tula Tampa Tives</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">gateway-apim-test.vuce.gob.pe</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.implementation"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <collectionProp name="DNSCacheManager.hosts"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">0</longProp>
+        <longProp name="ThreadGroup.delay">0</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DUE-05 Bandeja de Listado de DUEs">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoDue">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">estadoDue</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[4,1,3,2,5,6,8,7],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[4,1,3,2,5,6,8,7],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;PRUEBA&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[4,1,3,2,5,6,8,7],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;PRUEBA&quot;,&quot;nombreAgencia&quot;:&quot;COSMOS&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[4,1,3,2,5,6,8,7],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:false,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:true,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[10],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:false,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:true,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[2],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:true,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:false,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoNave" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                  <stringProp name="Argument.value">tipoNave</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew" enabled="true">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:false,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:true,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew">
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port">0</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;nombreNave&quot;:&quot;&quot;,&quot;nombreAgencia&quot;:&quot;&quot;,&quot;idProgramaDia&quot;:0,&quot;idArriboAnunciado&quot;:0,&quot;estados&quot;:[],&quot;fechaInicioEta&quot;:&quot;&quot;,&quot;fechaFinEta&quot;:&quot;&quot;,&quot;fechaInicioEtd&quot;:&quot;&quot;,&quot;fechaFinEtd&quot;:&quot;&quot;,&quot;tipoNave&quot;:[],&quot;filtro&quot;:false,&quot;page&quot;:1,&quot;size&quot;:25,&quot;puerto&quot;:&quot;CLL&quot;,&quot;rucAgente&quot;:&quot;&quot;,&quot;anio&quot;:&quot;2025&quot;,&quot;escalaId&quot;:&quot;73&quot;,&quot;nombrePuerto&quot;:&quot;&quot;,&quot;esArriboCondicional&quot;:false,&quot;limpiarDue&quot;:true,&quot;usuario&quot;:&quot;104 | Tula Tampa Tives&quot;,&quot;entidad&quot;:&quot;20509645150&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

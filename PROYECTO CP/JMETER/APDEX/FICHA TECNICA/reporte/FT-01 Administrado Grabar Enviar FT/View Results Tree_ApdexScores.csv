@@ -1,0 +1,25 @@
+Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoFicTec,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=materialCasco,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoTrafico,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=armador&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=armador&description=ger&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=naviera&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=naviera&description=sin&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=pais&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=pais&description=ALE&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=h&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=ham&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=hamb&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=tipoNave&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=tipoNave&description=y&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=tipoNave&description=yat&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas,1,0.0,2.0,0.5,0.94,Poor,true,true
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-command/1.0/camunda/fichas-tecnicas/3848/detalle/4310,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/documento?numberpage=1&sizepage=5&idFichaTecnicaDet=4310,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/documentos/vencidos?idFichaTecnicaDet=4310,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica?numberpage=1&sizepage=25&perfil=A,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/filtro?numberpage=1&sizepage=25&perfil=A,3,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/validar-form-header?field=matricula&value=GER246,1,0.0,2.0,1.0,0.94,Excellent,true,false
