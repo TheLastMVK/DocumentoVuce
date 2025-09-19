@@ -91,7 +91,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
@@ -106,7 +106,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
       </ThreadGroup>
       <hashTree>
-        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="DUE-04 Segmento 1 Declaracion de Administrado" enabled="true"/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="DUE-04 Segmento 1 Declaracion de Administrado" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=terminal" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -4775,7 +4775,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
@@ -6822,12 +6822,14 @@
                   <stringProp name="Argument.name">tipoDocumento</stringProp>
                   <stringProp name="Argument.value">2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="numeroDocumento" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">numeroDocumento</stringProp>
                   <stringProp name="Argument.value">40898002</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -6946,7 +6948,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/buzon/1.0/notificaciones/count/106?perfilId=106&amp;codComponente=CP" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/buzon/1.0/notificaciones/count/106?perfilId=106&amp;codComponente=CP" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -6955,12 +6957,14 @@
                   <stringProp name="Argument.name">perfilId</stringProp>
                   <stringProp name="Argument.value">106</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="codComponente" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">codComponente</stringProp>
                   <stringProp name="Argument.value">CP</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -9222,7 +9226,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/buzon/1.0/notificaciones/count/110?perfilId=110&amp;codComponente=CP" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/buzon/1.0/notificaciones/count/110?perfilId=110&amp;codComponente=CP" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments">
