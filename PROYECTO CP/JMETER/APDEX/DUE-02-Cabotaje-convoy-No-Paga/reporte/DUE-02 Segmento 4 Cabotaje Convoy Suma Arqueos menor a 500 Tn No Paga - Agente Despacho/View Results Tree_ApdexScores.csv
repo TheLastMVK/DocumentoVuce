@@ -1,0 +1,19 @@
+Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/cambioagencia-query/1.0/cambioagencia/valida-pendiente?rucReceptor=20100010136,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/buscarByFichaTecnicaId/1806,3,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-command/1.0/operacion/registrar?idTipoSeguimiento=40,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/agency/findByRuc?ruc=20100010136,3,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/despacho/escala/2602,3,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/2602?escalaId=2602,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/buscaravanzadanew,2,0.0,2.0,1.0,0.94,Excellent,true,false
+"https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/puertos/nacional?Listpuertos=CLL,PAI,YMS,CHM,ILQ",1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/motivo,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/motivo-escala/escala/2602,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/operacion/2602?estado=S,3,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/operacion/lista/2602,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/operacion/terminal/YMS,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/seguridad/1.0/cuentas-vuce?tipoDocumento=2&numeroDocumento=70820383,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/seguridad/1.0/perfiles/101,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/seguridad/1.0/roles-permisos?perfilId=101,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/translate/1.0/lang/es,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://landing-test.vuce.gob.pe/cp2/gestionduenave/tiempo/2602,1,0.0,2.0,1.0,0.94,Excellent,true,false
