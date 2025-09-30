@@ -91,7 +91,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
@@ -106,7 +106,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
       </ThreadGroup>
       <hashTree>
-        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="DUE-02 Segmento 1 Cabotaje Convoy Suma Arqueos menor a 500 Tn No Paga - Creacion Convoy Agente" enabled="false"/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="DUE-02 Segmento 1 Cabotaje Convoy Suma Arqueos menor a 500 Tn No Paga - Creacion Convoy Agente" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=terminal" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1011,9 +1011,9 @@
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/cambioagenciatripulante-command/1.0/libretaembarque/cargaMasivaTripulante" enabled="true">
             <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
               <collectionProp name="HTTPFileArgs.files">
-                <elementProp name="D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\cargaMasiva\tripulantes.xlsx" elementType="HTTPFileArg">
+                <elementProp name="D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\cargaMasiva\tripulantes.xlsx" elementType="HTTPFileArg">
                   <stringProp name="File.mimetype">text/csv</stringProp>
-                  <stringProp name="File.path">D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\cargaMasiva\tripulantes.xlsx</stringProp>
+                  <stringProp name="File.path">D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\cargaMasiva\tripulantes.xlsx</stringProp>
                   <stringProp name="File.paramname">archivoCarga</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1062,7 +1062,7 @@
             </elementProp>
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/2602</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/2603</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1283,9 +1283,9 @@
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-command/1.0/pasajero/cargaMasivaPasajero" enabled="true">
             <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
               <collectionProp name="HTTPFileArgs.files">
-                <elementProp name="D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\cargaMasiva\listapasajeros.xlsx" elementType="HTTPFileArg">
+                <elementProp name="D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\cargaMasiva\listapasajeros.xlsx" elementType="HTTPFileArg">
                   <stringProp name="File.mimetype">text/csv</stringProp>
-                  <stringProp name="File.path">D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\cargaMasiva\listapasajeros.xlsx</stringProp>
+                  <stringProp name="File.path">D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\cargaMasiva\listapasajeros.xlsx</stringProp>
                   <stringProp name="File.paramname">archivoCarga</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1908,7 +1908,7 @@
             </elementProp>
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/declaracion-general/2602</stringProp>
+            <stringProp name="HTTPSampler.path">pass-through-https-cert/cp2/gestionduenave-query/1.0/declaracion-general/2603</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -26788,7 +26788,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\reporte\View Results Tree.csv</stringProp>
+        <stringProp name="filename">D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\reporte\DUE-02 Segmento 1 Cabotaje Convoy Suma Arqueos menor a 500 Tn No Paga - Creacion Convoy Agente\View Results Tree.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -26825,7 +26825,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">D:\Documento VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\DUE-02-Cabotaje-convoy-No-Paga\reporte\Summary Report.csv</stringProp>
+        <stringProp name="filename">D:\VUCE\DocumentoVuce\PROYECTO CP\JMETER\APDEX\FIRMA\DUE-02 Cabotaje Convoy No Paga\reporte\DUE-02 Segmento 1 Cabotaje Convoy Suma Arqueos menor a 500 Tn No Paga - Creacion Convoy Agente\Summary Report.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="com.github.rbourga.jmeter.apdex.gui.ApdexGui" testclass="ResultCollector" testname="Apdex Score Calculator" enabled="true">
