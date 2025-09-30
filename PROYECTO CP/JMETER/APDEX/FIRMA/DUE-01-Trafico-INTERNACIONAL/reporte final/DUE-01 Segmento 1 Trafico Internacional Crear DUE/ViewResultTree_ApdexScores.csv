@@ -1,0 +1,13 @@
+Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=terminal,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=tipoTraficodue,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=&page=0&size=10,2,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=ANTOFa&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCodeAndDescription?code=puerto&description=GUAYa&page=0&size=10,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-command/1.0/escalas/validar-form-escala,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/2638?escalaId=2638,1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/convoy/2638,2,0.0,2.0,1.0,0.94,Excellent,true,false
+"https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/naves/3605?estadoDueId=4,5,6",1,0.0,2.0,1.0,0.94,Excellent,true,false
+"https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/naves?callSign=&matricula=&nombreNave=&imo=7414224&estadoDueId=1,9,10,11&convoy=no&puertoEscalaId=CLL&ruc=20100010136",1,0.0,2.0,1.0,0.94,Excellent,true,false
+"https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/escalas/puertos/nacional?Listpuertos=CLL,PAI,YMS,CHM,ILQ",1,0.0,2.0,1.0,0.94,Excellent,true,false
+https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/processdue/1.0/camunda/init,1,0.0,2.0,1.0,0.94,Excellent,true,false
