@@ -1,6 +1,0 @@
-Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=estadoFicTec,1,0.0,2.0,1.0,0.94,Excellent,true,false
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/comunes-query/1.0/master/allByCode?code=pais,1,0.0,2.0,1.0,0.94,Excellent,true,false
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/ficha-tecnica?numberpage=1&sizepage=25&perfil=F,2,0.0,2.0,1.0,0.94,Excellent,true,false
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/fichatecnica-query/1.0/filtro?numberpage=1&sizepage=25&perfil=F,4,0.0,2.0,1.0,0.94,Excellent,true,false
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/translate/1.0/lang/es,1,0.0,2.0,1.0,0.94,Excellent,true,false

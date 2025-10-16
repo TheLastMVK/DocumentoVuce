@@ -1,2 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1759264921148,456,https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/recepcion-nave/2638?escalaId=2638,200,OK,Thread Group 1-1,text,true,,1574,2358,1,1,https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/recepcion-nave/2650?escalaId=2638,456,0,54

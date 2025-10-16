@@ -1,2 +1,0 @@
-Label,# Samples,Error %,Apdex Target (s),Apdex Value,Apdex Min Score,Apdex Rating,Small Group,Failed
-https://gateway-apim-test.vuce.gob.pe/pass-through-https-cert/cp2/gestionduenave-query/1.0/declaracion-general/2638?escalaId=2638,1,0.0,2.0,1.0,0.94,Excellent,true,false
